@@ -1,0 +1,4821 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>REST API for Oracle AI Data Platform Workbench - Create a table</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+		
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="op-aidataplatforms-aidataplatformid-schemas-post.html" title="Previous" type="text/html">
+        <link rel="next" href="op-aidataplatforms-aidataplatformid-views-post.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:30+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"REST API for Oracle AI Data Platform Workbench - Create a table","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="op-aidataplatforms-aidataplatformid-schemas-post.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="op-aidataplatforms-aidataplatformid-views-post.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+
+            
+            <header id="top">
+
+                <ol class="breadcrumb">
+                    <li><a href="index.html">REST API for Oracle AI Data Platform Workbench</a></li>
+                    <li>Tasks</li>
+                    
+                    <li class="active">
+                        
+                        <a href="api-schema.html">Schema</a>
+                        
+                    </li>
+                    
+                </ol>
+                
+                <p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+                
+                
+                <div>
+                	<div class="dropdown btn-group pull-right" style="clear: right;">
+                		<button id="dLabel" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to <span class="caret"></span>
+                		</button>
+      					<ul class="dropdown-menu" aria-labelledby="dLabel">
+          					<li><a href="#request" data-toggle="ignore">Request</a></li>
+          					<li><a href="#response" data-toggle="ignore">Response</a></li>
+          					
+      					</ul>
+    				</div>
+     				<h2>Create a table</h2>
+     			</div>
+                
+                <div>
+                    <div class="label label-post text-uppercase">post</div>
+                    <p><strong>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables</strong></p>
+                </div>
+            </header>
+            <section>
+
+                <div class="description">Create a table.</div>
+
+                
+
+                <h3 id="request">Request</h3>
+                
+
+                
+
+                
+                <div class="h5">Path Parameters</div>
+                <div class="schema-container">
+                <ul class="schema-properties">
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-0" aria-expanded="false" aria-controls="request-path-param-0">
+                    aiDataPlatformId(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-0">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the AI Data Platform (Data Lake) instance.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                </ul>
+
+                
+                </div>
+                
+
+
+                
+
+
+                
+                <div class="h5">Header Parameters</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-request-id" aria-expanded="false" aria-controls="request-header-param-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned identifier for the request. If you need to contact
+Oracle about a particular request, please provide the request ID.
+The only valid characters for request IDs are letters, numbers,
+underscore, and dash.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-retry-token" aria-expanded="false" aria-controls="request-header-param-opc-retry-token">
+                        opc-retry-token: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-retry-token">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>64</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A token that uniquely identifies a request so it can be retried in case of a timeout or
+server error without risk of running that same action again. Retry tokens expire after 24
+hours, but can be invalidated before then due to conflicting operations. For example, if a resource
+has been deleted and removed from the system, then a retry of the original creation request
+might be rejected.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-should-update-recent" aria-expanded="false" aria-controls="request-header-param-should-update-recent">
+                        should-update-recent: boolean
+                        </a>
+                        <div class="collapse" id="request-header-param-should-update-recent">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A flag to identify if the recent list should be updated.</div>
+
+
+
+<div>Default Value: <code>false</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+
+
+                
+                <div class="entity">
+                <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+                <div>Details for the new table.</div>
+
+                
+                
+                
+
+                <div class="schema-container">
+                
+                <div id="request-bodyparam-definitions-CreateTableDetails" class="swagger-schema">
+    <div class="panel-heading">Root Schema : CreateTableDetails</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The data to create a table.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateTableDetails-properties-catalogKey-properties-catalogKey-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateTableDetails-properties-catalogKey-properties-catalogKey-0">
+            catalogKey(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateTableDetails-properties-catalogKey-properties-catalogKey-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The name of the catalog to which this table belongs.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateTableDetails-properties-description-properties-description-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateTableDetails-properties-description-properties-description-0">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateTableDetails-properties-description-properties-description-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Table description.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateTableDetails-properties-displayName-properties-displayName-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateTableDetails-properties-displayName-properties-displayName-0">
+            displayName(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateTableDetails-properties-displayName-properties-displayName-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Table name.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-ExternalTableDefinition-properties-externalTableDefinition-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-ExternalTableDefinition-properties-externalTableDefinition-0">
+            externalTableDefinition: 
+            object </a> <a href="#request-bodyparam-definitions-ExternalTableDefinition" role="button" class="btn btn-default btn-sm btn-xsm">ExternalTableDefinition</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-ExternalTableDefinition-properties-externalTableDefinition-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The details about the new external table.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-ManagedTableDefinition-properties-managedTableDefinition-1" aria-expanded="false" aria-controls="request-bodyparam-definitions-ManagedTableDefinition-properties-managedTableDefinition-1">
+            managedTableDefinition: 
+            object </a> <a href="#request-bodyparam-definitions-ManagedTableDefinition" role="button" class="btn btn-default btn-sm btn-xsm">ManagedTableDefinition</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-ManagedTableDefinition-properties-managedTableDefinition-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The details about the new managed table.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateTableDetails-properties-partitionKeys-properties-partitionKeys-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateTableDetails-properties-partitionKeys-properties-partitionKeys-0">
+            partitionKeys: 
+            array </a> <a href="#request-bodyparam-definitions-CreateTableDetails-properties-partitionKeys" role="button" class="btn btn-default btn-sm btn-xsm">partitionKeys</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateTableDetails-properties-partitionKeys-properties-partitionKeys-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Number of Items: <code>100</code></div>
+
+
+
+
+
+<div class="description">Columns to be used in partition for table.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateTableDetails-properties-schemaKey-properties-schemaKey-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateTableDetails-properties-schemaKey-properties-schemaKey-0">
+            schemaKey(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateTableDetails-properties-schemaKey-properties-schemaKey-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The name of the schema to which this table belongs.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateTableDetails-properties-tableFields-properties-tableFields-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateTableDetails-properties-tableFields-properties-tableFields-0">
+            tableFields: 
+            array </a> <a href="#request-bodyparam-definitions-CreateTableDetails-properties-tableFields" role="button" class="btn btn-default btn-sm btn-xsm">tableFields</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateTableDetails-properties-tableFields-properties-tableFields-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Number of Items: <code>100</code></div>
+
+
+
+
+
+<div class="description">Columns for table.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateTableDetails-properties-tableProperties-properties-tableProperties-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateTableDetails-properties-tableProperties-properties-tableProperties-0">
+            tableProperties: 
+            array </a> <a href="#request-bodyparam-definitions-CreateTableDetails-properties-tableProperties" role="button" class="btn btn-default btn-sm btn-xsm">tableProperties</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateTableDetails-properties-tableProperties-properties-tableProperties-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Number of Items: <code>10</code></div>
+
+
+
+
+
+<div class="description">Table properties.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateTableDetails-properties-tableType-properties-tableType-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateTableDetails-properties-tableType-properties-tableType-0">
+            tableType(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateTableDetails-properties-tableType-properties-tableType-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;MANAGED&quot;,
+    &quot;EXTERNAL&quot;
+]</code></div>
+
+
+
+
+
+<div>Type of table. Managed, external or mount table.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The data to create a table.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;displayName&quot;,
+        &quot;catalogKey&quot;,
+        &quot;schemaKey&quot;,
+        &quot;tableType&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;displayName&quot;:{
+            &quot;description&quot;:&quot;Table name.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;catalogKey&quot;:{
+            &quot;description&quot;:&quot;The name of the catalog to which this table belongs.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;schemaKey&quot;:{
+            &quot;description&quot;:&quot;The name of the schema to which this table belongs.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;Table description.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;tableType&quot;:{
+            &quot;description&quot;:&quot;Type of table. Managed, external or mount table.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/TableType&quot;,
+            &quot;enum&quot;:[
+                &quot;MANAGED&quot;,
+                &quot;EXTERNAL&quot;
+            ]
+        },
+        &quot;managedTableDefinition&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/ManagedTableDefinition&quot;
+        },
+        &quot;externalTableDefinition&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/ExternalTableDefinition&quot;
+        },
+        &quot;tableFields&quot;:{
+            &quot;description&quot;:&quot;Columns for table.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;maxItems&quot;:100,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/TableFieldDetails&quot;
+            }
+        },
+        &quot;partitionKeys&quot;:{
+            &quot;description&quot;:&quot;Columns to be used in partition for table.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;maxItems&quot;:100,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/TableFieldDetails&quot;
+            }
+        },
+        &quot;tableProperties&quot;:{
+            &quot;description&quot;:&quot;Table properties.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;maxItems&quot;:10,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/TableProperty&quot;
+            }
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-ExternalTableDefinition" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : ExternalTableDefinition</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The details about the new external table.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-ExternalTableDefinition-properties-externalTableDataFormat-properties-externalTableDataFormat-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-ExternalTableDefinition-properties-externalTableDataFormat-properties-externalTableDataFormat-0">
+            externalTableDataFormat(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-ExternalTableDefinition-properties-externalTableDataFormat-properties-externalTableDataFormat-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;AVRO&quot;,
+    &quot;ORC&quot;,
+    &quot;PARQUET&quot;,
+    &quot;TEXTFILE&quot;,
+    &quot;JSON&quot;,
+    &quot;CSV&quot;,
+    &quot;DELTA&quot;
+]</code></div>
+
+
+
+
+
+<div>External table data format.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-ExternalTableDefinition-properties-externalTableLocationType-properties-externalTableLocationType-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-ExternalTableDefinition-properties-externalTableLocationType-properties-externalTableLocationType-0">
+            externalTableLocationType: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-ExternalTableDefinition-properties-externalTableLocationType-properties-externalTableLocationType-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;OBJECT_STORAGE&quot;,
+    &quot;MOUNT&quot;
+]</code></div>
+
+
+
+
+
+<div>External table location type, either object store location or mount location.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-ExternalTableDefinition-properties-objectStorageLocationPath-properties-objectStorageLocationPath-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-ExternalTableDefinition-properties-objectStorageLocationPath-properties-objectStorageLocationPath-0">
+            objectStorageLocationPath: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-ExternalTableDefinition-properties-objectStorageLocationPath-properties-objectStorageLocationPath-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>1024</code></div>
+
+
+
+
+
+
+
+
+
+<div>The file location from which table properties are loaded.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TxtFileDefinition-properties-txtFileDefinition-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-TxtFileDefinition-properties-txtFileDefinition-0">
+            txtFileDefinition: 
+            object </a> <a href="#request-bodyparam-definitions-TxtFileDefinition" role="button" class="btn btn-default btn-sm btn-xsm">TxtFileDefinition</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TxtFileDefinition-properties-txtFileDefinition-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Properties specific to a text file.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The details about the new external table.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;externalTableDataFormat&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;externalTableLocationType&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;External table location type, either object store location or mount location.&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/ExternalTableLocationType&quot;,
+            &quot;enum&quot;:[
+                &quot;OBJECT_STORAGE&quot;,
+                &quot;MOUNT&quot;
+            ]
+        },
+        &quot;objectStorageLocationPath&quot;:{
+            &quot;description&quot;:&quot;The file location from which table properties are loaded.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:1024
+        },
+        &quot;externalTableDataFormat&quot;:{
+            &quot;description&quot;:&quot;External table data format.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/DataFormat&quot;,
+            &quot;enum&quot;:[
+                &quot;AVRO&quot;,
+                &quot;ORC&quot;,
+                &quot;PARQUET&quot;,
+                &quot;TEXTFILE&quot;,
+                &quot;JSON&quot;,
+                &quot;CSV&quot;,
+                &quot;DELTA&quot;
+            ]
+        },
+        &quot;txtFileDefinition&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/TxtFileDefinition&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-ManagedTableDefinition" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : ManagedTableDefinition</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The details about the new managed table.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-ManagedTableDefinition-properties-managedTableDataFormat-properties-managedTableDataFormat-1" aria-expanded="false" aria-controls="request-bodyparam-definitions-ManagedTableDefinition-properties-managedTableDataFormat-properties-managedTableDataFormat-1">
+            managedTableDataFormat(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-ManagedTableDefinition-properties-managedTableDataFormat-properties-managedTableDataFormat-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;AVRO&quot;,
+    &quot;ORC&quot;,
+    &quot;PARQUET&quot;,
+    &quot;TEXTFILE&quot;,
+    &quot;JSON&quot;,
+    &quot;CSV&quot;,
+    &quot;DELTA&quot;
+]</code></div>
+
+
+
+
+
+<div>Data format of the managed table.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The details about the new managed table.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;managedTableDataFormat&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;managedTableDataFormat&quot;:{
+            &quot;description&quot;:&quot;Data format of the managed table.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/DataFormat&quot;,
+            &quot;enum&quot;:[
+                &quot;AVRO&quot;,
+                &quot;ORC&quot;,
+                &quot;PARQUET&quot;,
+                &quot;TEXTFILE&quot;,
+                &quot;JSON&quot;,
+                &quot;CSV&quot;,
+                &quot;DELTA&quot;
+            ]
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-CreateTableDetails-properties-partitionKeys" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : partitionKeys</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Maximum Number of Items: <code>100</code></div>
+    
+
+    
+
+    
+    <div>Columns to be used in partition for table.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableFieldDetails-items-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableFieldDetails-items-0">
+            Array of: 
+                object </a> <a href="#request-bodyparam-definitions-TableFieldDetails" role="button" class="btn btn-default btn-sm btn-xsm">TableFieldDetails</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableFieldDetails-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Columns for table.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Columns to be used in partition for table.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;maxItems&quot;:100,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/TableFieldDetails&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-CreateTableDetails-properties-tableFields" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : tableFields</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Maximum Number of Items: <code>100</code></div>
+    
+
+    
+
+    
+    <div>Columns for table.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableFieldDetails-items-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableFieldDetails-items-0">
+            Array of: 
+                object </a> <a href="#request-bodyparam-definitions-TableFieldDetails" role="button" class="btn btn-default btn-sm btn-xsm">TableFieldDetails</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableFieldDetails-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Columns for table.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Columns for table.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;maxItems&quot;:100,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/TableFieldDetails&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-CreateTableDetails-properties-tableProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : tableProperties</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Maximum Number of Items: <code>10</code></div>
+    
+
+    
+
+    
+    <div>Table properties.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableProperty-items-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableProperty-items-0">
+            Array of: 
+                object </a> <a href="#request-bodyparam-definitions-TableProperty" role="button" class="btn btn-default btn-sm btn-xsm">TableProperty</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableProperty-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The property of the table.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Table properties.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;maxItems&quot;:10,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/TableProperty&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-TxtFileDefinition" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : TxtFileDefinition</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Properties specific to a text file.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TxtFileDefinition-properties-delimiter-properties-delimiter-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-TxtFileDefinition-properties-delimiter-properties-delimiter-0">
+            delimiter: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TxtFileDefinition-properties-delimiter-properties-delimiter-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>Delimiter to be used with text file.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TxtFileDefinition-properties-quote-properties-quote-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-TxtFileDefinition-properties-quote-properties-quote-0">
+            quote: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TxtFileDefinition-properties-quote-properties-quote-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>Type of quote to be used with text file.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Properties specific to a text file.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;delimiter&quot;:{
+            &quot;description&quot;:&quot;Delimiter to be used with text file.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;quote&quot;:{
+            &quot;description&quot;:&quot;Type of quote to be used with text file.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-TableFieldDetails" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : TableFieldDetails</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Columns for table.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableFieldDetails-properties-fieldDescription-properties-fieldDescription-1" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableFieldDetails-properties-fieldDescription-properties-fieldDescription-1">
+            fieldDescription: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableFieldDetails-properties-fieldDescription-properties-fieldDescription-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Description of the column.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableFieldDetails-properties-fieldName-properties-fieldName-1" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableFieldDetails-properties-fieldName-properties-fieldName-1">
+            fieldName(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableFieldDetails-properties-fieldName-properties-fieldName-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>767</code></div>
+
+
+
+
+
+
+
+
+
+<div>Name of the column.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableFieldDetails-properties-fieldPrecision-properties-fieldPrecision-1" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableFieldDetails-properties-fieldPrecision-properties-fieldPrecision-1">
+            fieldPrecision: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableFieldDetails-properties-fieldPrecision-properties-fieldPrecision-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>64</code></div>
+
+
+
+
+
+
+
+
+
+<div>Precision of the column.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableFieldDetails-properties-fieldScale-properties-fieldScale-1" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableFieldDetails-properties-fieldScale-properties-fieldScale-1">
+            fieldScale: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableFieldDetails-properties-fieldScale-properties-fieldScale-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>64</code></div>
+
+
+
+
+
+
+
+
+
+<div>Scale of the column.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableFieldDetails-properties-fieldType-properties-fieldType-1" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableFieldDetails-properties-fieldType-properties-fieldType-1">
+            fieldType: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableFieldDetails-properties-fieldType-properties-fieldType-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>9999</code></div>
+
+
+
+
+
+
+
+
+
+<div>Type of the column.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Columns for table.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;fieldName&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;fieldName&quot;:{
+            &quot;description&quot;:&quot;Name of the column.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:767
+        },
+        &quot;fieldType&quot;:{
+            &quot;description&quot;:&quot;Type of the column.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:9999
+        },
+        &quot;fieldPrecision&quot;:{
+            &quot;description&quot;:&quot;Precision of the column.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:64
+        },
+        &quot;fieldScale&quot;:{
+            &quot;description&quot;:&quot;Scale of the column.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:64
+        },
+        &quot;fieldDescription&quot;:{
+            &quot;description&quot;:&quot;Description of the column.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-TableProperty" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : TableProperty</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The property of the table.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableProperty-properties-propertyName-properties-propertyName-1" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableProperty-properties-propertyName-properties-propertyName-1">
+            propertyName(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableProperty-properties-propertyName-properties-propertyName-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>Property name.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-TableProperty-properties-propertyValue-properties-propertyValue-1" aria-expanded="false" aria-controls="request-bodyparam-definitions-TableProperty-properties-propertyValue-properties-propertyValue-1">
+            propertyValue: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-TableProperty-properties-propertyValue-properties-propertyValue-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>Property value.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The property of the table.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;propertyName&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;propertyName&quot;:{
+            &quot;description&quot;:&quot;Property name.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;propertyValue&quot;:{
+            &quot;description&quot;:&quot;Property value.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                </div>
+
+                
+                </div>
+
+                
+
+                
+
+                
+                
+                <a style="float: right" href="#top">Back to Top</a>
+
+                <h3 id="response">Response</h3>
+
+                
+                
+                <div class="h5">Supported Media Types</div>
+                <ul class="media-types">
+                    
+                    <li>application/json</li>
+                    
+                </ul>
+                
+                
+
+
+
+                
+                <div class="response">
+                <h4 class="response-code range-200">202 Response</h4>
+                <div class="response-body">
+                <div>Request accepted. Table is created.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#202-response-header-content-location" aria-expanded="false" aria-controls="202-response-header-content-location">
+                        content-location: string(uri-reference)
+                        </a>
+                        <div class="collapse" id="202-response-header-content-location">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Same as location.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#202-response-header-datalake-async-operation-key" aria-expanded="false" aria-controls="202-response-header-datalake-async-operation-key">
+                        datalake-async-operation-key: string
+                        </a>
+                        <div class="collapse" id="202-response-header-datalake-async-operation-key">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The key of the asynchronous operations associated with a OIDL instance..
+  Use GetAsyncOperation with this key to track the status of the request.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#202-response-header-location" aria-expanded="false" aria-controls="202-response-header-location">
+                        location: string(uri-reference)
+                        </a>
+                        <div class="collapse" id="202-response-header-location">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>URL for the created Table. The table key is generated after this request is sent.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#202-response-header-oidl-async-operation-key" aria-expanded="false" aria-controls="202-response-header-oidl-async-operation-key">
+                        oidl-async-operation-key: string
+                        </a>
+                        <div class="collapse" id="202-response-header-oidl-async-operation-key">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The key of the asynchronous operations associated with a OIDL instance..
+  Use GetAsyncOperation with this key to track the status of the request.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#202-response-header-opc-request-id" aria-expanded="false" aria-controls="202-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="202-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">400 Response</h4>
+                <div class="response-body">
+                <div>Bad Request (invalid query parameters, malformed headers, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#400-response-header-opc-request-id" aria-expanded="false" aria-controls="400-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="400-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="400-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-code-properties-code-99" aria-expanded="false" aria-controls="400-definitions-Error-properties-code-properties-code-99">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-code-properties-code-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-message-properties-message-99" aria-expanded="false" aria-controls="400-definitions-Error-properties-message-properties-message-99">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-message-properties-message-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">401 Response</h4>
+                <div class="response-body">
+                <div>Unauthorized (missing or expired credentials, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#401-response-header-opc-request-id" aria-expanded="false" aria-controls="401-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="401-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="401-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-code-properties-code-99" aria-expanded="false" aria-controls="401-definitions-Error-properties-code-properties-code-99">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-code-properties-code-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-message-properties-message-99" aria-expanded="false" aria-controls="401-definitions-Error-properties-message-properties-message-99">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-message-properties-message-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">404 Response</h4>
+                <div class="response-body">
+                <div>Not Found. The requested resource was not found.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#404-response-header-opc-request-id" aria-expanded="false" aria-controls="404-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="404-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="404-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-code-properties-code-99" aria-expanded="false" aria-controls="404-definitions-Error-properties-code-properties-code-99">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-code-properties-code-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-message-properties-message-99" aria-expanded="false" aria-controls="404-definitions-Error-properties-message-properties-message-99">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-message-properties-message-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">409 Response</h4>
+                <div class="response-body">
+                <div>Conflict. Request conflicts with the current state of the resource.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#409-response-header-opc-request-id" aria-expanded="false" aria-controls="409-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="409-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="409-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#409-definitions-Error-properties-code-properties-code-37" aria-expanded="false" aria-controls="409-definitions-Error-properties-code-properties-code-37">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="409-definitions-Error-properties-code-properties-code-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#409-definitions-Error-properties-message-properties-message-37" aria-expanded="false" aria-controls="409-definitions-Error-properties-message-properties-message-37">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="409-definitions-Error-properties-message-properties-message-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">429 Response</h4>
+                <div class="response-body">
+                <div>Too Many Requests. Too many requests sent to the server in a short period.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#429-response-header-opc-request-id" aria-expanded="false" aria-controls="429-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="429-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="429-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-code-properties-code-99" aria-expanded="false" aria-controls="429-definitions-Error-properties-code-properties-code-99">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-code-properties-code-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-message-properties-message-99" aria-expanded="false" aria-controls="429-definitions-Error-properties-message-properties-message-99">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-message-properties-message-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-500">500 Response</h4>
+                <div class="response-body">
+                <div>Internal Server Error. The server encountered an unexpected condition preventing fulfilment of the request.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#500-response-header-opc-request-id" aria-expanded="false" aria-controls="500-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="500-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="500-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-code-properties-code-99" aria-expanded="false" aria-controls="500-definitions-Error-properties-code-properties-code-99">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-code-properties-code-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-message-properties-message-99" aria-expanded="false" aria-controls="500-definitions-Error-properties-message-properties-message-99">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-message-properties-message-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range">Default Response</h4>
+                <div class="response-body">
+                <div>Unknown Error. Error is not recognized by the system.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#default-response-header-opc-request-id" aria-expanded="false" aria-controls="default-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="default-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="default-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-code-properties-code-99" aria-expanded="false" aria-controls="default-definitions-Error-properties-code-properties-code-99">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-code-properties-code-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-message-properties-message-99" aria-expanded="false" aria-controls="default-definitions-Error-properties-message-properties-message-99">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-message-properties-message-99">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+
+				<a style="float: right" href="#top">Back to Top</a>
+				
+                
+
+            </section>
+
+            
+        </article>
+    </body>
+</html>
