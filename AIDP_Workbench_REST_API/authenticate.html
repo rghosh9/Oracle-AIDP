@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Authenticate</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+			
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="use-curl.html" title="Previous" type="text/html">
+        <link rel="next" href="send-requests.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:29+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"Authenticate","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="use-curl.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="send-requests.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+            <h2>Authenticate</h2>
+		<p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+            <div class="dita-content">
+            <div>
+               <p>Oracle AI Data Platform Workbench requires OCI CLI authentication.</p><pre class="pre codeblock"><code>oci session authenticate --profile-name DEFAULT --region us-phoenix-1 --tenancy-name bmc_operator_access</code></pre><p>For more information on OCI CLI authentication, see <a href="https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/clitoken.htm" target="_blank">OCI CLI Token-based Authentication</a> and <a href="https://docs.oracle.com/en-us/iaas/Content/API/Concepts/signingrequests.htm" target="_blank">OCI Request Signing</a>.
+               </p>
+               <div class="tblformal" id="GUID-51E5C29A-6B7E-487A-8832-5D709410C16A__table_djf_lp4_33c">
+                  <table cellpadding="4" cellspacing="0" class="Formal" title summary="Components of the authentication request and descriptions" frame="hsides" border="1" rules="rows">
+                     <thead>
+                        <tr align="left" valign="top">
+                           <th align="left" valign="bottom" width="0%" id="d1222e27">Component</th>
+                           <th align="left" valign="bottom" width="0%" id="d1222e29">Description</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="0%" id="d1222e33" headers="d1222e27 "><code class="codeph">--profile-name DEFAULT</code></td>
+                           <td align="left" valign="top" width="0%" headers="d1222e33 d1222e29 ">Creates or updates the <code class="codeph">DEFAULT</code> profile in
+                <code>~/.oci/config</code>.
+                           </td>
+                        </tr>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="0%" id="d1222e45" headers="d1222e27 "><code class="codeph">--region us-phoenix-1</code></td>
+                           <td align="left" valign="top" width="0%" headers="d1222e45 d1222e29 ">Sets the session region (required).</td>
+                        </tr>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="0%" id="d1222e51" headers="d1222e27 "><code class="codeph">--tenancy-name bmc_operator_access</code></td>
+                           <td align="left" valign="top" width="0%" headers="d1222e51 d1222e29 ">Selects the tenancy by name for the session flow.</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <p>When you run the session authentication command the OCI CLI starts a
+      browser-based sign-in flow. After successful login, CLI creates a user principal session token
+      and associated RSA key material. Session files are saved to
+        <code>~/.oci/sessions</code> by default. You can set a different location for
+      sessions files with <code class="codeph">--token-location</code>. CLI writes profile entries in
+        <code>~/.oci/config</code>, including <code class="codeph">security_token_file</code> and
+        <code class="codeph">key_file</code>. <code class="codeph">AidpWorkspaceClient</code> uses
+        <code class="codeph">SessionTokenAuthenticationDetailsProvider</code> and
+        <code class="codeph">RequestSigningFilter</code> to automatically sign requests.
+               </p>
+               <div class="section">
+                  <p class="subhead1">How this maps to API authentication</p>
+                  
+                  
+                  <ul style="list-style-type: disc;" id="GUID-51E5C29A-6B7E-487A-8832-5D709410C16A__ul_fdw_yq4_33c">
+                     <li><code class="codeph">opc-security-token</code> carries the session JWT.
+                     </li>
+                     <li><code class="codeph">Authorization: Signature ...</code> is generated with
+            <code class="codeph">SHA256withRSA</code>.
+                     </li>
+                     <li>For GET with no body, signed headers include <code class="codeph">(request-target) date
+          host</code>.
+                     </li>
+                     <li>These values must match the actual request exactly.</li>
+                  </ul>
+                  
+                  <div class="p"><span class="bold">Canonical
+        example:</span><pre class="pre codeblock"><code>(request-target): get /20240831/aiDataPlatforms/&lt;ai-dataplatform-ocid&gt;/workspaces
+date: Tue, 17 Feb 2026 18:20:00 GMT
+host: aidpdev2.us-phoenix-1.oci.oc-test.com</code></pre></div>
+                  
+               </div>
+               <div class="section">
+                  <p class="subhead1">Best Practices</p>
+                  
+                  
+                  <p>Use manual signing only for deep debugging.</p>
+                  <pre class="pre codeblock"><code>DATE_VALUE="$(LC_ALL=C date -u '+%a, %d %b %Y %H:%M:%S GMT')"
+SIGNING_STRING="(request-target): get /20240831/aiDataPlatforms/&lt;ai-dataplatform-ocid&gt;/workspaces
+date: ${DATE_VALUE}
+host: aidpdev2.us-phoenix-1.oci.oc-test.com"
+
+SIGNATURE_B64="$(printf '%s' "$SIGNING_STRING" | openssl dgst -sha256 -sign &lt;private-key-file&gt; | openssl base64 -A)"</code></pre>
+                  <div class="p">Follow credential security best practices:
+                     <ul style="list-style-type: disc;" id="GUID-51E5C29A-6B7E-487A-8832-5D709410C16A__ul_ynd_rr4_33c">
+                        <li>Never commit token or key files.</li>
+                        <li>Restrict file permissions on <code class="codeph">&lt;token-file&gt;</code> and
+              <code class="codeph">&lt;private-key-file&gt;</code>.
+                        </li>
+                        <li>Rotate credentials regularly.</li>
+                        <li>Apply least-privilege IAM policies.</li>
+                     </ul>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+        </article>
+    </body>
+</html>

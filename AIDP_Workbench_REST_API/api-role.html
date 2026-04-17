@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>REST API for Oracle AI Data Platform Workbench - Role REST Endpoints</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+		<link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <link rel="stylesheet" href="https://static.oracle.com/cdn/fnd/gallery/2501.0.0/images/iconfont/ojuxIconFont.min.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+			
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="op-aidataplatforms-aidataplatformid-models-get.html" title="Previous" type="text/html">
+        <link rel="next" href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:19+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"REST API for Oracle AI Data Platform Workbench - Role REST Endpoints","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="op-aidataplatforms-aidataplatformid-models-get.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+            <header>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">REST API for Oracle AI Data Platform Workbench</a></li>
+                    <li>Tasks</li>
+                    
+                      
+                    
+                </ol>
+                
+                
+				   <p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+				
+                <h2>Role REST Endpoints</h2>
+            </header>
+
+            <div class="clearfix">
+                <form class="form-inline endpoints pull-left">
+                    <label for="sortby" class="control-label">Sort by</label>
+
+                    <div id="sortby" class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="sort-radio" value="summary" autocomplete="off" checked> Task
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="sort-radio" value="path" autocomplete="off"> Path
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="sort-radio" value="method" autocomplete="off"> Method
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <section>
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active" id="summary-sort">
+    
+<div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Role
+        </div>
+
+        
+    </div>
+    </div>
+<div class="panel-body">
+<div>The operations from the Role category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post.html">Add a member to Role.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}/actions/addMember</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-post.html">Creates a Data Lake Role.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-delete.html">Deletes a DataLake.</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-get.html">Get Data Lake Role</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-permissions-get.html">Get Permission information for a given role</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-get.html">Gets a list of Roles.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-removemember-post.html">Remove member from a Role.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}/actions/removeMember</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-put.html">Updates a Data Lake Role</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-managepermission-post.html">Updates permissions on a Role</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}/actions/managePermission</code></div></dd>
+
+</dl>
+</div>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="path-sort"></div>
+<div role="tabpanel" class="tab-pane fade" id="method-sort"></div>
+</div>
+            </section>
+        </article>
+    </body>
+</html>

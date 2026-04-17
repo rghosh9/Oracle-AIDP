@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Batch Actions</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+			
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="send-requests.html" title="Previous" type="text/html">
+        <link rel="next" href="test.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:29+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"Batch Actions","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="send-requests.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="test.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+            <h2>Batch Actions</h2>
+		<p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+            <div class="dita-content">
+            <div>
+               <p>You can combine multiple operations into a single HTTP request. </p>
+               <div class="p">The request body is a JSON object that contains a property named <code class="codeph">parts</code>. That property is an array of objects. Each object in the array contains:
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        
+                        <p>A unique ID</p>
+                        
+                     </li>
+                     <li>
+                        
+                        <p>A relative path to the resource</p>
+                        
+                     </li>
+                     <li>
+                        
+                        <p>An operation</p>
+                        
+                     </li>
+                     <li>
+                        
+                        <p>A payload (optional)</p>
+                        
+                     </li>
+                  </ul>
+                  
+                  <p>The JSON schema of a request:</p>
+                  
+                  <pre class="pre codeblock"><code>{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Batch execution",
+    "description": "Group multiple requests together ('part').",
+    "definitions": {
+        "Part": {
+            "type": "object",
+            "allOf": [
+                {
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "description": "An identification provided by the client to distinguish each part provided in the batch request."},
+                        "path": {
+                            "type": "string",
+                            "description": "Resource's location."},
+                        "operation": {
+                            "type": "string",
+                            "enum": ["get","create","update","replace","delete"
+                            ],
+                            "description": "The operation to perform."},
+                        "preconditionSucceeded": {
+                            "type": "boolean",
+                            "description": "This attribute is set in the batch response only when ifMatch or ifNoneMatch are provided in the request. It will be 'true' if the precondition (ifMatch/ifNoneMatch) was satisfied, otherwise 'false'."},
+                        "payload": {
+                            "oneOf": [
+                                {
+                                    "$ref": "resource-item.json",
+                                    "description": "The payload to use in the operation. Example: a resource instance should be provided in order to execute a 'create'."},
+                                {
+                                    "type": "null"}
+                            ]}},
+                    "required": ["id","path","operation"]}
+            ],
+            "anyOf": [
+                {
+                    "properties": {
+                        "ifMatch": {
+                            "type": "string",
+                            "description": "This attribute is analogous to the If-Match header. It represents a precondition to execute this operation. The value can be null (same effect of 'If-Match: *') or an array of resource versions."}}},
+                {
+                    "properties": {
+                        "ifNoneMatch": {
+                            "type": "string",
+                            "description": "This attribute is analogous to the If-None-Match header. It represents a precondition to execute this operation. The value can be null (same effect of 'If-None-Match: *') or an array of resource versions."}}}
+            ],
+            "description": "Represents a request."}},
+    "properties": {
+        "parts": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Part"},
+            "description": "Array that represents multiple requests."}},
+    "required": ["parts"
+    ]}</code></pre>
+                  </div>
+               <div class="p">
+                  
+                  <p>In this example, you retrieve an existing account, create a new account, and retrieve details of a sales team member:</p>
+                  <pre class="pre codeblock"><code>{
+"parts": [
+{
+"id": "part1",
+"path": "/accounts/100100003227292",
+"operation": "get",
+},
+{
+"id": "part2",
+"path": "/accounts/100100003227294",
+"operation": "create",
+"payload": {
+	"Address" : [ 
+		{
+		"AddressLine1" : "500 oracle parkway",
+		"City" : "Redwood Shores",
+		"State" : "CA",
+		"Country" : "US"
+		}
+		]
+	}
+}
+{
+"id": "part3",
+"path": "/accounts/100100003230718/child/SalesTeamMember/300100018233318",
+"operation": "get"
+}
+]
+}</code></pre>
+                  <p>The response body contains the result and uses the same media type as the request:</p>
+                  <pre class="pre codeblock"><code>
+{
+"parts": [
+{
+"id": "part1",
+"path": "/accounts/100100003227292",
+"operation": "get"
+"payload" : {
+	"PartyId" : 999997549785817,
+	"PartyNumber" : "100100003227292",
+	"SourceSystem" : null,
+	"SourceSystemReferenceValue" : null,
+	"OrganizationName" : "High Technology_102304669",
+	"UniqueNameSuffix" : "(REDWOOD CITY, US)",
+	"PartyUniqueName" : "High Technology_102304669 (REDWOOD CITY, US)",
+	"Type" : "ZCA_CUSTOMER",
+	"OwnerPartyId" : null,
+	"OwnerPartyNumber" : null,
+	"OwnerEmailAddress" : null,
+	"OwnerName" : null,
+	...
+	}
+},
+},
+{
+"id": "part2",
+"path": "/accounts/100100003227294",
+"operation": "create",
+"payload" : {
+	"PartyId" : 300100046354520,
+	"PartyNumber" : "100100003227294",
+	"AddressId" : 300100046354531,
+	"AddressNumber" : "CDRM_100005",
+	"CreatedByModule" : "HZ_WS",
+	"FormattedAddress" : "REDWOOD SHORES, CA",
+	"FormattedMultilineAddress" : "REDWOOD SHORES, CA",
+	"City" : "Redwood Shores",
+	"Country" : "US",
+	"State" : "CA",
+	...
+	}
+}
+{
+"id": "part3",
+"path": "/accounts/100100003230718/child/SalesTeamMember/300100018233318",
+"operation": "get"
+"payload" : {
+	"TeamMemberId" : 300100046354524,
+	"SalesProfileId" : 300100046354521,
+	"ResourceId" : 100010025532672,
+	"MemberFunctionCode" : null,
+	"AccessLevelCode" : "300",
+	"LockAssignmentFlag" : true,
+	"AssignmentTypeCode" : "MANUAL",
+	...
+	}
+}
+]
+}</code></pre>
+                  </div>
+            </div>
+         </div>
+        </article>
+    </body>
+</html>
