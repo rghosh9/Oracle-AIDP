@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quick Start</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+			
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="rest-endpoints.html" title="Previous" type="text/html">
+        <link rel="next" href="use-curl.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:31+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"Quick Start","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="rest-endpoints.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="use-curl.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+            <h2>Quick Start</h2>
+		<p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+            <div class="dita-content">
+            <div>
+               <p>Use the information in this topic to help you get started with Oracle AI
+    Data Platform Workbench. </p>
+               <div class="section">
+                  <p class="subhead1">Prerequisites</p>
+                  
+                  
+                  <div class="tblformal">
+                     <table cellpadding="4" cellspacing="0" class="Formal" frame="hsides" border="1" rules="rows">
+                        <tbody>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d330e18">
+                                 <span class="bold">Prerequisite</span>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d330e18 ">
+                                 <span class="bold">More Information</span>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d330e29">Java 17 or above</td>
+                              <td align="left" valign="top" headers="d330e29 ">link to Java doc/download</td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d330e34">Maven 3.x</td>
+                              <td align="left" valign="top" headers="d330e34 ">link to Maven doc/download</td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d330e39">OCI CLI installed</td>
+                              <td align="left" valign="top" headers="d330e39 ">&nbsp;</td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d330e43">Browser-based or <code class="codeph">--no-browser</code> capable environment for
+                  <code class="codeph">oci session authenticate</code></td>
+                              <td align="left" valign="top" headers="d330e43 ">
+                                 <a href="authenticate.html">Authenticate</a>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d330e57">Access to tenancy and IAM permissions for AI Data Platform Workbench</td>
+                              <td align="left" valign="top" headers="d330e57 ">link to AIDP doc</td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d330e62">Network access to
+                  <code class="codeph">https://aidpdev2.us-phoenix-1.oci.oc-test.com</code>.
+                              </td>
+                              <td align="left" valign="top" headers="d330e62 ">&nbsp;</td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d330e69">Session credential files</td>
+                              <td align="left" valign="top" headers="d330e69 ">
+                                 
+                                 <ul style="list-style-type: disc;" id="GUID-51E5C29A-6B7E-487A-8832-5D709410C16A__ul_yx5_p44_33c">
+                                    <li><code class="codeph">&lt;token-file&gt;</code> (typically
+                      <code class="codeph">~/.oci/sessions/DEFAULT/token</code>)
+                                    </li>
+                                    <li><code class="codeph">&lt;private-key-file&gt;</code> (typically
+                      <code class="codeph">~/.oci/sessions/DEFAULT/oci_api_key.pem</code>)
+                                    </li>
+                                 </ul>
+                                 
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  
+               </div>
+               <div class="section">
+                  <p class="subhead1">Task 1: Create an OCI CLI session (recommended first step)</p>
+                  
+                  
+                  <pre class="pre codeblock"><code>oci session authenticate --profile-name DEFAULT --region us-phoenix-1 --tenancy-name bmc_operator_access</code></pre>
+                  <p>This command opens a browser login flow, then creates a local session token and key pair
+        that the sample can use for signed API calls.</p>
+                  
+               </div>
+               <div class="section">
+                  <p class="subhead1">Task 2: Verify the generated session files and profile configuration</p>
+                  
+                  <pre class="pre codeblock"><code>ls -l ~/.oci/sessions/DEFAULT/token ~/.oci/sessions/DEFAULT/oci_api_key.pem
+grep -E "^\[DEFAULT\]|^region=|^security_token_file=|^key_file=" ~/.oci/config</code></pre>
+                  </div>
+               <div class="section">
+                  <p class="subhead1">Task 3: Set endpoint and AI Data Platform OCID</p>
+                  
+                  <pre class="pre codeblock"><code>export AIDP_ENDPOINT="https://aidpdev2.us-phoenix-1.oci.oc-test.com"
+export API_VERSION="20240831"
+export AI_DATAPLATFORM_OCID="&lt;ai-dataplatform-ocid&gt;"</code></pre>
+                  </div>
+               <div class="section">
+                  <p class="subhead1">Task 4: Update <code class="codeph">AidpWorkspaceClient.java</code> constants
+                  </p>
+                  
+                  <pre class="pre codeblock"><code>private static final String TOKEN_FILE_PATH = System.getProperty("user.home") + "/.oci/sessions/DEFAULT/token";
+private static final Region REGION = Region.US_PHOENIX_1;
+private static final String TENANT_OCID = "&lt;tenancy-ocid&gt;";
+private static final String AIDP_OCID = System.getenv().getOrDefault("AI_DATAPLATFORM_OCID", "&lt;ai-dataplatform-ocid&gt;");
+private static final String AIDP_ENDPOINT = System.getenv().getOrDefault("AIDP_ENDPOINT", "https://aidpdev2.us-phoenix-1.oci.oc-test.com");
+private static final String API_VERSION = System.getenv().getOrDefault("API_VERSION", "20240831");
+private static String buildWorkspacesBaseUrl() {  return String.format("%s/%s/aiDataPlatforms/%s/workspaces", AIDP_ENDPOINT, API_VERSION, AIDP_OCID); }</code></pre>
+                  </div>
+               <div class="section">
+                  <p class="subhead1">Task 5: Build and run</p>
+                  
+                  <pre class="pre codeblock"><code>mvn -DskipTests clean compile
+mvn -DskipTests -Dexec.mainClass=org.example.AidpWorkspaceClient exec:java</code></pre>
+                  </div>
+               <div class="section">
+                  <p class="subhead1">Task 5: Validate successful output</p>
+                  
+                  
+                  <p>A successful run typically prints:</p>
+                  
+                  <ul style="list-style-type: disc;" id="GUID-51E5C29A-6B7E-487A-8832-5D709410C16A__ul_vwp_cn4_33c">
+                     <li><code class="codeph">=== List workspaces ===</code> with <code class="codeph">Status: 200</code></li>
+                     <li><code class="codeph">=== Create workspace ===</code> with <code class="codeph">Status: 2xx</code> and a
+          workspace key in the body
+                     </li>
+                     <li><code class="codeph">=== Get workspace ... ===</code>, <code class="codeph">=== Update workspace ...
+            ===</code>, and <code class="codeph">=== Delete workspace ... ===</code> with <code class="codeph">Status:
+            2xx</code></li>
+                  </ul>
+                  
+                  <div class="p">Common outcomes from unsuccessful runs include:
+                     <ul style="list-style-type: disc;" id="GUID-51E5C29A-6B7E-487A-8832-5D709410C16A__ul_zrk_ln4_33c">
+                        <li><code class="codeph">401 Unauthorized</code>: expired session token, wrong token/key pair, or
+            signature mismatch.
+                        </li>
+                        <li><code class="codeph">403 Forbidden</code>: authenticated caller lacks permission for this AI Data
+            Platform.
+                        </li>
+                        <li><code class="codeph">404 Not Found</code>: wrong OCID, wrong API version, or wrong route
+            shape.
+                        </li>
+                        <li><code class="codeph">429 / 500</code>: throttling or transient server issues (client retries with
+            exponential backoff).
+                        </li>
+                     </ul>
+                  </div>
+                  
+               </div>
+               <div class="section">
+                  <p class="subhead1">Troubleshooting</p>
+                  
+                  
+                  <div class="p">If your build run is unsuccessful, you can try one or more of the following methods to
+          troubleshoot:
+                     <ul style="list-style-type: disc;" id="GUID-51E5C29A-6B7E-487A-8832-5D709410C16A__ul_cc2_tn4_33c">
+                        <li>Rerun <code class="codeph">oci session authenticate</code> if token is expired or missing.
+                        </li>
+                        <li>Ensure the <code class="codeph">DEFAULT</code> profile in <code>~/.oci/config</code>
+            points to the same token/key files used by the session.
+                        </li>
+                        <li>Confirm <code class="codeph">TENANT_OCID, REGION</code>, endpoint host, API version, and AI Data
+            Platform Workbench OCID belong to the same environment.
+                        </li>
+                        <li>If your deployed route uses a different resource segment, update
+              <code class="codeph">buildWorkspacesBaseUrl()</code> accordingly.
+                        </li>
+                        <li>For repeated <code class="codeph">429/500</code>, reduce request rate and retry after
+            backoff.
+                        </li>
+                     </ul>
+                  </div>
+                  
+               </div>
+               <div class="section">
+                  <p class="subhead1">Sample Code</p>
+                  
+                  
+                  <p>Minimal authentication and signed client setup from the Java sample:</p>
+                  <pre class="pre codeblock"><code>RequestSigningFilter requestSigningFilter =
+        RequestSigningFilter.fromAuthProvider(SessionTokenAuthenticationDetailsProvider
+                .builder()
+                .region(REGION)
+                .tenantId(TENANT_OCID)
+                .sessionTokenFilePath(TOKEN_FILE_PATH)
+                .build());
+
+String workspacesUrl = String.format("%s/%s/aiDataPlatforms/%s/workspaces", AIDP_ENDPOINT, API_VERSION, AIDP_OCID);
+
+try (HttpClient client = JerseyHttpProvider.getInstance()
+        .newBuilder()
+        .registerRequestInterceptor(Priorities.AUTHENTICATION, requestSigningFilter)
+        .baseUri(URI.create(workspacesUrl))
+        .build()) {
+    listWorkspaces(client);
+}</code></pre>
+                  </div>
+            </div>
+         </div>
+        </article>
+    </body>
+</html>

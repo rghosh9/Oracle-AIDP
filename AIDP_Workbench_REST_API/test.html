@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+			
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="batch-actions.html" title="Previous" type="text/html">
+        <link rel="next" href="use-cases.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:32+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"Test","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="batch-actions.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="use-cases.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+            <h2>Test</h2>
+		<p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+            <div class="dita-content">
+            <div>
+               <p>Test REST APIs, their resources, and parameters before you implement REST calls. When you test, you need an application to interact with the REST API. You can also use cURL commands or REST clients to test REST APIs before you implement them in your application.</p>
+               <div class="section">
+                  <p class="subhead1">Testing with cURL</p>
+                  
+                  
+                  <p>cURL is a command-line tool for transferring data using URL syntax. cURL options to test REST APIs are listed in the following table:</p>
+                  
+                  <div class="tblformal">
+                     <table cellpadding="4" cellspacing="0" class="Formal" frame="hsides" border="1" rules="rows">
+                        <tbody>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e21">
+                                 <span class="bold">Option</span>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e21 ">
+                                 <span class="bold">Description</span>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e32">
+                                 <code>-user</code>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e32 ">
+                                 <code class="codeph">username:password</code>
+                                 
+                                 <p>Specifies the user name and password for server authentication.</p>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e46">
+                                 <code>-d</code>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e46 ">
+                                 
+                                 <p>Sends the specified JSON request body to the server. If you begin the data with the <code class="codeph">@</code> sign, the rest of the request body should be a file name from which the data is read.
+                                 </p>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e60">
+                                 <code>-H</code>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e60 ">
+                                 
+                                 <p>Specifies an extra HTTP header in the request. To specify multiple headers, precede each header with the&nbsp;<code class="codeph">-H</code>&nbsp;option.
+                                 </p>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e74">
+                                 <code>-output</code>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e74 ">
+                                 <code class="codeph">&lt;file&gt;</code>
+                                 
+                                 <p>Writes the output to a file.</p>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e88">
+                                 <code>-X</code>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e88 ">
+                                 
+                                 <p>Specifies the request method to use when communicating with the HTTP server. The default method is GET.</p>
+                                 
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  
+                  <p>The following table shows examples of <code class="codeph">GET</code>, <code class="codeph">PATCH</code>, and <code class="codeph">POST</code> operations using cURL:
+                  </p>
+                  
+                  <div class="tblformal">
+                     <table cellpadding="4" cellspacing="0" class="Formal" frame="hsides" border="1" rules="rows">
+                        <tbody>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e117">
+                                 <span class="bold">Operation</span>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e117 ">
+                                 <span class="bold">cURL Command</span>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e128">
+                                 
+                                 <p>Use <code>GET</code>&nbsp;to retrieve all employee records
+                                 </p>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e128 ">
+                                 <code class="codeph">curl -i -u "&lt;username&gt;:&lt;password&gt;" -X GET https://&lt;host&gt;:&lt;port&gt;/hcmRestApi/resources/&lt;version&gt;/emps/</code>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e142">
+                                 
+                                 <p>Use&nbsp; <code>PATCH</code>&nbsp;to update a work order
+                                 </p>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e142 ">
+                                 <code class="codeph">curl -u username:password -X PATCH -H "Content-Type: application/vnd.oracle.adf.resourceitem+json" -d 'request payload' "server:port/fscmRestApi/resources/latest/workOrders/WorkOrderId"</code>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e156">
+                                 
+                                 <p>Use&nbsp; <code>POST</code>&nbsp;to create an account
+                                 </p>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e156 ">
+                                 <code class="codeph">curl --user sales_cloud_user -X POST -d @example_request_payload.json https://your_organization.com:port/hcmRestApi/resources/&lt;version&gt;/accounts</code>
+                                 
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  
+               </div>
+               <div class="section">
+                  <p class="subhead1">Testing with REST Clients</p>
+                  
+                  
+                  <p>You can test REST services using the Advanced REST Client.</p>
+                  
+                  <p>The following table shows examples of <code class="codeph">GET</code>, <code class="codeph">POST</code>, and <code class="codeph">PATCH</code> operations using a REST client:
+                  </p>
+                  
+                  <div class="tblformal">
+                     <table cellpadding="4" cellspacing="0" class="Formal" frame="hsides" border="1" rules="rows">
+                        <tbody>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e196">
+                                 <span class="bold">Operation</span>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e196 ">
+                                 <span class="bold">Response/Payload</span>
+                                 
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e207">
+                                 
+                                 <p>Get an account</p>
+                                 
+                                 <p>
+                                    <code class="codeph">https://your_organization.com:port/hcmRestApi /resources</code>
+                                    
+                                 </p>
+                                 
+                                 <p>
+                                    <code class="codeph">/&lt;version&gt;/accounts/CDRM_262783</code>
+                                    
+                                 </p>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e207 ">
+                                 <pre class="pre codeblock"><code>Content-Type: {
+   "PartyId" : 999997549785817,
+   "PartyNumber" : "CDRM_262783",
+   "SourceSystem" : null,
+   "SourceSystemReferenceValue" : null,
+   "OrganizationName" : "Softgear",
+   "UniqueNameSuffix" : "(US)",
+   "PartyUniqueName" : "Softgear_1023	(US)",
+   "Type" : "ZCA_CUSTOMER",
+   "OwnerPartyId" : null,
+   "OwnerPartyNumber" : null,
+   "OwnerEmailAddress" : null,
+   "OwnerName" : null,
+   ...  
+}</code></pre>
+                                 </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e230">
+                                 
+                                 <p>Create a new role</p>
+                                 
+                                 <p>
+                                    <code class="codeph">https://&lt;host&gt;:&lt;port&gt;/hcmRestApi/resources</code>
+                                    
+                                 </p>
+                                 
+                                 <p>
+                                    <code class="codeph"> /&lt;version&gt;/emps/{id}/child/roles</code>
+                                    
+                                 </p>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e230 ">
+                                 <pre class="pre codeblock"><code>{
+  "RoleName": "PER_LINE_MANAGER_ABSTRACT"
+}</code></pre>
+                                 </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" id="d2231e253">
+                                 
+                                 <p>Update email address of an employee</p>
+                                 
+                                 <p>
+                                    <code class="codeph">https://&lt;host&gt;:&lt;port&gt;/hcmRestApi/resources</code>
+                                    
+                                 </p>
+                                 
+                                 <p>
+                                    <code class="codeph"> /&lt;version&gt;/emps{id}</code>
+                                    
+                                 </p>
+                                 
+                              </td>
+                              <td align="left" valign="top" headers="d2231e253 ">
+                                 <pre class="pre codeblock"><code>{
+  "WorkEmail": "josh.watson@ymail.com"
+}</code></pre>
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+        </article>
+    </body>
+</html>

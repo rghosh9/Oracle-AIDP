@@ -1,0 +1,2438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--doceng target.db-->
+<div element="book" href="toc.htm" number="" targetptr="">
+   <ttl>REST API for Oracle AI Data Platform Workbench - Table of Contents</ttl>
+   <xreftext>&#x201C;REST API for Oracle AI Data Platform Workbench - Table of Contents&#x201D;</xreftext>
+   <div element="index" href="index.html" targetptr="AIWAP-index">
+      <ttl>About the REST APIs</ttl>
+      <xreftext>&#x201C;About the REST APIs&#x201D;</xreftext>
+   </div>
+   <div element="rest-endpoints"
+        href="rest-endpoints.html"
+        targetptr="AIWAP-rest-endpoints">
+      <ttl>All REST Endpoints</ttl>
+      <xreftext>&#x201C;All REST Endpoints&#x201D;</xreftext>
+   </div>
+   <div element="chapter"
+        href="quick-start.html"
+        targetptr="AIWAP-quick-start">
+      <ttl>Quick Start</ttl>
+      <xreftext>&#x201C;Quick Start&#x201D;</xreftext>
+   </div>
+   <div element="chapter" href="use-curl.html" targetptr="AIWAP-use-curl">
+      <ttl>Use cURL</ttl>
+      <xreftext>&#x201C;Use cURL&#x201D;</xreftext>
+   </div>
+   <div element="chapter"
+        href="authenticate.html"
+        targetptr="AIWAP-authenticate">
+      <ttl>Authenticate</ttl>
+      <xreftext>&#x201C;Authenticate&#x201D;</xreftext>
+   </div>
+   <div element="chapter"
+        href="send-requests.html"
+        targetptr="AIWAP-send-requests">
+      <ttl>Send Requests</ttl>
+      <xreftext>&#x201C;Send Requests&#x201D;</xreftext>
+   </div>
+   <div element="chapter"
+        href="batch-actions.html"
+        targetptr="AIWAP-batch-actions">
+      <ttl>Batch Actions</ttl>
+      <xreftext>&#x201C;Batch Actions&#x201D;</xreftext>
+   </div>
+   <div element="chapter" href="test.html" targetptr="AIWAP-test">
+      <ttl>Test</ttl>
+      <xreftext>&#x201C;Test&#x201D;</xreftext>
+   </div>
+   <div element="chapter" href="use-cases.html" targetptr="AIWAP-use-cases">
+      <ttl>Use Cases</ttl>
+      <xreftext>&#x201C;Use Cases&#x201D;</xreftext>
+      <obj element="section"
+           href="use-case-name.html"
+           targetptr="AIWAP-use-case-name">
+         <ttl>Monitor a Service Instance</ttl>
+         <xreftext>&#x201C;Monitor a Service Instance&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="use-case-name.html"
+           targetptr="AIWAP-use-case-name">
+         <ttl>Monitor a Service Instance</ttl>
+         <xreftext>&#x201C;Monitor a Service Instance&#x201D;</xreftext>
+      </obj>
+   </div>
+   <obj element="section"
+        href="use-case-name.html"
+        targetptr="AIWAP-use-case-name">
+      <ttl>Monitor a Service Instance</ttl>
+      <xreftext>&#x201C;Monitor a Service Instance&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="use-case-name.html"
+        targetptr="AIWAP-use-case-name">
+      <ttl>Monitor a Service Instance</ttl>
+      <xreftext>&#x201C;Monitor a Service Instance&#x201D;</xreftext>
+   </obj>
+   <div element="chapter"
+        href="api-agentflow.html"
+        targetptr="AIWAP-api-agentflow">
+      <ttl>AgentFlow</ttl>
+      <xreftext>&#x201C;AgentFlow&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-attachcompute-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-attachcompute-post">
+         <ttl>Attach compute to Agent Flow</ttl>
+         <xreftext>&#x201C;Attach compute to Agent Flow&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-copy-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-copy-post">
+         <ttl>Copy an Agent Flow</ttl>
+         <xreftext>&#x201C;Copy an Agent Flow&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-post">
+         <ttl>Create an Agent Flow</ttl>
+         <xreftext>&#x201C;Create an Agent Flow&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-delete">
+         <ttl>Delete an Agent Flow</ttl>
+         <xreftext>&#x201C;Delete an Agent Flow&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-delete">
+         <ttl>Delete an Agent Flow Deployment.</ttl>
+         <xreftext>&#x201C;Delete an Agent Flow Deployment.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-delete">
+         <ttl>Delete an Agent Flow Session.</ttl>
+         <xreftext>&#x201C;Delete an Agent Flow Session.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-post">
+         <ttl>Deploy an Agent Flow</ttl>
+         <xreftext>&#x201C;Deploy an Agent Flow&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-deployagentflow-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-deployagentflow-post">
+         <ttl>Deploy an AgentFlow asynchronously.</ttl>
+         <xreftext>&#x201C;Deploy an AgentFlow asynchronously.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-detachcompute-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-detachcompute-post">
+         <ttl>Detach compute to Agent Flow</ttl>
+         <xreftext>&#x201C;Detach compute to Agent Flow&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-get">
+         <ttl>Get Agent Flow deployment details.</ttl>
+         <xreftext>&#x201C;Get Agent Flow deployment details.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-get">
+         <ttl>Get Agent Flow details</ttl>
+         <xreftext>&#x201C;Get Agent Flow details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-permissions-get">
+         <ttl>Get Agent Flow permissions</ttl>
+         <xreftext>&#x201C;Get Agent Flow permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-chathistory-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-chathistory-get">
+         <ttl>Get Agent Flow Session chat messages</ttl>
+         <xreftext>&#x201C;Get Agent Flow Session chat messages&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-get">
+         <ttl>Get Agent Flow Session details</ttl>
+         <xreftext>&#x201C;Get Agent Flow Session details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-traces-tracekey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-traces-tracekey-get">
+         <ttl>Get Agent Flow Session trace for a given message key</ttl>
+         <xreftext>&#x201C;Get Agent Flow Session trace for a given message key&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-get">
+         <ttl>Get Agent Flows in schema</ttl>
+         <xreftext>&#x201C;Get Agent Flows in schema&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-sessionmetrics-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-sessionmetrics-get">
+         <ttl>Get session metrics for an agent flow</ttl>
+         <xreftext>&#x201C;Get session metrics for an agent flow&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-get">
+         <ttl>List all deployments of an Agent Flow.</ttl>
+         <xreftext>&#x201C;List all deployments of an Agent Flow.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-get">
+         <ttl>List all test sessions of an agent flow.</ttl>
+         <xreftext>&#x201C;List all test sessions of an agent flow.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-agentflowguardrails-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-agentflowguardrails-get">
+         <ttl>List Guardrails available to configure on Agent Flow</ttl>
+         <xreftext>&#x201C;List Guardrails available to configure on Agent Flow&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-post">
+         <ttl>Start a session of agent flow for testing.</ttl>
+         <xreftext>&#x201C;Start a session of agent flow for testing.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-actions-stop-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-actions-stop-post">
+         <ttl>Stop a session of agent flow.</ttl>
+         <xreftext>&#x201C;Stop a session of agent flow.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-put">
+         <ttl>Update a session of agent flow for testing.</ttl>
+         <xreftext>&#x201C;Update a session of agent flow for testing.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-put">
+         <ttl>Update agent flow deployment.</ttl>
+         <xreftext>&#x201C;Update agent flow deployment.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-managepermission-post">
+         <ttl>Update Agent Flow permissions</ttl>
+         <xreftext>&#x201C;Update Agent Flow permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-redeployagentflow-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-redeployagentflow-post">
+         <ttl>Update agentflow deployment asynchronously.</ttl>
+         <xreftext>&#x201C;Update agentflow deployment asynchronously.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-put">
+         <ttl>Update an Agent Flow</ttl>
+         <xreftext>&#x201C;Update an Agent Flow&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-validate-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-validate-post">
+         <ttl>Validate Agent Flow diagram</ttl>
+         <xreftext>&#x201C;Validate Agent Flow diagram&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter" href="api-audit.html" targetptr="AIWAP-api-audit">
+      <ttl>Audit</ttl>
+      <xreftext>&#x201C;Audit&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-actions-manageauditlogs-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-actions-manageauditlogs-post">
+         <ttl>Manage audit logs for Intelligent Data Lake</ttl>
+         <xreftext>&#x201C;Manage audit logs for Intelligent Data Lake&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-actions-searchauditlogs-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-actions-searchauditlogs-post">
+         <ttl>Search audit logs for Intelligent Data Lake</ttl>
+         <xreftext>&#x201C;Search audit logs for Intelligent Data Lake&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-catalog.html"
+        targetptr="AIWAP-api-catalog">
+      <ttl>Catalog</ttl>
+      <xreftext>&#x201C;Catalog&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-catalogs-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-post">
+         <ttl>Create Intelligent Data Lake catalog</ttl>
+         <xreftext>&#x201C;Create Intelligent Data Lake catalog&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-delete">
+         <ttl>Delete an Intelligent Data Lake catalog</ttl>
+         <xreftext>&#x201C;Delete an Intelligent Data Lake catalog&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-get">
+         <ttl>Get Intelligent Data Lake catalog</ttl>
+         <xreftext>&#x201C;Get Intelligent Data Lake catalog&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-permissions-get">
+         <ttl>Get list of Intelligent Data Lake catalog permissions</ttl>
+         <xreftext>&#x201C;Get list of Intelligent Data Lake catalog permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-catalogs-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-get">
+         <ttl>Get list of Intelligent Data Lake catalogs</ttl>
+         <xreftext>&#x201C;Get list of Intelligent Data Lake catalogs&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-refresh-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-refresh-post">
+         <ttl>Refresh Intelligent Data Lake catalog via crawler</ttl>
+         <xreftext>&#x201C;Refresh Intelligent Data Lake catalog via crawler&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-actions-testconnection-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-actions-testconnection-post">
+         <ttl>Test external catalog connection</ttl>
+         <xreftext>&#x201C;Test external catalog connection&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-put">
+         <ttl>Update Intelligent Data Lake catalog details</ttl>
+         <xreftext>&#x201C;Update Intelligent Data Lake catalog details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-managepermission-post">
+         <ttl>Update permissions for an Intelligent Data Lake catalog</ttl>
+         <xreftext>&#x201C;Update permissions for an Intelligent Data Lake catalog&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-cluster.html"
+        targetptr="AIWAP-api-cluster">
+      <ttl>Cluster</ttl>
+      <xreftext>&#x201C;Cluster&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-post">
+         <ttl>Create a cluster</ttl>
+         <xreftext>&#x201C;Create a cluster&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-delete">
+         <ttl>Delete a cluster</ttl>
+         <xreftext>&#x201C;Delete a cluster&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-get">
+         <ttl>Get cluster details</ttl>
+         <xreftext>&#x201C;Get cluster details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-get">
+         <ttl>Get cluster libraries</ttl>
+         <xreftext>&#x201C;Get cluster libraries&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-permissions-get">
+         <ttl>Get cluster permissions</ttl>
+         <xreftext>&#x201C;Get cluster permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-get">
+         <ttl>Get clusters in a workspace</ttl>
+         <xreftext>&#x201C;Get clusters in a workspace&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-defaultcluster-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-defaultcluster-get">
+         <ttl>Get default cluster</ttl>
+         <xreftext>&#x201C;Get default cluster&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-patch.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-patch">
+         <ttl>Patch cluster libraries</ttl>
+         <xreftext>&#x201C;Patch cluster libraries&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-restart-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-restart-post">
+         <ttl>Restart running cluster</ttl>
+         <xreftext>&#x201C;Restart running cluster&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-start-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-start-post">
+         <ttl>Start a termintated cluster</ttl>
+         <xreftext>&#x201C;Start a termintated cluster&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-stop-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-stop-post">
+         <ttl>Stop a Cluster</ttl>
+         <xreftext>&#x201C;Stop a Cluster&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-put">
+         <ttl>Update cluster details</ttl>
+         <xreftext>&#x201C;Update cluster details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-put">
+         <ttl>Update cluster libraries</ttl>
+         <xreftext>&#x201C;Update cluster libraries&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-managepermission-post">
+         <ttl>Update cluster permissions</ttl>
+         <xreftext>&#x201C;Update cluster permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-asyncoperations-asyncoperationkey-status-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-asyncoperations-asyncoperationkey-status-put">
+         <ttl>Update cluster status</ttl>
+         <xreftext>&#x201C;Update cluster status&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-deltashare.html"
+        targetptr="AIWAP-api-deltashare">
+      <ttl>DeltaShare</ttl>
+      <xreftext>&#x201C;DeltaShare&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-post">
+         <ttl>Creates a Delta Share in Data Lake.</ttl>
+         <xreftext>&#x201C;Creates a Delta Share in Data Lake.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-recipients-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-post">
+         <ttl>Creates a Delta Share Recipient in Data Lake.</ttl>
+         <xreftext>&#x201C;Creates a Delta Share Recipient in Data Lake.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-delete">
+         <ttl>Deletes a Recipient.</ttl>
+         <xreftext>&#x201C;Deletes a Recipient.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-sharekey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-delete">
+         <ttl>Deletes a share.</ttl>
+         <xreftext>&#x201C;Deletes a share.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-sharekey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-get">
+         <ttl>Get Data Lake Share</ttl>
+         <xreftext>&#x201C;Get Data Lake Share&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-get">
+         <ttl>Get Delta Share Recipient resource in a Data Lake instance</ttl>
+         <xreftext>&#x201C;Get Delta Share Recipient resource in a Data Lake instance&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-permissions-get">
+         <ttl>Gets a list of Data Lake Recipient permissions.</ttl>
+         <xreftext>&#x201C;Gets a list of Data Lake Recipient permissions.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-sharekey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-permissions-get">
+         <ttl>Gets a list of Data Lake Share permissions.</ttl>
+         <xreftext>&#x201C;Gets a list of Data Lake Share permissions.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-recipients-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-get">
+         <ttl>Gets a list of Delta Share Recipients</ttl>
+         <xreftext>&#x201C;Gets a list of Delta Share Recipients&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-get">
+         <ttl>Gets a list of Delta Shares</ttl>
+         <xreftext>&#x201C;Gets a list of Delta Shares&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-sharekey-dataassets-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-dataassets-get">
+         <ttl>Gets a list of Delta Shares Assets</ttl>
+         <xreftext>&#x201C;Gets a list of Delta Shares Assets&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-sharekey-recipients-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-recipients-get">
+         <ttl>Gets a list of recipients specific to this share</ttl>
+         <xreftext>&#x201C;Gets a list of recipients specific to this share&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-shares-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-shares-get">
+         <ttl>Returns a list of Share summary on which this recipient has been granted access on</ttl>
+         <xreftext>&#x201C;Returns a list of Share summary on which this recipient has been granted access on&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-sharekey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-put">
+         <ttl>Update a delta share.</ttl>
+         <xreftext>&#x201C;Update a delta share.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-put">
+         <ttl>Update a recipient resource.</ttl>
+         <xreftext>&#x201C;Update a recipient resource.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-sharekey-actions-manageaccess-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-actions-manageaccess-post">
+         <ttl>Updates consumer side access on a share for a Recipient</ttl>
+         <xreftext>&#x201C;Updates consumer side access on a share for a Recipient&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managedataasset-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managedataasset-post">
+         <ttl>Updates data assets on a Share</ttl>
+         <xreftext>&#x201C;Updates data assets on a Share&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-actions-managepermission-post">
+         <ttl>Updates permissions on a Recipient</ttl>
+         <xreftext>&#x201C;Updates permissions on a Recipient&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managepermission-post">
+         <ttl>Updates permissions on a Share</ttl>
+         <xreftext>&#x201C;Updates permissions on a Share&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-knowledgebase.html"
+        targetptr="AIWAP-api-knowledgebase">
+      <ttl>knowledgebase</ttl>
+      <xreftext>&#x201C;knowledgebase&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-post">
+         <ttl>Create a job run for a given KnowledgeBase Job</ttl>
+         <xreftext>&#x201C;Create a job run for a given KnowledgeBase Job&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-post">
+         <ttl>Create a new KnowledgeBase</ttl>
+         <xreftext>&#x201C;Create a new KnowledgeBase&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-post">
+         <ttl>Creates a new Job for give KnowledgeBase</ttl>
+         <xreftext>&#x201C;Creates a new Job for give KnowledgeBase&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-delete">
+         <ttl>Delete a knowledge base</ttl>
+         <xreftext>&#x201C;Delete a knowledge base&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-delete">
+         <ttl>Deletes a job definition for a given KnowledgeBase</ttl>
+         <xreftext>&#x201C;Deletes a job definition for a given KnowledgeBase&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-knowledgebasejobrunkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-knowledgebasejobrunkey-get">
+         <ttl>Get information about a knowledgeBaseJobRun</ttl>
+         <xreftext>&#x201C;Get information about a knowledgeBaseJobRun&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-get">
+         <ttl>Get Knowledge Base</ttl>
+         <xreftext>&#x201C;Get Knowledge Base&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-get">
+         <ttl>Get list of KnowledgeBase Jobs</ttl>
+         <xreftext>&#x201C;Get list of KnowledgeBase Jobs&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-get">
+         <ttl>Gets a list of all KnowledgeBase Job Run in a catalog and schema</ttl>
+         <xreftext>&#x201C;Gets a list of all KnowledgeBase Job Run in a catalog and schema&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-permissions-get">
+         <ttl>Gets a list of Data Lake Knowledge Base permissions.</ttl>
+         <xreftext>&#x201C;Gets a list of Data Lake Knowledge Base permissions.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-get">
+         <ttl>List of KnowledgeBases</ttl>
+         <xreftext>&#x201C;List of KnowledgeBases&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-get">
+         <ttl>The Job definition is returned successfully</ttl>
+         <xreftext>&#x201C;The Job definition is returned successfully&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-put">
+         <ttl>Update KnowledgeBase details</ttl>
+         <xreftext>&#x201C;Update KnowledgeBase details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-actions-managepermission-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-actions-managepermission-put">
+         <ttl>Updates permissions on a Data Lake Knowledge Base</ttl>
+         <xreftext>&#x201C;Updates permissions on a Data Lake Knowledge Base&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter" href="api-model.html" targetptr="AIWAP-api-model">
+      <ttl>Model</ttl>
+      <xreftext>&#x201C;Model&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-models-modelid-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-models-modelid-get">
+         <ttl>Get Data Lake Model</ttl>
+         <xreftext>&#x201C;Get Data Lake Model&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-models-modelid-modelparameters-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-models-modelid-modelparameters-get">
+         <ttl>Get Model Parameters</ttl>
+         <xreftext>&#x201C;Get Model Parameters&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-models-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-models-get">
+         <ttl>Gets a list of Models.</ttl>
+         <xreftext>&#x201C;Gets a list of Models.&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter" href="api-role.html" targetptr="AIWAP-api-role">
+      <ttl>Role</ttl>
+      <xreftext>&#x201C;Role&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post">
+         <ttl>Add a member to Role.</ttl>
+         <xreftext>&#x201C;Add a member to Role.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-roles-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-post">
+         <ttl>Creates a Data Lake Role.</ttl>
+         <xreftext>&#x201C;Creates a Data Lake Role.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-roles-rolekey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-delete">
+         <ttl>Deletes a DataLake.</ttl>
+         <xreftext>&#x201C;Deletes a DataLake.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-roles-rolekey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-get">
+         <ttl>Get Data Lake Role</ttl>
+         <xreftext>&#x201C;Get Data Lake Role&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-roles-rolekey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-permissions-get">
+         <ttl>Get Permission information for a given role</ttl>
+         <xreftext>&#x201C;Get Permission information for a given role&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-roles-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-get">
+         <ttl>Gets a list of Roles.</ttl>
+         <xreftext>&#x201C;Gets a list of Roles.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-removemember-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-actions-removemember-post">
+         <ttl>Remove member from a Role.</ttl>
+         <xreftext>&#x201C;Remove member from a Role.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-roles-rolekey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-put">
+         <ttl>Updates a Data Lake Role</ttl>
+         <xreftext>&#x201C;Updates a Data Lake Role&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-actions-managepermission-post">
+         <ttl>Updates permissions on a Role</ttl>
+         <xreftext>&#x201C;Updates permissions on a Role&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-schema.html"
+        targetptr="AIWAP-api-schema">
+      <ttl>Schema</ttl>
+      <xreftext>&#x201C;Schema&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-datatables-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-datatables-post">
+         <ttl>Create a managed table from sample file</ttl>
+         <xreftext>&#x201C;Create a managed table from sample file&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-post">
+         <ttl>Create a schema</ttl>
+         <xreftext>&#x201C;Create a schema&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-tables-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-post">
+         <ttl>Create a table</ttl>
+         <xreftext>&#x201C;Create a table&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-views-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-post">
+         <ttl>Creates a View</ttl>
+         <xreftext>&#x201C;Creates a View&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-tables-tablekey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-delete">
+         <ttl>Delete a table</ttl>
+         <xreftext>&#x201C;Delete a table&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-schemakey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-delete">
+         <ttl>Delete schema</ttl>
+         <xreftext>&#x201C;Delete schema&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-views-viewkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-delete">
+         <ttl>Deletes a View</ttl>
+         <xreftext>&#x201C;Deletes a View&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-generatetempfileuploadtarget-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-generatetempfileuploadtarget-post">
+         <ttl>Generate URI for uploading a sample file to a temporary folder in a schema</ttl>
+         <xreftext>&#x201C;Generate URI for uploading a sample file to a temporary folder in a schema&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-schemakey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-get">
+         <ttl>Get schema details</ttl>
+         <xreftext>&#x201C;Get schema details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-schemakey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-permissions-get">
+         <ttl>Get schema permissions</ttl>
+         <xreftext>&#x201C;Get schema permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-get">
+         <ttl>Get schemas</ttl>
+         <xreftext>&#x201C;Get schemas&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-tables-tablekey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-get">
+         <ttl>Get table details</ttl>
+         <xreftext>&#x201C;Get table details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-tables-tablekey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-permissions-get">
+         <ttl>Get table permissions</ttl>
+         <xreftext>&#x201C;Get table permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschema-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschema-post">
+         <ttl>Get table schema</ttl>
+         <xreftext>&#x201C;Get table schema&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschemawithpreview-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschemawithpreview-post">
+         <ttl>Get table schema and data</ttl>
+         <xreftext>&#x201C;Get table schema and data&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-tables-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-get">
+         <ttl>Get tables in schema</ttl>
+         <xreftext>&#x201C;Get tables in schema&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-views-viewkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-get">
+         <ttl>Get View</ttl>
+         <xreftext>&#x201C;Get View&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-views-viewkey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-permissions-get">
+         <ttl>Gets a list of View permissions.</ttl>
+         <xreftext>&#x201C;Gets a list of View permissions.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-views-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-get">
+         <ttl>Gets a list of Views in a Schema.</ttl>
+         <xreftext>&#x201C;Gets a list of Views in a Schema.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-refresh-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-refresh-post">
+         <ttl>Refresh schema</ttl>
+         <xreftext>&#x201C;Refresh schema&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-tables-tablekey-actions-refresh-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-actions-refresh-post">
+         <ttl>Refresh table</ttl>
+         <xreftext>&#x201C;Refresh table&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-tables-tablekey-actions-getpar-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-actions-getpar-post">
+         <ttl>Retrieve PAR for the entities created in AIDP</ttl>
+         <xreftext>&#x201C;Retrieve PAR for the entities created in AIDP&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-tables-tablekey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-put">
+         <ttl>Update a table</ttl>
+         <xreftext>&#x201C;Update a table&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-schemakey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-put">
+         <ttl>Update schema</ttl>
+         <xreftext>&#x201C;Update schema&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-tables-tablekey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-actions-managepermission-post">
+         <ttl>Update table permissions</ttl>
+         <xreftext>&#x201C;Update table permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-views-viewkey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-put">
+         <ttl>Updates a View</ttl>
+         <xreftext>&#x201C;Updates a View&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-views-viewkey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-actions-managepermission-post">
+         <ttl>Updates permissions on a View</ttl>
+         <xreftext>&#x201C;Updates permissions on a View&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-managepermission-post">
+         <ttl>Updates schema permissions</ttl>
+         <xreftext>&#x201C;Updates schema permissions&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter" href="api-tool.html" targetptr="AIWAP-api-tool">
+      <ttl>Tool</ttl>
+      <xreftext>&#x201C;Tool&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-tools-actions-test-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-tools-actions-test-post">
+         <ttl>Test the tool</ttl>
+         <xreftext>&#x201C;Test the tool&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-volume.html"
+        targetptr="AIWAP-api-volume">
+      <ttl>Volume</ttl>
+      <xreftext>&#x201C;Volume&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-mkdir-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-mkdir-post">
+         <ttl>Create directory in Volume</ttl>
+         <xreftext>&#x201C;Create directory in Volume&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-post">
+         <ttl>Creates a Data Lake Volume.</ttl>
+         <xreftext>&#x201C;Creates a Data Lake Volume.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-delete">
+         <ttl>Deletes a DataLake.</ttl>
+         <xreftext>&#x201C;Deletes a DataLake.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletefile-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletefile-delete">
+         <ttl>Deletes a file in Volume</ttl>
+         <xreftext>&#x201C;Deletes a file in Volume&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletedir-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletedir-delete">
+         <ttl>Deletes directory in Volume</ttl>
+         <xreftext>&#x201C;Deletes directory in Volume&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfilemeta-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfilemeta-post">
+         <ttl>Download a file to Volume by generating par</ttl>
+         <xreftext>&#x201C;Download a file to Volume by generating par&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfile-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfile-post">
+         <ttl>Download file from Volume</ttl>
+         <xreftext>&#x201C;Download file from Volume&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-get">
+         <ttl>Get Data Lake Volume</ttl>
+         <xreftext>&#x201C;Get Data Lake Volume&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-permissions-get">
+         <ttl>Gets a list of Data Lake Volume permissions.</ttl>
+         <xreftext>&#x201C;Gets a list of Data Lake Volume permissions.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-get">
+         <ttl>Gets a list of Data Lake Volumes.</ttl>
+         <xreftext>&#x201C;Gets a list of Data Lake Volumes.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-files-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-files-get">
+         <ttl>Gets a list of files in the Data Lake Volume.</ttl>
+         <xreftext>&#x201C;Gets a list of files in the Data Lake Volume.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-put">
+         <ttl>Updates a Data Lake Volume</ttl>
+         <xreftext>&#x201C;Updates a Data Lake Volume&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-updatedir-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-updatedir-put">
+         <ttl>Updates directory in Volume</ttl>
+         <xreftext>&#x201C;Updates directory in Volume&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-managepermission-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-managepermission-put">
+         <ttl>Updates permissions on a Data Lake Volume</ttl>
+         <xreftext>&#x201C;Updates permissions on a Data Lake Volume&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfile-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfile-post">
+         <ttl>Upload a file to Volume</ttl>
+         <xreftext>&#x201C;Upload a file to Volume&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfilemeta-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfilemeta-post">
+         <ttl>Upload a file to Volume by generating par</ttl>
+         <xreftext>&#x201C;Upload a file to Volume by generating par&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-workflow.html"
+        targetptr="AIWAP-api-workflow">
+      <ttl>Workflow</ttl>
+      <xreftext>&#x201C;Workflow&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-cancel-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-cancel-post">
+         <ttl>Cancel a job run</ttl>
+         <xreftext>&#x201C;Cancel a job run&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-canceljobruns-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-canceljobruns-post">
+         <ttl>Cancel jobRuns for a job</ttl>
+         <xreftext>&#x201C;Cancel jobRuns for a job&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-post">
+         <ttl>Create a job</ttl>
+         <xreftext>&#x201C;Create a job&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-post">
+         <ttl>Create a job run for an Intelligent Data Lake.</ttl>
+         <xreftext>&#x201C;Create a job run for an Intelligent Data Lake.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-delete">
+         <ttl>Delete a job</ttl>
+         <xreftext>&#x201C;Delete a job&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-delete">
+         <ttl>Delete a job run</ttl>
+         <xreftext>&#x201C;Delete a job run&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-outputs-taskrunoutputkey-actions-export-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-outputs-taskrunoutputkey-actions-export-post">
+         <ttl>Export task run output</ttl>
+         <xreftext>&#x201C;Export task run output&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-actions-fetchoutput-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-actions-fetchoutput-post">
+         <ttl>Fetch task run output from runtime engine</ttl>
+         <xreftext>&#x201C;Fetch task run output from runtime engine&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-get">
+         <ttl>Get job details</ttl>
+         <xreftext>&#x201C;Get job details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-permissions-get">
+         <ttl>Get job permissions</ttl>
+         <xreftext>&#x201C;Get job permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-get">
+         <ttl>Get job run details</ttl>
+         <xreftext>&#x201C;Get job run details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-get">
+         <ttl>Get job runs</ttl>
+         <xreftext>&#x201C;Get job runs&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-get">
+         <ttl>Get jobs</ttl>
+         <xreftext>&#x201C;Get jobs&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-recentjobruns-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-recentjobruns-get">
+         <ttl>Get latest job runs</ttl>
+         <xreftext>&#x201C;Get latest job runs&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-get">
+         <ttl>Get task run details</ttl>
+         <xreftext>&#x201C;Get task run details&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-get">
+         <ttl>Get task runs</ttl>
+         <xreftext>&#x201C;Get task runs&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-repair-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-repair-post">
+         <ttl>Repair job run</ttl>
+         <xreftext>&#x201C;Repair job run&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-managepermission-post">
+         <ttl>Update job permissions</ttl>
+         <xreftext>&#x201C;Update job permissions&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-put">
+         <ttl>Updates a job</ttl>
+         <xreftext>&#x201C;Updates a job&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-workspace.html"
+        targetptr="AIWAP-api-workspace">
+      <ttl>Workspace</ttl>
+      <xreftext>&#x201C;Workspace&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-post">
+         <ttl>Creates a Data Lake Workspace.</ttl>
+         <xreftext>&#x201C;Creates a Data Lake Workspace.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-delete">
+         <ttl>Deletes a DataLake.</ttl>
+         <xreftext>&#x201C;Deletes a DataLake.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-get">
+         <ttl>Get Data Lake Workspace</ttl>
+         <xreftext>&#x201C;Get Data Lake Workspace&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-createworkspacepermissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-createworkspacepermissions-get">
+         <ttl>Gets a list of Data Lake Workspace permissions.</ttl>
+         <xreftext>&#x201C;Gets a list of Data Lake Workspace permissions.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-permissions-get">
+         <ttl>Gets a list of Data Lake Workspace permissions.</ttl>
+         <xreftext>&#x201C;Gets a list of Data Lake Workspace permissions.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-get">
+         <ttl>Gets a list of Data Lake Workspaces.</ttl>
+         <xreftext>&#x201C;Gets a list of Data Lake Workspaces.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-asyncoperations-asyncoperationkey-status-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-asyncoperations-asyncoperationkey-status-put">
+         <ttl>Update workspace status</ttl>
+         <xreftext>&#x201C;Update workspace status&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-put">
+         <ttl>Updates a Data Lake Workspace</ttl>
+         <xreftext>&#x201C;Updates a Data Lake Workspace&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-actions-managecreateworkspacepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-actions-managecreateworkspacepermission-post">
+         <ttl>Updates create workspace permissions on a Data Lake Workspace</ttl>
+         <xreftext>&#x201C;Updates create workspace permissions on a Data Lake Workspace&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-managepermission-post">
+         <ttl>Updates permissions on a Data Lake Workspace</ttl>
+         <xreftext>&#x201C;Updates permissions on a Data Lake Workspace&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-workspaceobject.html"
+        targetptr="AIWAP-api-workspaceobject">
+      <ttl>WorkspaceObject</ttl>
+      <xreftext>&#x201C;WorkspaceObject&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-renameobject-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-renameobject-post">
+         <ttl>Changes the name of the Workspace Object.</ttl>
+         <xreftext>&#x201C;Changes the name of the Workspace Object.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-copyobject-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-copyobject-post">
+         <ttl>Copy the Workspace Object to different location</ttl>
+         <xreftext>&#x201C;Copy the Workspace Object to different location&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-mkdir-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-mkdir-post">
+         <ttl>Create a directory in the Workspace</ttl>
+         <xreftext>&#x201C;Create a directory in the Workspace&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-post">
+         <ttl>Creates a Workspace Object</ttl>
+         <xreftext>&#x201C;Creates a Workspace Object&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-delete.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-delete">
+         <ttl>Deletes a Workspace Object.</ttl>
+         <xreftext>&#x201C;Deletes a Workspace Object.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-downloadfilemeta-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-downloadfilemeta-post">
+         <ttl>Download a workspace file by generating par</ttl>
+         <xreftext>&#x201C;Download a workspace file by generating par&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-head.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-head">
+         <ttl>Get summary metadata of the Workspace Object</ttl>
+         <xreftext>&#x201C;Get summary metadata of the Workspace Object&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-get">
+         <ttl>Get Workspace Object</ttl>
+         <xreftext>&#x201C;Get Workspace Object&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-get">
+         <ttl>Gets a list of objects in the Workspace</ttl>
+         <xreftext>&#x201C;Gets a list of objects in the Workspace&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-permissions-get.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-permissions-get">
+         <ttl>Gets a list of Workspace Object permissions.</ttl>
+         <xreftext>&#x201C;Gets a list of Workspace Object permissions.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-moveobject-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-moveobject-post">
+         <ttl>Moves the Workspace Object to different location</ttl>
+         <xreftext>&#x201C;Moves the Workspace Object to different location&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-put.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-put">
+         <ttl>Updates a WorkspaceObject</ttl>
+         <xreftext>&#x201C;Updates a WorkspaceObject&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-actions-managepermission-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-actions-managepermission-post">
+         <ttl>Updates permissions on a WorkspaceObject</ttl>
+         <xreftext>&#x201C;Updates permissions on a WorkspaceObject&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-uploadfilemeta-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-uploadfilemeta-post">
+         <ttl>Upload a workspace file by generating par</ttl>
+         <xreftext>&#x201C;Upload a workspace file by generating par&#x201D;</xreftext>
+      </obj>
+   </div>
+   <div element="chapter"
+        href="api-wrapper.html"
+        targetptr="AIWAP-api-wrapper">
+      <ttl>Wrapper</ttl>
+      <xreftext>&#x201C;Wrapper&#x201D;</xreftext>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-downloadlogs-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-downloadlogs-post">
+         <ttl>Download logs for a given cluster within a specific time range.</ttl>
+         <xreftext>&#x201C;Download logs for a given cluster within a specific time range.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-searchlogs-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-searchlogs-post">
+         <ttl>Searches logs for a given cluster within a specific time range.</ttl>
+         <xreftext>&#x201C;Searches logs for a given cluster within a specific time range.&#x201D;</xreftext>
+      </obj>
+      <obj element="section"
+           href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-summarizemetricsdata-post.html"
+           targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-summarizemetricsdata-post">
+         <ttl>Summarizes compute metrics data for the specified Data Lake.</ttl>
+         <xreftext>&#x201C;Summarizes compute metrics data for the specified Data Lake.&#x201D;</xreftext>
+      </obj>
+   </div>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-attachcompute-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-attachcompute-post">
+      <ttl>Attach compute to Agent Flow</ttl>
+      <xreftext>&#x201C;Attach compute to Agent Flow&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-copy-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-copy-post">
+      <ttl>Copy an Agent Flow</ttl>
+      <xreftext>&#x201C;Copy an Agent Flow&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-post">
+      <ttl>Create an Agent Flow</ttl>
+      <xreftext>&#x201C;Create an Agent Flow&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-delete">
+      <ttl>Delete an Agent Flow</ttl>
+      <xreftext>&#x201C;Delete an Agent Flow&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-delete">
+      <ttl>Delete an Agent Flow Deployment.</ttl>
+      <xreftext>&#x201C;Delete an Agent Flow Deployment.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-delete">
+      <ttl>Delete an Agent Flow Session.</ttl>
+      <xreftext>&#x201C;Delete an Agent Flow Session.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-post">
+      <ttl>Deploy an Agent Flow</ttl>
+      <xreftext>&#x201C;Deploy an Agent Flow&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-deployagentflow-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-deployagentflow-post">
+      <ttl>Deploy an AgentFlow asynchronously.</ttl>
+      <xreftext>&#x201C;Deploy an AgentFlow asynchronously.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-detachcompute-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-detachcompute-post">
+      <ttl>Detach compute to Agent Flow</ttl>
+      <xreftext>&#x201C;Detach compute to Agent Flow&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-get">
+      <ttl>Get Agent Flow deployment details.</ttl>
+      <xreftext>&#x201C;Get Agent Flow deployment details.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-get">
+      <ttl>Get Agent Flow details</ttl>
+      <xreftext>&#x201C;Get Agent Flow details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-permissions-get">
+      <ttl>Get Agent Flow permissions</ttl>
+      <xreftext>&#x201C;Get Agent Flow permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-chathistory-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-chathistory-get">
+      <ttl>Get Agent Flow Session chat messages</ttl>
+      <xreftext>&#x201C;Get Agent Flow Session chat messages&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-get">
+      <ttl>Get Agent Flow Session details</ttl>
+      <xreftext>&#x201C;Get Agent Flow Session details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-traces-tracekey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-traces-tracekey-get">
+      <ttl>Get Agent Flow Session trace for a given message key</ttl>
+      <xreftext>&#x201C;Get Agent Flow Session trace for a given message key&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-get">
+      <ttl>Get Agent Flows in schema</ttl>
+      <xreftext>&#x201C;Get Agent Flows in schema&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-sessionmetrics-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-sessionmetrics-get">
+      <ttl>Get session metrics for an agent flow</ttl>
+      <xreftext>&#x201C;Get session metrics for an agent flow&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-get">
+      <ttl>List all deployments of an Agent Flow.</ttl>
+      <xreftext>&#x201C;List all deployments of an Agent Flow.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-get">
+      <ttl>List all test sessions of an agent flow.</ttl>
+      <xreftext>&#x201C;List all test sessions of an agent flow.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-agentflowguardrails-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-agentflowguardrails-get">
+      <ttl>List Guardrails available to configure on Agent Flow</ttl>
+      <xreftext>&#x201C;List Guardrails available to configure on Agent Flow&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-post">
+      <ttl>Start a session of agent flow for testing.</ttl>
+      <xreftext>&#x201C;Start a session of agent flow for testing.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-actions-stop-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-actions-stop-post">
+      <ttl>Stop a session of agent flow.</ttl>
+      <xreftext>&#x201C;Stop a session of agent flow.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-put">
+      <ttl>Update a session of agent flow for testing.</ttl>
+      <xreftext>&#x201C;Update a session of agent flow for testing.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-put">
+      <ttl>Update agent flow deployment.</ttl>
+      <xreftext>&#x201C;Update agent flow deployment.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-managepermission-post">
+      <ttl>Update Agent Flow permissions</ttl>
+      <xreftext>&#x201C;Update Agent Flow permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-redeployagentflow-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-redeployagentflow-post">
+      <ttl>Update agentflow deployment asynchronously.</ttl>
+      <xreftext>&#x201C;Update agentflow deployment asynchronously.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-put">
+      <ttl>Update an Agent Flow</ttl>
+      <xreftext>&#x201C;Update an Agent Flow&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-validate-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-validate-post">
+      <ttl>Validate Agent Flow diagram</ttl>
+      <xreftext>&#x201C;Validate Agent Flow diagram&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-actions-manageauditlogs-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-actions-manageauditlogs-post">
+      <ttl>Manage audit logs for Intelligent Data Lake</ttl>
+      <xreftext>&#x201C;Manage audit logs for Intelligent Data Lake&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-actions-searchauditlogs-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-actions-searchauditlogs-post">
+      <ttl>Search audit logs for Intelligent Data Lake</ttl>
+      <xreftext>&#x201C;Search audit logs for Intelligent Data Lake&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-catalogs-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-post">
+      <ttl>Create Intelligent Data Lake catalog</ttl>
+      <xreftext>&#x201C;Create Intelligent Data Lake catalog&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-delete">
+      <ttl>Delete an Intelligent Data Lake catalog</ttl>
+      <xreftext>&#x201C;Delete an Intelligent Data Lake catalog&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-get">
+      <ttl>Get Intelligent Data Lake catalog</ttl>
+      <xreftext>&#x201C;Get Intelligent Data Lake catalog&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-permissions-get">
+      <ttl>Get list of Intelligent Data Lake catalog permissions</ttl>
+      <xreftext>&#x201C;Get list of Intelligent Data Lake catalog permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-catalogs-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-get">
+      <ttl>Get list of Intelligent Data Lake catalogs</ttl>
+      <xreftext>&#x201C;Get list of Intelligent Data Lake catalogs&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-refresh-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-refresh-post">
+      <ttl>Refresh Intelligent Data Lake catalog via crawler</ttl>
+      <xreftext>&#x201C;Refresh Intelligent Data Lake catalog via crawler&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-actions-testconnection-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-actions-testconnection-post">
+      <ttl>Test external catalog connection</ttl>
+      <xreftext>&#x201C;Test external catalog connection&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-put">
+      <ttl>Update Intelligent Data Lake catalog details</ttl>
+      <xreftext>&#x201C;Update Intelligent Data Lake catalog details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-managepermission-post">
+      <ttl>Update permissions for an Intelligent Data Lake catalog</ttl>
+      <xreftext>&#x201C;Update permissions for an Intelligent Data Lake catalog&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-post">
+      <ttl>Create a cluster</ttl>
+      <xreftext>&#x201C;Create a cluster&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-delete">
+      <ttl>Delete a cluster</ttl>
+      <xreftext>&#x201C;Delete a cluster&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-get">
+      <ttl>Get cluster details</ttl>
+      <xreftext>&#x201C;Get cluster details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-get">
+      <ttl>Get cluster libraries</ttl>
+      <xreftext>&#x201C;Get cluster libraries&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-permissions-get">
+      <ttl>Get cluster permissions</ttl>
+      <xreftext>&#x201C;Get cluster permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-get">
+      <ttl>Get clusters in a workspace</ttl>
+      <xreftext>&#x201C;Get clusters in a workspace&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-defaultcluster-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-defaultcluster-get">
+      <ttl>Get default cluster</ttl>
+      <xreftext>&#x201C;Get default cluster&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-patch.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-patch">
+      <ttl>Patch cluster libraries</ttl>
+      <xreftext>&#x201C;Patch cluster libraries&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-restart-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-restart-post">
+      <ttl>Restart running cluster</ttl>
+      <xreftext>&#x201C;Restart running cluster&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-start-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-start-post">
+      <ttl>Start a termintated cluster</ttl>
+      <xreftext>&#x201C;Start a termintated cluster&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-stop-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-stop-post">
+      <ttl>Stop a Cluster</ttl>
+      <xreftext>&#x201C;Stop a Cluster&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-put">
+      <ttl>Update cluster details</ttl>
+      <xreftext>&#x201C;Update cluster details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-put">
+      <ttl>Update cluster libraries</ttl>
+      <xreftext>&#x201C;Update cluster libraries&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-managepermission-post">
+      <ttl>Update cluster permissions</ttl>
+      <xreftext>&#x201C;Update cluster permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-asyncoperations-asyncoperationkey-status-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-asyncoperations-asyncoperationkey-status-put">
+      <ttl>Update cluster status</ttl>
+      <xreftext>&#x201C;Update cluster status&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-post">
+      <ttl>Creates a Delta Share in Data Lake.</ttl>
+      <xreftext>&#x201C;Creates a Delta Share in Data Lake.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-recipients-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-post">
+      <ttl>Creates a Delta Share Recipient in Data Lake.</ttl>
+      <xreftext>&#x201C;Creates a Delta Share Recipient in Data Lake.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-delete">
+      <ttl>Deletes a Recipient.</ttl>
+      <xreftext>&#x201C;Deletes a Recipient.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-sharekey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-delete">
+      <ttl>Deletes a share.</ttl>
+      <xreftext>&#x201C;Deletes a share.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-sharekey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-get">
+      <ttl>Get Data Lake Share</ttl>
+      <xreftext>&#x201C;Get Data Lake Share&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-get">
+      <ttl>Get Delta Share Recipient resource in a Data Lake instance</ttl>
+      <xreftext>&#x201C;Get Delta Share Recipient resource in a Data Lake instance&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-permissions-get">
+      <ttl>Gets a list of Data Lake Recipient permissions.</ttl>
+      <xreftext>&#x201C;Gets a list of Data Lake Recipient permissions.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-sharekey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-permissions-get">
+      <ttl>Gets a list of Data Lake Share permissions.</ttl>
+      <xreftext>&#x201C;Gets a list of Data Lake Share permissions.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-recipients-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-get">
+      <ttl>Gets a list of Delta Share Recipients</ttl>
+      <xreftext>&#x201C;Gets a list of Delta Share Recipients&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-get">
+      <ttl>Gets a list of Delta Shares</ttl>
+      <xreftext>&#x201C;Gets a list of Delta Shares&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-sharekey-dataassets-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-dataassets-get">
+      <ttl>Gets a list of Delta Shares Assets</ttl>
+      <xreftext>&#x201C;Gets a list of Delta Shares Assets&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-sharekey-recipients-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-recipients-get">
+      <ttl>Gets a list of recipients specific to this share</ttl>
+      <xreftext>&#x201C;Gets a list of recipients specific to this share&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-shares-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-shares-get">
+      <ttl>Returns a list of Share summary on which this recipient has been granted access on</ttl>
+      <xreftext>&#x201C;Returns a list of Share summary on which this recipient has been granted access on&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-sharekey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-put">
+      <ttl>Update a delta share.</ttl>
+      <xreftext>&#x201C;Update a delta share.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-put">
+      <ttl>Update a recipient resource.</ttl>
+      <xreftext>&#x201C;Update a recipient resource.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-sharekey-actions-manageaccess-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-actions-manageaccess-post">
+      <ttl>Updates consumer side access on a share for a Recipient</ttl>
+      <xreftext>&#x201C;Updates consumer side access on a share for a Recipient&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managedataasset-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managedataasset-post">
+      <ttl>Updates data assets on a Share</ttl>
+      <xreftext>&#x201C;Updates data assets on a Share&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-recipients-recipientkey-actions-managepermission-post">
+      <ttl>Updates permissions on a Recipient</ttl>
+      <xreftext>&#x201C;Updates permissions on a Recipient&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managepermission-post">
+      <ttl>Updates permissions on a Share</ttl>
+      <xreftext>&#x201C;Updates permissions on a Share&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-post">
+      <ttl>Create a job run for a given KnowledgeBase Job</ttl>
+      <xreftext>&#x201C;Create a job run for a given KnowledgeBase Job&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-post">
+      <ttl>Create a new KnowledgeBase</ttl>
+      <xreftext>&#x201C;Create a new KnowledgeBase&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-post">
+      <ttl>Creates a new Job for give KnowledgeBase</ttl>
+      <xreftext>&#x201C;Creates a new Job for give KnowledgeBase&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-delete">
+      <ttl>Delete a knowledge base</ttl>
+      <xreftext>&#x201C;Delete a knowledge base&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-delete">
+      <ttl>Deletes a job definition for a given KnowledgeBase</ttl>
+      <xreftext>&#x201C;Deletes a job definition for a given KnowledgeBase&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-knowledgebasejobrunkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-knowledgebasejobrunkey-get">
+      <ttl>Get information about a knowledgeBaseJobRun</ttl>
+      <xreftext>&#x201C;Get information about a knowledgeBaseJobRun&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-get">
+      <ttl>Get Knowledge Base</ttl>
+      <xreftext>&#x201C;Get Knowledge Base&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-get">
+      <ttl>Get list of KnowledgeBase Jobs</ttl>
+      <xreftext>&#x201C;Get list of KnowledgeBase Jobs&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-get">
+      <ttl>Gets a list of all KnowledgeBase Job Run in a catalog and schema</ttl>
+      <xreftext>&#x201C;Gets a list of all KnowledgeBase Job Run in a catalog and schema&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-permissions-get">
+      <ttl>Gets a list of Data Lake Knowledge Base permissions.</ttl>
+      <xreftext>&#x201C;Gets a list of Data Lake Knowledge Base permissions.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-get">
+      <ttl>List of KnowledgeBases</ttl>
+      <xreftext>&#x201C;List of KnowledgeBases&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-get">
+      <ttl>The Job definition is returned successfully</ttl>
+      <xreftext>&#x201C;The Job definition is returned successfully&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-put">
+      <ttl>Update KnowledgeBase details</ttl>
+      <xreftext>&#x201C;Update KnowledgeBase details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-actions-managepermission-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-actions-managepermission-put">
+      <ttl>Updates permissions on a Data Lake Knowledge Base</ttl>
+      <xreftext>&#x201C;Updates permissions on a Data Lake Knowledge Base&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-models-modelid-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-models-modelid-get">
+      <ttl>Get Data Lake Model</ttl>
+      <xreftext>&#x201C;Get Data Lake Model&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-models-modelid-modelparameters-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-models-modelid-modelparameters-get">
+      <ttl>Get Model Parameters</ttl>
+      <xreftext>&#x201C;Get Model Parameters&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-models-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-models-get">
+      <ttl>Gets a list of Models.</ttl>
+      <xreftext>&#x201C;Gets a list of Models.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post">
+      <ttl>Add a member to Role.</ttl>
+      <xreftext>&#x201C;Add a member to Role.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-roles-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-post">
+      <ttl>Creates a Data Lake Role.</ttl>
+      <xreftext>&#x201C;Creates a Data Lake Role.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-roles-rolekey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-delete">
+      <ttl>Deletes a DataLake.</ttl>
+      <xreftext>&#x201C;Deletes a DataLake.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-roles-rolekey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-get">
+      <ttl>Get Data Lake Role</ttl>
+      <xreftext>&#x201C;Get Data Lake Role&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-roles-rolekey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-permissions-get">
+      <ttl>Get Permission information for a given role</ttl>
+      <xreftext>&#x201C;Get Permission information for a given role&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-roles-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-get">
+      <ttl>Gets a list of Roles.</ttl>
+      <xreftext>&#x201C;Gets a list of Roles.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-removemember-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-actions-removemember-post">
+      <ttl>Remove member from a Role.</ttl>
+      <xreftext>&#x201C;Remove member from a Role.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-roles-rolekey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-put">
+      <ttl>Updates a Data Lake Role</ttl>
+      <xreftext>&#x201C;Updates a Data Lake Role&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-roles-rolekey-actions-managepermission-post">
+      <ttl>Updates permissions on a Role</ttl>
+      <xreftext>&#x201C;Updates permissions on a Role&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-datatables-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-datatables-post">
+      <ttl>Create a managed table from sample file</ttl>
+      <xreftext>&#x201C;Create a managed table from sample file&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-post">
+      <ttl>Create a schema</ttl>
+      <xreftext>&#x201C;Create a schema&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-tables-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-post">
+      <ttl>Create a table</ttl>
+      <xreftext>&#x201C;Create a table&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-views-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-post">
+      <ttl>Creates a View</ttl>
+      <xreftext>&#x201C;Creates a View&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-tables-tablekey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-delete">
+      <ttl>Delete a table</ttl>
+      <xreftext>&#x201C;Delete a table&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-schemakey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-delete">
+      <ttl>Delete schema</ttl>
+      <xreftext>&#x201C;Delete schema&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-views-viewkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-delete">
+      <ttl>Deletes a View</ttl>
+      <xreftext>&#x201C;Deletes a View&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-generatetempfileuploadtarget-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-generatetempfileuploadtarget-post">
+      <ttl>Generate URI for uploading a sample file to a temporary folder in a schema</ttl>
+      <xreftext>&#x201C;Generate URI for uploading a sample file to a temporary folder in a schema&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-schemakey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-get">
+      <ttl>Get schema details</ttl>
+      <xreftext>&#x201C;Get schema details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-schemakey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-permissions-get">
+      <ttl>Get schema permissions</ttl>
+      <xreftext>&#x201C;Get schema permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-get">
+      <ttl>Get schemas</ttl>
+      <xreftext>&#x201C;Get schemas&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-tables-tablekey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-get">
+      <ttl>Get table details</ttl>
+      <xreftext>&#x201C;Get table details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-tables-tablekey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-permissions-get">
+      <ttl>Get table permissions</ttl>
+      <xreftext>&#x201C;Get table permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschema-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschema-post">
+      <ttl>Get table schema</ttl>
+      <xreftext>&#x201C;Get table schema&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschemawithpreview-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschemawithpreview-post">
+      <ttl>Get table schema and data</ttl>
+      <xreftext>&#x201C;Get table schema and data&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-tables-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-get">
+      <ttl>Get tables in schema</ttl>
+      <xreftext>&#x201C;Get tables in schema&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-views-viewkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-get">
+      <ttl>Get View</ttl>
+      <xreftext>&#x201C;Get View&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-views-viewkey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-permissions-get">
+      <ttl>Gets a list of View permissions.</ttl>
+      <xreftext>&#x201C;Gets a list of View permissions.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-views-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-get">
+      <ttl>Gets a list of Views in a Schema.</ttl>
+      <xreftext>&#x201C;Gets a list of Views in a Schema.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-refresh-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-refresh-post">
+      <ttl>Refresh schema</ttl>
+      <xreftext>&#x201C;Refresh schema&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-tables-tablekey-actions-refresh-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-actions-refresh-post">
+      <ttl>Refresh table</ttl>
+      <xreftext>&#x201C;Refresh table&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-tables-tablekey-actions-getpar-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-actions-getpar-post">
+      <ttl>Retrieve PAR for the entities created in AIDP</ttl>
+      <xreftext>&#x201C;Retrieve PAR for the entities created in AIDP&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-tables-tablekey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-put">
+      <ttl>Update a table</ttl>
+      <xreftext>&#x201C;Update a table&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-schemakey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-put">
+      <ttl>Update schema</ttl>
+      <xreftext>&#x201C;Update schema&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-tables-tablekey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-tables-tablekey-actions-managepermission-post">
+      <ttl>Update table permissions</ttl>
+      <xreftext>&#x201C;Update table permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-views-viewkey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-put">
+      <ttl>Updates a View</ttl>
+      <xreftext>&#x201C;Updates a View&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-views-viewkey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-views-viewkey-actions-managepermission-post">
+      <ttl>Updates permissions on a View</ttl>
+      <xreftext>&#x201C;Updates permissions on a View&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-managepermission-post">
+      <ttl>Updates schema permissions</ttl>
+      <xreftext>&#x201C;Updates schema permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-tools-actions-test-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-tools-actions-test-post">
+      <ttl>Test the tool</ttl>
+      <xreftext>&#x201C;Test the tool&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-mkdir-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-mkdir-post">
+      <ttl>Create directory in Volume</ttl>
+      <xreftext>&#x201C;Create directory in Volume&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-post">
+      <ttl>Creates a Data Lake Volume.</ttl>
+      <xreftext>&#x201C;Creates a Data Lake Volume.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-delete">
+      <ttl>Deletes a DataLake.</ttl>
+      <xreftext>&#x201C;Deletes a DataLake.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletefile-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletefile-delete">
+      <ttl>Deletes a file in Volume</ttl>
+      <xreftext>&#x201C;Deletes a file in Volume&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletedir-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletedir-delete">
+      <ttl>Deletes directory in Volume</ttl>
+      <xreftext>&#x201C;Deletes directory in Volume&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfilemeta-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfilemeta-post">
+      <ttl>Download a file to Volume by generating par</ttl>
+      <xreftext>&#x201C;Download a file to Volume by generating par&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfile-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfile-post">
+      <ttl>Download file from Volume</ttl>
+      <xreftext>&#x201C;Download file from Volume&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-get">
+      <ttl>Get Data Lake Volume</ttl>
+      <xreftext>&#x201C;Get Data Lake Volume&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-permissions-get">
+      <ttl>Gets a list of Data Lake Volume permissions.</ttl>
+      <xreftext>&#x201C;Gets a list of Data Lake Volume permissions.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-get">
+      <ttl>Gets a list of Data Lake Volumes.</ttl>
+      <xreftext>&#x201C;Gets a list of Data Lake Volumes.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-files-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-files-get">
+      <ttl>Gets a list of files in the Data Lake Volume.</ttl>
+      <xreftext>&#x201C;Gets a list of files in the Data Lake Volume.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-put">
+      <ttl>Updates a Data Lake Volume</ttl>
+      <xreftext>&#x201C;Updates a Data Lake Volume&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-updatedir-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-updatedir-put">
+      <ttl>Updates directory in Volume</ttl>
+      <xreftext>&#x201C;Updates directory in Volume&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-managepermission-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-managepermission-put">
+      <ttl>Updates permissions on a Data Lake Volume</ttl>
+      <xreftext>&#x201C;Updates permissions on a Data Lake Volume&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfile-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfile-post">
+      <ttl>Upload a file to Volume</ttl>
+      <xreftext>&#x201C;Upload a file to Volume&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfilemeta-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfilemeta-post">
+      <ttl>Upload a file to Volume by generating par</ttl>
+      <xreftext>&#x201C;Upload a file to Volume by generating par&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-cancel-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-cancel-post">
+      <ttl>Cancel a job run</ttl>
+      <xreftext>&#x201C;Cancel a job run&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-canceljobruns-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-canceljobruns-post">
+      <ttl>Cancel jobRuns for a job</ttl>
+      <xreftext>&#x201C;Cancel jobRuns for a job&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-post">
+      <ttl>Create a job</ttl>
+      <xreftext>&#x201C;Create a job&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-post">
+      <ttl>Create a job run for an Intelligent Data Lake.</ttl>
+      <xreftext>&#x201C;Create a job run for an Intelligent Data Lake.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-delete">
+      <ttl>Delete a job</ttl>
+      <xreftext>&#x201C;Delete a job&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-delete">
+      <ttl>Delete a job run</ttl>
+      <xreftext>&#x201C;Delete a job run&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-outputs-taskrunoutputkey-actions-export-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-outputs-taskrunoutputkey-actions-export-post">
+      <ttl>Export task run output</ttl>
+      <xreftext>&#x201C;Export task run output&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-actions-fetchoutput-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-actions-fetchoutput-post">
+      <ttl>Fetch task run output from runtime engine</ttl>
+      <xreftext>&#x201C;Fetch task run output from runtime engine&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-get">
+      <ttl>Get job details</ttl>
+      <xreftext>&#x201C;Get job details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-permissions-get">
+      <ttl>Get job permissions</ttl>
+      <xreftext>&#x201C;Get job permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-get">
+      <ttl>Get job run details</ttl>
+      <xreftext>&#x201C;Get job run details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-get">
+      <ttl>Get job runs</ttl>
+      <xreftext>&#x201C;Get job runs&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-get">
+      <ttl>Get jobs</ttl>
+      <xreftext>&#x201C;Get jobs&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-recentjobruns-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-recentjobruns-get">
+      <ttl>Get latest job runs</ttl>
+      <xreftext>&#x201C;Get latest job runs&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-get">
+      <ttl>Get task run details</ttl>
+      <xreftext>&#x201C;Get task run details&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-get">
+      <ttl>Get task runs</ttl>
+      <xreftext>&#x201C;Get task runs&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-repair-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-repair-post">
+      <ttl>Repair job run</ttl>
+      <xreftext>&#x201C;Repair job run&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-managepermission-post">
+      <ttl>Update job permissions</ttl>
+      <xreftext>&#x201C;Update job permissions&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-put">
+      <ttl>Updates a job</ttl>
+      <xreftext>&#x201C;Updates a job&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-post">
+      <ttl>Creates a Data Lake Workspace.</ttl>
+      <xreftext>&#x201C;Creates a Data Lake Workspace.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-delete">
+      <ttl>Deletes a DataLake.</ttl>
+      <xreftext>&#x201C;Deletes a DataLake.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-get">
+      <ttl>Get Data Lake Workspace</ttl>
+      <xreftext>&#x201C;Get Data Lake Workspace&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-createworkspacepermissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-createworkspacepermissions-get">
+      <ttl>Gets a list of Data Lake Workspace permissions.</ttl>
+      <xreftext>&#x201C;Gets a list of Data Lake Workspace permissions.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-permissions-get">
+      <ttl>Gets a list of Data Lake Workspace permissions.</ttl>
+      <xreftext>&#x201C;Gets a list of Data Lake Workspace permissions.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-get">
+      <ttl>Gets a list of Data Lake Workspaces.</ttl>
+      <xreftext>&#x201C;Gets a list of Data Lake Workspaces.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-asyncoperations-asyncoperationkey-status-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-asyncoperations-asyncoperationkey-status-put">
+      <ttl>Update workspace status</ttl>
+      <xreftext>&#x201C;Update workspace status&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-put">
+      <ttl>Updates a Data Lake Workspace</ttl>
+      <xreftext>&#x201C;Updates a Data Lake Workspace&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-actions-managecreateworkspacepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-actions-managecreateworkspacepermission-post">
+      <ttl>Updates create workspace permissions on a Data Lake Workspace</ttl>
+      <xreftext>&#x201C;Updates create workspace permissions on a Data Lake Workspace&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-managepermission-post">
+      <ttl>Updates permissions on a Data Lake Workspace</ttl>
+      <xreftext>&#x201C;Updates permissions on a Data Lake Workspace&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-renameobject-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-renameobject-post">
+      <ttl>Changes the name of the Workspace Object.</ttl>
+      <xreftext>&#x201C;Changes the name of the Workspace Object.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-copyobject-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-copyobject-post">
+      <ttl>Copy the Workspace Object to different location</ttl>
+      <xreftext>&#x201C;Copy the Workspace Object to different location&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-mkdir-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-mkdir-post">
+      <ttl>Create a directory in the Workspace</ttl>
+      <xreftext>&#x201C;Create a directory in the Workspace&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-post">
+      <ttl>Creates a Workspace Object</ttl>
+      <xreftext>&#x201C;Creates a Workspace Object&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-delete.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-delete">
+      <ttl>Deletes a Workspace Object.</ttl>
+      <xreftext>&#x201C;Deletes a Workspace Object.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-downloadfilemeta-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-downloadfilemeta-post">
+      <ttl>Download a workspace file by generating par</ttl>
+      <xreftext>&#x201C;Download a workspace file by generating par&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-head.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-head">
+      <ttl>Get summary metadata of the Workspace Object</ttl>
+      <xreftext>&#x201C;Get summary metadata of the Workspace Object&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-get">
+      <ttl>Get Workspace Object</ttl>
+      <xreftext>&#x201C;Get Workspace Object&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-get">
+      <ttl>Gets a list of objects in the Workspace</ttl>
+      <xreftext>&#x201C;Gets a list of objects in the Workspace&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-permissions-get.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-permissions-get">
+      <ttl>Gets a list of Workspace Object permissions.</ttl>
+      <xreftext>&#x201C;Gets a list of Workspace Object permissions.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-moveobject-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-moveobject-post">
+      <ttl>Moves the Workspace Object to different location</ttl>
+      <xreftext>&#x201C;Moves the Workspace Object to different location&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-put.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-put">
+      <ttl>Updates a WorkspaceObject</ttl>
+      <xreftext>&#x201C;Updates a WorkspaceObject&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-actions-managepermission-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-actions-managepermission-post">
+      <ttl>Updates permissions on a WorkspaceObject</ttl>
+      <xreftext>&#x201C;Updates permissions on a WorkspaceObject&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-uploadfilemeta-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-uploadfilemeta-post">
+      <ttl>Upload a workspace file by generating par</ttl>
+      <xreftext>&#x201C;Upload a workspace file by generating par&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-downloadlogs-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-downloadlogs-post">
+      <ttl>Download logs for a given cluster within a specific time range.</ttl>
+      <xreftext>&#x201C;Download logs for a given cluster within a specific time range.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-searchlogs-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-searchlogs-post">
+      <ttl>Searches logs for a given cluster within a specific time range.</ttl>
+      <xreftext>&#x201C;Searches logs for a given cluster within a specific time range.&#x201D;</xreftext>
+   </obj>
+   <obj element="section"
+        href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-summarizemetricsdata-post.html"
+        targetptr="AIWAP-op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-summarizemetricsdata-post">
+      <ttl>Summarizes compute metrics data for the specified Data Lake.</ttl>
+      <xreftext>&#x201C;Summarizes compute metrics data for the specified Data Lake.&#x201D;</xreftext>
+   </obj>
+</div>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Monitor a Service Instance</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+			
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="use-cases.html" title="Previous" type="text/html">
+        <link rel="next" href="api-agentflow.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:32+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"Monitor a Service Instance","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="use-cases.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="api-agentflow.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+            <h2>Monitor a Service Instance</h2>
+		<p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+            <div class="dita-content">
+            <div>
+               <p>You can monitor the health of an Oracle Java Cloud Service instance using
+		the REST API.</p>
+               <div class="section">
+                  <p><span class="bold">Note: </span></p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>On accounts that are integrated with Oracle Identity Cloud Service, the
+						identity domain ID is the Identity Cloud Service tenant name. This tenant
+						name begins with the characters <code class="codeph">idcs-</code>followed by a string
+						of number and letters (for example,
+							<code class="codeph">idcs-98888f7964454b658ac6d2f625b29030</code>). See <a href="http://www.oracle.com/pls/topic/lookup?ctx=cloud&amp;id=UAIDS-GUID-601E5FB1-BF69-4215-9EFA-0AAF35B0A802" target="_blank">Find Your Oracle Identity Cloud Service Tenant
+							Name</a> in <span class="italic">Administering Oracle Identity Cloud
+					Service</span>.
+                        </p>
+                     </li>
+                     <li>
+                        <p> The cURL command examples use the URL structure
+								<code class="codeph">https://rest_server_url/<span class="codeinlineitalic">resource-path</span></code>, where
+							<code class="codeph">rest_server_url</code> is the REST server to contact for your
+						identity domain. See <a href="SendRequests.html" target="_blank">Send Requests</a>.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section">
+                  <p>To
+				monitor an Oracle Java Cloud Service instance:</p>
+               </div>
+               <ol>
+                  <li class="stepexpand"><span>Before monitoring an Oracle Java Cloud Service instance, review the service
+					instances that currently exist to identify the service instance you want to
+					monitor.</span><div><pre class="oac_no_warn" dir="ltr">curl -i -X GET -u username:userPassword -H "X-ID-TENANT-NAME:ExampleIdentityDomain" https://rest_server_url/paas/api/v1.1/instancemgmt/ExampleIdentityDomain/services/jaas/instances
+</pre><p>Specify the following options on the cURL command line:</p>
+                        <ul style="list-style-type: disc;">
+                           <li>
+                              <p><code class="codeph">-i</code> option to include the
+								HTTP header in the output. This option is optional.
+                              </p>
+                           </li>
+                           <li>
+                              <p><code class="codeph">-X</code> option to indicate the
+								type of request (<code class="codeph">GET</code>).
+                              </p>
+                           </li>
+                           <li>
+                              <p><code class="codeph">-u</code> option to specify the
+								user name and password for the Oracle Java Cloud Service account for
+								authentication.
+                              </p>
+                           </li>
+                           <li>
+                              <p><code class="codeph">-H</code> to define a custom
+								header, <code class="codeph">X-ID-TENANT-NAME</code>, to identify the identity
+								domain ID.
+                              </p>
+                           </li>
+                        </ul>
+                        <p>The following shows an example of the response body.</p>
+                        <p>Look
+						for the service name of the service instance you want to monitor. In this
+						example, the service name is
+					<code class="codeph">ExampleInstance</code>.
+                        </p><pre class="pre codeblock"><code>{
+    "uri":"https:\/\/rest_server_url\/paas\/service\/jcs\/api\/v1.1\/instances\/ExampleIdentityDomain",
+    "service_type":"jaas",
+    "implementation_version":"1.0",
+    "services":[
+    {
+        "service_name":"ExampleInstance",
+        "version":"12cR3",
+        "wlsVersion":"12.1.3.0.xxxxxx",
+        "status":"Running",
+        "error_status_desc":"",
+        "compliance_status":"",
+        "compliance_status_desc":"",
+        "auto_update":"true",
+        "description":"Example Instance created using REST API",
+        "identity_domain":"ExampleIdentityDomain",
+        "creation_time":"Mon Jun 6 19:37:41 UTC 2016",
+        "last_modified_time":"Sat Jul 2 7:10:35 UTC 2016",
+        "created_by":"username",
+        "service_uri":"https:\/\/rest_server_url\/paas\/service\/jcs\/api\/v1.1\/instances\/ExampleIdentityDomain\/ExampleInstance"
+    },
+    {
+        "service_name":"My1221Instance",
+        "version":"12cRelease2",
+        "wlsVersion":"12.2.1.0.xxxxxx",
+        "status":"Running",
+        "error_status_desc":"",
+        "compliance_status":"",
+        "compliance_status_desc":"",
+        "auto_update":"true",
+        "description":"desc",
+        "identity_domain":"ExampleIdentityDomain",
+        "creation_time":"Tue Jun 7 21:22:20 UTC 2016",
+        "last_modified_time":"Sat Jul 2 9:10:25 UTC 2016",
+        "created_by":"username",
+        "service_uri":"https:\/\/rest_server_url\/paas\/service\/jcs\/api\/v1.1\/instances\/ExampleIdentityDomain\/My1221Instance"
+    }
+    ]
+}</code></pre></div>
+                  </li>
+                  <li class="stepexpand"><span>Monitor the <code class="codeph">ExampleInstance</code> service instance by entering the
+					following command.</span><div><pre class="oac_no_warn" dir="ltr">curl -i -X GET -u username:userPassword1! -H "X-ID-TENANT-NAME:ExampleIdentityDomain" https://rest_server_url/paas/core/api/v1.1/healthcheck/ExampleIdentityDomain/services/jaas/instances/ExampleInstance</pre><p>Specify the following options on the cURL command line:</p>
+                        <ul style="list-style-type: disc;">
+                           <li>
+                              <p><code class="codeph">-i</code> option to include the
+								HTTP header in the output. This option is optional.
+                              </p>
+                           </li>
+                           <li>
+                              <p><code class="codeph">-X</code> option to indicate the
+								type of request (<code class="codeph">GET</code>).
+                              </p>
+                           </li>
+                           <li>
+                              <p><code class="codeph">-u</code> option to specify the
+								user name and password for the Oracle Java Cloud Service account for
+								authentication.
+                              </p>
+                           </li>
+                           <li>
+                              <p><code class="codeph">-H</code> to define a custom
+								header, <code class="codeph">X-ID-TENANT-NAME</code>, to identify the identity
+								domain ID.
+                              </p>
+                           </li>
+                        </ul>
+                        <p>For more information, see <a href="op-paas-api-v1.1-instancemgmt-identitydomainid-services-jaas-instances-serviceid-get.html" target="_blank">Monitor a Service Instance</a>.
+                        </p>
+                        <p>The following shows an example of the response
+					body.</p><pre class="pre codeblock"><code>{
+    "summary":
+    {
+        "status":"UP",
+        "status_time":"2016-11-17T20:23:20.029+00:00"
+    },
+    "identity_domain":"ExampleIdentityDomain",
+    "service_components":[
+    {
+        "summary":
+        {
+            "status":"UP",
+            "status_time":"2016-11-17T20:23:11.000+00:00"
+        },
+        "component":"OTD",
+        "vms":[
+        {
+            "summary":
+            {
+                "status":"UP",
+                "status_time":"2016-11-17T20:23:18.511+00:00"
+            },
+            "vm":"exampleinstance-lb-1",
+            "servers":[]
+        }],
+        "health_data":[
+        {
+            "unit":"count",
+            "name":"requestCount",
+            "value":"2",
+            "displayName":"Execution t"
+        },
+        {
+            "unit":"count",
+            "name":"errorRequestCount",
+            "value":"0",
+            "displayName":"Execution t"
+        },
+        {
+            "unit":"ms",
+            "name":"epsLast5MinAvg",
+            "value":"0",
+            "displayName":"Execution time"
+        },
+        {
+            "unit":"ms",
+            "name":"upsince",
+            "value":"2016-11-17T19:53:16.000+00:00",
+            "displayName":"Server time from when it was up."
+        },
+        {
+            "unit":"ms",
+            "name":"rtLast5MinAvg",
+            "value":"0",
+            "displayName":"Execution t"
+        }]
+    },
+    {
+        "summary":
+        {
+            "status":"UP",
+            "status_time":"2016-11-17T20:23:10.000+00:00",
+            "status_message":"Number of servers processing request:1"
+        },
+        "component":"WLS",
+        "vms":[
+        {
+            "summary":
+            {
+                "status":"UP",
+                "status_time":"2016-11-17T20:23:18.511+00:00"
+            },
+            "vm":"exampleinstance-wls-1",
+            "servers":[
+            {
+                "summary":
+                {
+                    "status":"UP",
+                    "status_time":"2016-11-17T20:23:10.000+00:00"
+                },
+                "server_name":"ExampleI_server_1",
+                "server_role":"MANAGED",
+                "health_data":[
+                {
+                    "unit":"MB",
+                    "name":"heapmax",
+                    "value":"1820.5",
+                    "displayName":"Max memory"
+                },
+                {
+                    "unit":"ms",
+                    "name":"upsince",
+                    "value":"2016-11-17T19:56:14.000+00:00",
+                    "displayName":"Server time from when it was up."
+                },
+                {
+                    "unit":"MB",
+                    "name":"heapfree",
+                    "value":"1328.96",
+                    "displayName":"Free memory"
+                }]
+            },
+            {
+                "summary":
+                {
+                    "status":"UP",
+                    "status_time":"2016-11-17T20:23:10.000+00:00",
+                    "status_message":"Not processing requests"
+                },
+                "server_name":"ExampleI_adminserver",
+                "server_role":"ADMIN",
+                "health_data":[
+                {
+                    "unit":"MB",
+                    "name":"heapmax",
+                    "value":"1820.5",
+                    "displayName":"Max memory"
+                },
+                {
+                    "unit":"ms",
+                    "name":"upsince",
+                    "value":"2016-11-17T17:50:22.000+00:00",
+                    "displayName":"Server time from when it was up."
+                    },
+                {
+                    "unit":"MB",
+                    "name":"heapfree",
+                    "value":"1146.91",
+                    "displayName":"Free memory"
+                }]
+            }]
+        }]
+    }],
+    "service_name":"ExampleInstance"
+}</code></pre></div>
+                  </li>
+                  <li class="stepexpand"><span>Review the health monitoring data and take action, as required. For
+					example:</span><div>
+                        <div class="p">
+                           <ul style="list-style-type: disc;">
+                              <li>For each server, review the free heap size
+									(<code class="codeph">heapFree</code>) and consider scaling the node if the
+								value falls below the acceptable threshold.
+                              </li>
+                              <li>
+                                 <p>For the Oracle Traffic Director (OTD) component, review the
+									average request time (<code class="codeph">rtLast5MinAvg</code>) and
+									consider scaling the cluster if the value is above the
+									acceptable threshold.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
+               </ol>
+            </div>
+         </div>
+        </article>
+    </body>
+</html>

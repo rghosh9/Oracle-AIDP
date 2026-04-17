@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>REST API for Oracle AI Data Platform Workbench - All REST Endpoints</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+			
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="index.html" title="Previous" type="text/html">
+        <link rel="next" href="quick-start.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:31+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"REST API for Oracle AI Data Platform Workbench - All REST Endpoints","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="index.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="quick-start.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+
+            <header>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">REST API for Oracle AI Data Platform Workbench</a></li>
+                    <li class="active">Endpoints</li>
+                </ol>
+		<p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+                <h2>All REST Endpoints</h2>
+            </header>
+
+            <div class="clearfix">
+                <form class="form-inline endpoints pull-left">
+                    <label for="sortby" class="control-label">Sort by</label>
+
+                    <div id="sortby" class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="sort-radio" value="summary" autocomplete="off" checked> Task
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="sort-radio" value="path" autocomplete="off"> Path
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="sort-radio" value="method" autocomplete="off"> Method
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input id="grouped" type="checkbox" checked> Group by API
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <section>
+
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active" id="summary-sort-grouped">
+<div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            AgentFlow
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the AgentFlow category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-attachcompute-post.html">Attach compute to Agent Flow</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}/actions/attachCompute</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-copy-post.html">Copy an Agent Flow</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}/actions/copy</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-post.html">Create an Agent Flow</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-delete.html">Delete an Agent Flow</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-delete.html">Delete an Agent Flow Deployment.</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowDeployments/{agentFlowDeploymentKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-delete.html">Delete an Agent Flow Session.</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowSessions/{agentFlowSessionKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-post.html">Deploy an Agent Flow</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowDeployments</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-deployagentflow-post.html">Deploy an AgentFlow asynchronously.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/actions/deployAgentFlow</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-detachcompute-post.html">Detach compute to Agent Flow</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}/actions/detachCompute</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-get.html">Get Agent Flow deployment details.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowDeployments/{agentFlowDeploymentKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-get.html">Get Agent Flow details</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-permissions-get.html">Get Agent Flow permissions</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-chathistory-get.html">Get Agent Flow Session chat messages</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowSessions/{agentFlowSessionKey}/chatHistory</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-get.html">Get Agent Flow Session details</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowSessions/{agentFlowSessionKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-traces-tracekey-get.html">Get Agent Flow Session trace for a given message key</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowSessions/{agentFlowSessionKey}/traces/{traceKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-get.html">Get Agent Flows in schema</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-sessionmetrics-get.html">Get session metrics for an agent flow</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}/sessionMetrics</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-get.html">List all deployments of an Agent Flow.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowDeployments</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-get.html">List all test sessions of an agent flow.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowSessions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-agentflowguardrails-get.html">List Guardrails available to configure on Agent Flow</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/agentFlowGuardrails</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-post.html">Start a session of agent flow for testing.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowSessions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-actions-stop-post.html">Stop a session of agent flow.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowSessions/{agentFlowSessionKey}/actions/stop</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowsessions-agentflowsessionkey-put.html">Update a session of agent flow for testing.</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowSessions/{agentFlowSessionKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-put.html">Update agent flow deployment.</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlowDeployments</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-managepermission-post.html">Update Agent Flow permissions</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}/actions/managePermission</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-redeployagentflow-post.html">Update agentflow deployment asynchronously.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/actions/redeployAgentFlow</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-put.html">Update an Agent Flow</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-actions-validate-post.html">Validate Agent Flow diagram</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}/actions/validate</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Audit
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Audit category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-actions-manageauditlogs-post.html">Manage audit logs for Intelligent Data Lake</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/actions/manageAuditLogs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-actions-searchauditlogs-post.html">Search audit logs for Intelligent Data Lake</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/actions/searchAuditLogs</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Catalog
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Catalog category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-catalogs-post.html">Create Intelligent Data Lake catalog</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/catalogs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-delete.html">Delete an Intelligent Data Lake catalog</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/catalogs/{catalogKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-get.html">Get Intelligent Data Lake catalog</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/catalogs/{catalogKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-permissions-get.html">Get list of Intelligent Data Lake catalog permissions</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/catalogs/{catalogKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-catalogs-get.html">Get list of Intelligent Data Lake catalogs</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/catalogs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-refresh-post.html">Refresh Intelligent Data Lake catalog via crawler</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/catalogs/{catalogKey}/actions/refresh</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-actions-testconnection-post.html">Test external catalog connection</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/actions/testConnection</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-put.html">Update Intelligent Data Lake catalog details</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/catalogs/{catalogKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-catalogs-catalogkey-actions-managepermission-post.html">Update permissions for an Intelligent Data Lake catalog</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/catalogs/{catalogKey}/actions/managePermission</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Cluster
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Cluster category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-post.html">Create a cluster</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-delete.html">Delete a cluster</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-get.html">Get cluster details</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-get.html">Get cluster libraries</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/libraries</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-permissions-get.html">Get cluster permissions</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-get.html">Get clusters in a workspace</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-defaultcluster-get.html">Get default cluster</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/defaultCluster</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-patch.html">Patch cluster libraries</a></dt><dd><div>Method: <span class="l-patch">patch</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/libraries</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-restart-post.html">Restart running cluster</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/actions/restart</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-start-post.html">Start a termintated cluster</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/actions/start</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-stop-post.html">Stop a Cluster</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/actions/stop</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-put.html">Update cluster details</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-libraries-put.html">Update cluster libraries</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/libraries</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-managepermission-post.html">Update cluster permissions</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/actions/managePermission</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-asyncoperations-asyncoperationkey-status-put.html">Update cluster status</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/asyncOperations/{asyncOperationKey}/status</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            DeltaShare
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the DeltaShare category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-post.html">Creates a Delta Share in Data Lake.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-recipients-post.html">Creates a Delta Share Recipient in Data Lake.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/recipients</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-delete.html">Deletes a Recipient.</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/recipients/{recipientKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-sharekey-delete.html">Deletes a share.</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares/{shareKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-sharekey-get.html">Get Data Lake Share</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares/{shareKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-get.html">Get Delta Share Recipient resource in a Data Lake instance</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/recipients/{recipientKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-permissions-get.html">Gets a list of Data Lake Recipient permissions.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/recipients/{recipientKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-sharekey-permissions-get.html">Gets a list of Data Lake Share permissions.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares/{shareKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-recipients-get.html">Gets a list of Delta Share Recipients</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/recipients</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-get.html">Gets a list of Delta Shares</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-sharekey-dataassets-get.html">Gets a list of Delta Shares Assets</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares/{shareKey}/dataAssets</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-sharekey-recipients-get.html">Gets a list of recipients specific to this share</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares/{shareKey}/recipients</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-shares-get.html">Returns a list of Share summary on which this recipient has been granted access on</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/recipients/{recipientKey}/shares</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-sharekey-put.html">Update a delta share.</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares/{shareKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-put.html">Update a recipient resource.</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/recipients/{recipientKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-sharekey-actions-manageaccess-post.html">Updates consumer side access on a share for a Recipient</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares/{shareKey}/actions/manageAccess</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managedataasset-post.html">Updates data assets on a Share</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares/{shareKey}/actions/manageDataAsset</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-recipients-recipientkey-actions-managepermission-post.html">Updates permissions on a Recipient</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/recipients/{recipientKey}/actions/managePermission</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-shares-sharekey-actions-managepermission-post.html">Updates permissions on a Share</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/shares/{shareKey}/actions/managePermission</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Model
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Model category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-models-modelid-get.html">Get Data Lake Model</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/models/{modelId}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-models-modelid-modelparameters-get.html">Get Model Parameters</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/models/{modelId}/modelParameters</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-models-get.html">Gets a list of Models.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/models</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Role
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Role category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post.html">Add a member to Role.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}/actions/addMember</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-post.html">Creates a Data Lake Role.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-delete.html">Deletes a DataLake.</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-get.html">Get Data Lake Role</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-permissions-get.html">Get Permission information for a given role</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-get.html">Gets a list of Roles.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-removemember-post.html">Remove member from a Role.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}/actions/removeMember</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-put.html">Updates a Data Lake Role</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-managepermission-post.html">Updates permissions on a Role</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles/{roleKey}/actions/managePermission</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Schema
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Schema category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-datatables-post.html">Create a managed table from sample file</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/dataTables</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-post.html">Create a schema</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-tables-post.html">Create a table</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-views-post.html">Creates a View</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/views</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-tables-tablekey-delete.html">Delete a table</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables/{tableKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-schemakey-delete.html">Delete schema</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas/{schemaKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-views-viewkey-delete.html">Deletes a View</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/views/{viewKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-generatetempfileuploadtarget-post.html">Generate URI for uploading a sample file to a temporary folder in a schema</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas/{schemaKey}/actions/generateTempFileUploadTarget</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-schemakey-get.html">Get schema details</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas/{schemaKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-schemakey-permissions-get.html">Get schema permissions</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas/{schemaKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-get.html">Get schemas</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-tables-tablekey-get.html">Get table details</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables/{tableKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-tables-tablekey-permissions-get.html">Get table permissions</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables/{tableKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschema-post.html">Get table schema</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas/{schemaKey}/actions/inferSchema</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-inferschemawithpreview-post.html">Get table schema and data</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas/{schemaKey}/actions/inferSchemaWithPreview</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-tables-get.html">Get tables in schema</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-views-viewkey-get.html">Get View</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/views/{viewKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-views-viewkey-permissions-get.html">Gets a list of View permissions.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/views/{viewKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-views-get.html">Gets a list of Views in a Schema.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/views</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-refresh-post.html">Refresh schema</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas/{schemaKey}/actions/refresh</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-tables-tablekey-actions-refresh-post.html">Refresh table</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables/{tableKey}/actions/refresh</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-tables-tablekey-actions-getpar-post.html">Retrieve PAR for the entities created in AIDP</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables/{tableKey}/actions/getPar</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-tables-tablekey-put.html">Update a table</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables/{tableKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-schemakey-put.html">Update schema</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas/{schemaKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-tables-tablekey-actions-managepermission-post.html">Update table permissions</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/tables/{tableKey}/actions/managePermission</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-views-viewkey-put.html">Updates a View</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/views/{viewKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-views-viewkey-actions-managepermission-post.html">Updates permissions on a View</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/views/{viewKey}/actions/managePermission</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-schemas-schemakey-actions-managepermission-post.html">Updates schema permissions</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/schemas/{schemaKey}/actions/managePermission</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Tool
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Tool category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-tools-actions-test-post.html">Test the tool</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/tools/actions/test</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Volume
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Volume category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-mkdir-post.html">Create directory in Volume</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/mkdir</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-post.html">Creates a Data Lake Volume.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-delete.html">Deletes a DataLake.</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletefile-delete.html">Deletes a file in Volume</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/deleteFile</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletedir-delete.html">Deletes directory in Volume</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/deleteDir</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfilemeta-post.html">Download a file to Volume by generating par</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/downloadFileMeta</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfile-post.html">Download file from Volume</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/downloadFile</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-get.html">Get Data Lake Volume</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-permissions-get.html">Gets a list of Data Lake Volume permissions.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-get.html">Gets a list of Data Lake Volumes.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-files-get.html">Gets a list of files in the Data Lake Volume.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/files</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-put.html">Updates a Data Lake Volume</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-updatedir-put.html">Updates directory in Volume</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/updateDir</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-managepermission-put.html">Updates permissions on a Data Lake Volume</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/managePermission</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfile-post.html">Upload a file to Volume</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/uploadFile</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-uploadfilemeta-post.html">Upload a file to Volume by generating par</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/uploadFileMeta</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Workflow
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Workflow category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-cancel-post.html">Cancel a job run</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobRuns/{jobRunKey}/actions/cancel</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-canceljobruns-post.html">Cancel jobRuns for a job</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobs/{jobKey}/actions/cancelJobRuns</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-post.html">Create a job</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-post.html">Create a job run for an Intelligent Data Lake.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobRuns</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-delete.html">Delete a job</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobs/{jobKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-delete.html">Delete a job run</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobRuns/{jobRunKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-outputs-taskrunoutputkey-actions-export-post.html">Export task run output</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/taskRuns/{taskRunKey}/outputs/{taskRunOutputKey}/actions/export</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-actions-fetchoutput-post.html">Fetch task run output from runtime engine</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/taskRuns/{taskRunKey}/actions/fetchOutput</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-get.html">Get job details</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobs/{jobKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-permissions-get.html">Get job permissions</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobs/{jobKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-get.html">Get job run details</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobRuns/{jobRunKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-get.html">Get job runs</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobRuns</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-get.html">Get jobs</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-recentjobruns-get.html">Get latest job runs</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/recentJobRuns</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-taskrunkey-get.html">Get task run details</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/taskRuns/{taskRunKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-get.html">Get task runs</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/taskRuns</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobruns-jobrunkey-actions-repair-post.html">Repair job run</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobRuns/{jobRunKey}/actions/repair</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-managepermission-post.html">Update job permissions</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobs/{jobKey}/actions/managePermission</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-put.html">Updates a job</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobs/{jobKey}</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Workspace
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Workspace category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-post.html">Creates a Data Lake Workspace.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-delete.html">Deletes a DataLake.</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-get.html">Get Data Lake Workspace</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-createworkspacepermissions-get.html">Gets a list of Data Lake Workspace permissions.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/createWorkspacePermissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-permissions-get.html">Gets a list of Data Lake Workspace permissions.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-get.html">Gets a list of Data Lake Workspaces.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-asyncoperations-asyncoperationkey-status-put.html">Update workspace status</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/asyncOperations/{asyncOperationKey}/status</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-put.html">Updates a Data Lake Workspace</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-actions-managecreateworkspacepermission-post.html">Updates create workspace permissions on a Data Lake Workspace</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/actions/manageCreateWorkspacePermission</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-managepermission-post.html">Updates permissions on a Data Lake Workspace</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/actions/managePermission</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            WorkspaceObject
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the WorkspaceObject category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-renameobject-post.html">Changes the name of the Workspace Object.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/actions/renameObject</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-copyobject-post.html">Copy the Workspace Object to different location</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/actions/copyObject</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-mkdir-post.html">Create a directory in the Workspace</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/actions/mkdir</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-post.html">Creates a Workspace Object</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/objects</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-delete.html">Deletes a Workspace Object.</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/objects/{objectPath}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-downloadfilemeta-post.html">Download a workspace file by generating par</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/actions/downloadFileMeta</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-head.html">Get summary metadata of the Workspace Object</a></dt><dd><div>Method: <span class="l-head">head</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/objects/{objectPath}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-get.html">Get Workspace Object</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/objects/{objectPath}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-get.html">Gets a list of objects in the Workspace</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/objects</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-permissions-get.html">Gets a list of Workspace Object permissions.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/objects/{objectKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-moveobject-post.html">Moves the Workspace Object to different location</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/actions/moveObject</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectpath-put.html">Updates a WorkspaceObject</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/objects/{objectPath}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-objects-objectkey-actions-managepermission-post.html">Updates permissions on a WorkspaceObject</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/objects/{objectKey}/actions/managePermission</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-actions-uploadfilemeta-post.html">Upload a workspace file by generating par</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/actions/uploadFileMeta</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            Wrapper
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the Wrapper category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-downloadlogs-post.html">Download logs for a given cluster within a specific time range.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/actions/downloadLogs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-searchlogs-post.html">Searches logs for a given cluster within a specific time range.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/actions/searchLogs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-actions-summarizemetricsdata-post.html">Summarizes compute metrics data for the specified Data Lake.</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters/{clusterKey}/actions/summarizeMetricsData</code></div></dd>
+
+</dl>
+</div>
+</div><div class="panel panel-default">
+<div class="panel-heading">
+    <div class="heading-content">
+        <div>
+            knowledgebase
+        </div>
+
+        
+    </div>
+</div>
+<div class="panel-body">
+<div>The operations from the knowledgebase category.</div>
+<dl class="list-group schema-properties">
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-post.html">Create a job run for a given KnowledgeBase Job</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}/jobs/{knowledgeBaseJobKey}/runs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-post.html">Create a new KnowledgeBase</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-post.html">Creates a new Job for give KnowledgeBase</a></dt><dd><div>Method: <span class="l-post">post</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}/jobs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-delete.html">Delete a knowledge base</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-delete.html">Deletes a job definition for a given KnowledgeBase</a></dt><dd><div>Method: <span class="l-delete">delete</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}/jobs/{knowledgeBaseJobKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-knowledgebasejobrunkey-get.html">Get information about a knowledgeBaseJobRun</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}/jobs/{knowledgeBaseJobKey}/runs/{knowledgeBaseJobRunKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-get.html">Get Knowledge Base</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-get.html">Get list of KnowledgeBase Jobs</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}/jobs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-runs-get.html">Gets a list of all KnowledgeBase Job Run in a catalog and schema</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}/jobs/{knowledgeBaseJobKey}/runs</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-permissions-get.html">Gets a list of Data Lake Knowledge Base permissions.</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}/permissions</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-get.html">List of KnowledgeBases</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-jobs-knowledgebasejobkey-get.html">The Job definition is returned successfully</a></dt><dd><div>Method: <span class="l-get">get</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}/jobs/{knowledgeBaseJobKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-put.html">Update KnowledgeBase details</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}</code></div></dd>
+<dt><a href="op-aidataplatforms-aidataplatformid-knowledgebases-knowledgebasekey-actions-managepermission-put.html">Updates permissions on a Data Lake Knowledge Base</a></dt><dd><div>Method: <span class="l-put">put</span></div><div>Path: <code>/20240831/aiDataPlatforms/{aiDataPlatformId}/knowledgeBases/{knowledgeBaseKey}/actions/managePermission</code></div></dd>
+
+</dl>
+</div>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="summary-sort-ungrouped"></div>
+<div role="tabpanel" class="tab-pane fade" id="path-sort-grouped"></div>
+<div role="tabpanel" class="tab-pane fade" id="path-sort-ungrouped"></div>
+<div role="tabpanel" class="tab-pane fade" id="method-sort-grouped"></div>
+<div role="tabpanel" class="tab-pane fade" id="method-sort-ungrouped"></div>
+</div>
+
+            </section>
+
+        </article>
+    </body>
+</html>
