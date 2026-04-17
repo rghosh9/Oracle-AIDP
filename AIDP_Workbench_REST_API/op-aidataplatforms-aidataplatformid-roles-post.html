@@ -1,0 +1,3706 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>REST API for Oracle AI Data Platform Workbench - Creates a Data Lake Role.</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+		
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post.html" title="Previous" type="text/html">
+        <link rel="next" href="op-aidataplatforms-aidataplatformid-roles-rolekey-delete.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:29+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"REST API for Oracle AI Data Platform Workbench - Creates a Data Lake Role.","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="op-aidataplatforms-aidataplatformid-roles-rolekey-actions-addmember-post.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="op-aidataplatforms-aidataplatformid-roles-rolekey-delete.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+
+            
+            <header id="top">
+
+                <ol class="breadcrumb">
+                    <li><a href="index.html">REST API for Oracle AI Data Platform Workbench</a></li>
+                    <li>Tasks</li>
+                    
+                    <li class="active">
+                        
+                        <a href="api-role.html">Role</a>
+                        
+                    </li>
+                    
+                </ol>
+                
+                <p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+                
+                
+                <div>
+                	<div class="dropdown btn-group pull-right" style="clear: right;">
+                		<button id="dLabel" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to <span class="caret"></span>
+                		</button>
+      					<ul class="dropdown-menu" aria-labelledby="dLabel">
+          					<li><a href="#request" data-toggle="ignore">Request</a></li>
+          					<li><a href="#response" data-toggle="ignore">Response</a></li>
+          					
+      					</ul>
+    				</div>
+     				<h2>Creates a Data Lake Role.</h2>
+     			</div>
+                
+                <div>
+                    <div class="label label-post text-uppercase">post</div>
+                    <p><strong>/20240831/aiDataPlatforms/{aiDataPlatformId}/roles</strong></p>
+                </div>
+            </header>
+            <section>
+
+                <div class="description">Creates a Data Lake Role.
+</div>
+
+                
+
+                <h3 id="request">Request</h3>
+                
+
+                
+
+                
+                <div class="h5">Path Parameters</div>
+                <div class="schema-container">
+                <ul class="schema-properties">
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-0" aria-expanded="false" aria-controls="request-path-param-0">
+                    aiDataPlatformId(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-0">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the AI Data Platform (Data Lake) instance.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                </ul>
+
+                
+                </div>
+                
+
+
+                
+
+
+                
+                <div class="h5">Header Parameters</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-request-id" aria-expanded="false" aria-controls="request-header-param-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned identifier for the request. If you need to contact
+Oracle about a particular request, please provide the request ID.
+The only valid characters for request IDs are letters, numbers,
+underscore, and dash.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-retry-token" aria-expanded="false" aria-controls="request-header-param-opc-retry-token">
+                        opc-retry-token: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-retry-token">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>64</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A token that uniquely identifies a request so it can be retried in case of a timeout or
+server error without risk of running that same action again. Retry tokens expire after 24
+hours, but can be invalidated before then due to conflicting operations. For example, if a resource
+has been deleted and removed from the system, then a retry of the original creation request
+might be rejected.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+
+
+                
+                <div class="entity">
+                <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+                <div>Details for the new Data Lake Role.</div>
+
+                
+                
+                
+
+                <div class="schema-container">
+                
+                <div id="request-bodyparam-definitions-CreateRoleDetails" class="swagger-schema">
+    <div class="panel-heading">Root Schema : CreateRoleDetails</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The details about the new Role.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateRoleDetails-properties-description-properties-description-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateRoleDetails-properties-description-properties-description-0">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateRoleDetails-properties-description-properties-description-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Length: <code>1024</code></div>
+
+
+
+
+
+
+
+
+
+<div>The description of the Role.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-CreateRoleDetails-properties-displayName-properties-displayName-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-CreateRoleDetails-properties-displayName-properties-displayName-0">
+            displayName(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-CreateRoleDetails-properties-displayName-properties-displayName-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Length: <code>64</code></div>
+
+
+
+
+
+
+
+
+
+<div>The Role name, it can be changed. No special characters except for ???_???. Case insensitive.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The details about the new Role.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;displayName&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;displayName&quot;:{
+            &quot;description&quot;:&quot;The Role name, it can be changed. No special characters except for ???_???. Case insensitive.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;maxLength&quot;:64
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;The description of the Role.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;maxLength&quot;:1024
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                </div>
+
+                
+                </div>
+
+                
+
+                
+
+                
+                
+                <a style="float: right" href="#top">Back to Top</a>
+
+                <h3 id="response">Response</h3>
+
+                
+                
+                <div class="h5">Supported Media Types</div>
+                <ul class="media-types">
+                    
+                    <li>application/json</li>
+                    
+                </ul>
+                
+                
+
+
+
+                
+                <div class="response">
+                <h4 class="response-code range-200">200 Response</h4>
+                <div class="response-body">
+                <div>Returns the created role.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-etag" aria-expanded="false" aria-controls="200-response-header-etag">
+                        etag: string
+                        </a>
+                        <div class="collapse" id="200-response-header-etag">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>For optimistic concurrency control. See `if-match`.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-opc-request-id" aria-expanded="false" aria-controls="200-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="200-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="200-definitions-Role" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Role</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>A Data Lake role details</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-assignees-properties-assignees-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-assignees-properties-assignees-0">
+            assignees: 
+            array </a> <a href="#200-definitions-Role-properties-assignees" role="button" class="btn btn-default btn-sm btn-xsm">assignees</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-assignees-properties-assignees-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Number of Items: <code>100</code></div>
+
+
+
+
+
+<div class="description">The users and groups this Role is assigned to.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-createdBy-properties-createdBy-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-createdBy-properties-createdBy-0">
+            createdBy: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-createdBy-properties-createdBy-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>The user name of the User/Principal who created the role.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-description-properties-description-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-description-properties-description-0">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-description-properties-description-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The description of the Role.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-displayName-properties-displayName-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-displayName-properties-displayName-0">
+            displayName: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-displayName-properties-displayName-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>The Role name. It can be changed.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-isAssigned-properties-isAssigned-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-isAssigned-properties-isAssigned-0">
+            isAssigned: 
+            boolean</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-isAssigned-properties-isAssigned-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The Role is assigned to the current user or a group that the user is part of.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-key-properties-key-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-key-properties-key-0">
+            key(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-key-properties-key-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>A unique key for the Role, that is immutable on creation.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-lifecycleDetails-properties-lifecycleDetails-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-lifecycleDetails-properties-lifecycleDetails-0">
+            lifecycleDetails: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-lifecycleDetails-properties-lifecycleDetails-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A message describing the current state in more detail. For example, it can be used to provide actionable information for a resource in Failed state.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-lifecycleState-properties-lifecycleState-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-lifecycleState-properties-lifecycleState-0">
+            lifecycleState: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-lifecycleState-properties-lifecycleState-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;ACTIVE&quot;
+]</code></div>
+
+
+
+
+
+<div>The state of the Role.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-roleType-properties-roleType-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-roleType-properties-roleType-0">
+            roleType: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-roleType-properties-roleType-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;SYSTEM&quot;,
+    &quot;CUSTOM&quot;
+]</code></div>
+
+
+
+
+
+<div>Type of Role.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-timeCreated-properties-timeCreated-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-timeCreated-properties-timeCreated-0">
+            timeCreated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-timeCreated-properties-timeCreated-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time the Role was created. An RFC3339 formatted datetime string.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-timeUpdated-properties-timeUpdated-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-timeUpdated-properties-timeUpdated-0">
+            timeUpdated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-timeUpdated-properties-timeUpdated-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time the Role was updated. An RFC3339 formatted datetime string.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Role-properties-updatedBy-properties-updatedBy-0" aria-expanded="false" aria-controls="200-definitions-Role-properties-updatedBy-properties-updatedBy-0">
+            updatedBy: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-Role-properties-updatedBy-properties-updatedBy-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>The user name of the User/Principal who updated the role.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;A Data Lake role details&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;x-obmcs-splat&quot;:{
+        &quot;resourceKind&quot;:&quot;Role&quot;,
+        &quot;ocidEntityType&quot;:&quot;Role&quot;,
+        &quot;activeLifecycleStates&quot;:[
+            &quot;active&quot;
+        ],
+        &quot;deletedLifecycleStates&quot;:[
+            &quot;deleted&quot;
+        ],
+        &quot;getOperationId&quot;:&quot;GetRole&quot;,
+        &quot;adLocality&quot;:&quot;regional&quot;
+    },
+    &quot;required&quot;:[
+        &quot;key&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;key&quot;:{
+            &quot;description&quot;:&quot;A unique key for the Role, that is immutable on creation.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;displayName&quot;:{
+            &quot;description&quot;:&quot;The Role name. It can be changed.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;maxLength&quot;:255
+        },
+        &quot;roleType&quot;:{
+            &quot;description&quot;:&quot;Type of Role.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/RoleType&quot;,
+            &quot;enum&quot;:[
+                &quot;SYSTEM&quot;,
+                &quot;CUSTOM&quot;
+            ]
+        },
+        &quot;timeCreated&quot;:{
+            &quot;description&quot;:&quot;The time the Role was created. An RFC3339 formatted datetime string.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;
+        },
+        &quot;timeUpdated&quot;:{
+            &quot;description&quot;:&quot;The time the Role was updated. An RFC3339 formatted datetime string.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;
+        },
+        &quot;createdBy&quot;:{
+            &quot;description&quot;:&quot;The user name of the User/Principal who created the role.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;updatedBy&quot;:{
+            &quot;description&quot;:&quot;The user name of the User/Principal who updated the role.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;isAssigned&quot;:{
+            &quot;description&quot;:&quot;The Role is assigned to the current user or a group that the user is part of.&quot;,
+            &quot;type&quot;:&quot;boolean&quot;
+        },
+        &quot;assignees&quot;:{
+            &quot;description&quot;:&quot;The users and groups this Role is assigned to.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;maxItems&quot;:100,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/RoleAssignee&quot;
+            }
+        },
+        &quot;lifecycleState&quot;:{
+            &quot;description&quot;:&quot;The state of the Role.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;ACTIVE&quot;
+            ]
+        },
+        &quot;lifecycleDetails&quot;:{
+            &quot;description&quot;:&quot;A message describing the current state in more detail. For example, it can be used to provide actionable information for a resource in Failed state.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;The description of the Role.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-Role-properties-assignees" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : assignees</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Maximum Number of Items: <code>100</code></div>
+    
+
+    
+
+    
+    <div>The users and groups this Role is assigned to.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-RoleAssignee-items-0" aria-expanded="false" aria-controls="200-definitions-RoleAssignee-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-RoleAssignee" role="button" class="btn btn-default btn-sm btn-xsm">RoleAssignee</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-RoleAssignee-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The user/principal/Role the Role can be assigned to.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The users and groups this Role is assigned to.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;maxItems&quot;:100,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/RoleAssignee&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-RoleAssignee" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : RoleAssignee</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The user/principal/Role the Role can be assigned to.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-RoleAssignee-properties-target-properties-target-0" aria-expanded="false" aria-controls="200-definitions-RoleAssignee-properties-target-properties-target-0">
+            target(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-RoleAssignee-properties-target-properties-target-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The OCID for a principal or Role.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-RoleAssignee-properties-targetName-properties-targetName-0" aria-expanded="false" aria-controls="200-definitions-RoleAssignee-properties-targetName-properties-targetName-0">
+            targetName: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-RoleAssignee-properties-targetName-properties-targetName-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The name for a principal or Role.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-RoleAssignee-properties-type-properties-type-0" aria-expanded="false" aria-controls="200-definitions-RoleAssignee-properties-type-properties-type-0">
+            type(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-RoleAssignee-properties-type-properties-type-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;USER&quot;,
+    &quot;ROLE&quot;,
+    &quot;GROUP&quot;
+]</code></div>
+
+
+
+
+
+<div>assignee type.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;description&quot;:&quot;The user/principal/Role the Role can be assigned to.&quot;,
+    &quot;required&quot;:[
+        &quot;type&quot;,
+        &quot;target&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;type&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;assignee type.&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/RoleAssigneeType&quot;,
+            &quot;enum&quot;:[
+                &quot;USER&quot;,
+                &quot;ROLE&quot;,
+                &quot;GROUP&quot;
+            ]
+        },
+        &quot;target&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;The OCID for a principal or Role.&quot;
+        },
+        &quot;targetName&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;The name for a principal or Role.&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">400 Response</h4>
+                <div class="response-body">
+                <div>Bad Request (invalid query parameters, malformed headers, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#400-response-header-opc-request-id" aria-expanded="false" aria-controls="400-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="400-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="400-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-code-properties-code-115" aria-expanded="false" aria-controls="400-definitions-Error-properties-code-properties-code-115">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-code-properties-code-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-message-properties-message-115" aria-expanded="false" aria-controls="400-definitions-Error-properties-message-properties-message-115">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-message-properties-message-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">401 Response</h4>
+                <div class="response-body">
+                <div>Unauthorized (missing or expired credentials, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#401-response-header-opc-request-id" aria-expanded="false" aria-controls="401-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="401-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="401-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-code-properties-code-115" aria-expanded="false" aria-controls="401-definitions-Error-properties-code-properties-code-115">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-code-properties-code-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-message-properties-message-115" aria-expanded="false" aria-controls="401-definitions-Error-properties-message-properties-message-115">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-message-properties-message-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">404 Response</h4>
+                <div class="response-body">
+                <div>Not Found. The requested resource was not found.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#404-response-header-opc-request-id" aria-expanded="false" aria-controls="404-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="404-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="404-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-code-properties-code-115" aria-expanded="false" aria-controls="404-definitions-Error-properties-code-properties-code-115">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-code-properties-code-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-message-properties-message-115" aria-expanded="false" aria-controls="404-definitions-Error-properties-message-properties-message-115">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-message-properties-message-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">409 Response</h4>
+                <div class="response-body">
+                <div>Conflict. Request conflicts with the current state of the resource.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#409-response-header-opc-request-id" aria-expanded="false" aria-controls="409-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="409-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="409-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#409-definitions-Error-properties-code-properties-code-40" aria-expanded="false" aria-controls="409-definitions-Error-properties-code-properties-code-40">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="409-definitions-Error-properties-code-properties-code-40">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#409-definitions-Error-properties-message-properties-message-40" aria-expanded="false" aria-controls="409-definitions-Error-properties-message-properties-message-40">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="409-definitions-Error-properties-message-properties-message-40">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">429 Response</h4>
+                <div class="response-body">
+                <div>Too Many Requests. Too many requests sent to the server in a short period.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#429-response-header-opc-request-id" aria-expanded="false" aria-controls="429-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="429-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="429-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-code-properties-code-115" aria-expanded="false" aria-controls="429-definitions-Error-properties-code-properties-code-115">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-code-properties-code-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-message-properties-message-115" aria-expanded="false" aria-controls="429-definitions-Error-properties-message-properties-message-115">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-message-properties-message-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-500">500 Response</h4>
+                <div class="response-body">
+                <div>Internal Server Error. The server encountered an unexpected condition preventing fulfilment of the request.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#500-response-header-opc-request-id" aria-expanded="false" aria-controls="500-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="500-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="500-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-code-properties-code-115" aria-expanded="false" aria-controls="500-definitions-Error-properties-code-properties-code-115">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-code-properties-code-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-message-properties-message-115" aria-expanded="false" aria-controls="500-definitions-Error-properties-message-properties-message-115">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-message-properties-message-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range">Default Response</h4>
+                <div class="response-body">
+                <div>Unknown Error. Error is not recognized by the system.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#default-response-header-opc-request-id" aria-expanded="false" aria-controls="default-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="default-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="default-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-code-properties-code-115" aria-expanded="false" aria-controls="default-definitions-Error-properties-code-properties-code-115">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-code-properties-code-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-message-properties-message-115" aria-expanded="false" aria-controls="default-definitions-Error-properties-message-properties-message-115">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-message-properties-message-115">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+
+				<a style="float: right" href="#top">Back to Top</a>
+				
+                
+
+            </section>
+
+            
+        </article>
+    </body>
+</html>
