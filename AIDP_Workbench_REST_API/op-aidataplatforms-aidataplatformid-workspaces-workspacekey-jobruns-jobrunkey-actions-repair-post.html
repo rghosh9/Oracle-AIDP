@@ -1,0 +1,10743 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>REST API for Oracle AI Data Platform Workbench - Repair job run</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+		
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-get.html" title="Previous" type="text/html">
+        <link rel="next" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-managepermission-post.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:31+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"REST API for Oracle AI Data Platform Workbench - Repair job run","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-taskruns-get.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-jobs-jobkey-actions-managepermission-post.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+
+            
+            <header id="top">
+
+                <ol class="breadcrumb">
+                    <li><a href="index.html">REST API for Oracle AI Data Platform Workbench</a></li>
+                    <li>Tasks</li>
+                    
+                    <li class="active">
+                        
+                        <a href="api-workflow.html">Workflow</a>
+                        
+                    </li>
+                    
+                </ol>
+                
+                <p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+                
+                
+                <div>
+                	<div class="dropdown btn-group pull-right" style="clear: right;">
+                		<button id="dLabel" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to <span class="caret"></span>
+                		</button>
+      					<ul class="dropdown-menu" aria-labelledby="dLabel">
+          					<li><a href="#request" data-toggle="ignore">Request</a></li>
+          					<li><a href="#response" data-toggle="ignore">Response</a></li>
+          					
+      					</ul>
+    				</div>
+     				<h2>Repair job run</h2>
+     			</div>
+                
+                <div>
+                    <div class="label label-post text-uppercase">post</div>
+                    <p><strong>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/jobRuns/{jobRunKey}/actions/repair</strong></p>
+                </div>
+            </header>
+            <section>
+
+                <div class="description">Repair and rerun a job run in Intelligent Data Lake.</div>
+
+                
+
+                <h3 id="request">Request</h3>
+                
+
+                
+
+                
+                <div class="h5">Path Parameters</div>
+                <div class="schema-container">
+                <ul class="schema-properties">
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-0" aria-expanded="false" aria-controls="request-path-param-0">
+                    aiDataPlatformId(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-0">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the AI Data Platform (Data Lake) instance.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-1" aria-expanded="false" aria-controls="request-path-param-1">
+                    jobRunKey(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-1">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Job run key.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-2" aria-expanded="false" aria-controls="request-path-param-2">
+                    workspaceKey(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-2">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The key of the Workspace</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                </ul>
+
+                
+                </div>
+                
+
+
+                
+
+
+                
+                <div class="h5">Header Parameters</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-if-match" aria-expanded="false" aria-controls="request-header-param-if-match">
+                        if-match: string
+                        </a>
+                        <div class="collapse" id="request-header-param-if-match">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>For optimistic concurrency control. In the PUT or DELETE call for a resource, set the
+`if-match` parameter to the value of the etag from a previous GET or POST response for
+that resource. The resource will be updated or deleted only if the etag you provide
+matches the resource's current etag value.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-request-id" aria-expanded="false" aria-controls="request-header-param-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned identifier for the request. If you need to contact
+Oracle about a particular request, please provide the request ID.
+The only valid characters for request IDs are letters, numbers,
+underscore, and dash.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-retry-token" aria-expanded="false" aria-controls="request-header-param-opc-retry-token">
+                        opc-retry-token: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-retry-token">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>64</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A token that uniquely identifies a request so it can be retried in case of a timeout or
+server error without risk of running that same action again. Retry tokens expire after 24
+hours, but can be invalidated before then due to conflicting operations. For example, if a resource
+has been deleted and removed from the system, then a retry of the original creation request
+might be rejected.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-should-update-recent" aria-expanded="false" aria-controls="request-header-param-should-update-recent">
+                        should-update-recent: boolean
+                        </a>
+                        <div class="collapse" id="request-header-param-should-update-recent">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A flag to identify if the recent list should be updated.</div>
+
+
+
+<div>Default Value: <code>false</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+
+
+                
+                <div class="entity">
+                <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+                <div>Details of the job run to be repaired.</div>
+
+                
+                
+                
+
+                <div class="schema-container">
+                
+                <div id="request-bodyparam-definitions-RepairJobRunDetails" class="swagger-schema">
+    <div class="panel-heading">Root Schema : RepairJobRunDetails</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The data to repair a JobRun.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-RepairJobRunDetails-properties-parameters-properties-parameters-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-RepairJobRunDetails-properties-parameters-properties-parameters-0">
+            parameters: 
+            array </a> <a href="#request-bodyparam-definitions-RepairJobRunDetails-properties-parameters" role="button" class="btn btn-default btn-sm btn-xsm">parameters</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-RepairJobRunDetails-properties-parameters-properties-parameters-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">An optional list of parameters.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-RepairJobRunDetails-properties-taskKeys-properties-taskKeys-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-RepairJobRunDetails-properties-taskKeys-properties-taskKeys-0">
+            taskKeys(required): 
+            array </a> <a href="#request-bodyparam-definitions-RepairJobRunDetails-properties-taskKeys" role="button" class="btn btn-default btn-sm btn-xsm">taskKeys</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-RepairJobRunDetails-properties-taskKeys-properties-taskKeys-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The collection of selected task Ids to be repaired.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The data to repair a JobRun.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;taskKeys&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;taskKeys&quot;:{
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;description&quot;:&quot;The collection of selected task Ids to be repaired.&quot;,
+            &quot;items&quot;:{
+                &quot;type&quot;:&quot;string&quot;
+            }
+        },
+        &quot;parameters&quot;:{
+            &quot;description&quot;:&quot;An optional list of parameters.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/Parameter&quot;
+            }
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-RepairJobRunDetails-properties-parameters" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : parameters</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>An optional list of parameters.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-Parameter-items-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-Parameter-items-0">
+            Array of: 
+                object </a> <a href="#request-bodyparam-definitions-Parameter" role="button" class="btn btn-default btn-sm btn-xsm">Parameter</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-Parameter-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Specifies the name and value of the defined parameter.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;An optional list of parameters.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/Parameter&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-RepairJobRunDetails-properties-taskKeys" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : taskKeys</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The collection of selected task Ids to be repaired.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-RepairJobRunDetails-properties-taskKeys-items-items-0" aria-expanded="false" aria-controls="request-bodyparam-definitions-RepairJobRunDetails-properties-taskKeys-items-items-0">
+            Array of: 
+                string</a>
+            
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-RepairJobRunDetails-properties-taskKeys-items-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;description&quot;:&quot;The collection of selected task Ids to be repaired.&quot;,
+    &quot;items&quot;:{
+        &quot;type&quot;:&quot;string&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                <div id="request-bodyparam-definitions-Parameter" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : Parameter</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Specifies the name and value of the defined parameter.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-Parameter-properties-name-properties-name-3" aria-expanded="false" aria-controls="request-bodyparam-definitions-Parameter-properties-name-properties-name-3">
+            name(required): 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-Parameter-properties-name-properties-name-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Pattern: <code>^[\w\-.]+$</code></div>
+
+
+
+<div>The name of the defined parameter. May only contain alphanumeric characters, '_', '-', and '.'</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#request-bodyparam-definitions-Parameter-properties-value-properties-value-3" aria-expanded="false" aria-controls="request-bodyparam-definitions-Parameter-properties-value-properties-value-3">
+            value: 
+            string</a>
+            <div class="collapse schema-summary" id="request-bodyparam-definitions-Parameter-properties-value-properties-value-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Value of the defined parameter.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Specifies the name and value of the defined parameter.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;name&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;name&quot;:{
+            &quot;description&quot;:&quot;The name of the defined parameter. May only contain alphanumeric characters, &#x27;_&#x27;, &#x27;-&#x27;, and &#x27;.&#x27;&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;pattern&quot;:&quot;^[\\w\\-.]+$&quot;
+        },
+        &quot;value&quot;:{
+            &quot;description&quot;:&quot;Value of the defined parameter.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                
+                </div>
+
+                
+                </div>
+
+                
+
+                
+
+                
+                
+                <a style="float: right" href="#top">Back to Top</a>
+
+                <h3 id="response">Response</h3>
+
+                
+                
+                <div class="h5">Supported Media Types</div>
+                <ul class="media-types">
+                    
+                    <li>application/json</li>
+                    
+                </ul>
+                
+                
+
+
+
+                
+                <div class="response">
+                <h4 class="response-code range-200">201 Response</h4>
+                <div class="response-body">
+                <div>Request accepted. Job run is repaired and rerun.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#201-response-header-content-location" aria-expanded="false" aria-controls="201-response-header-content-location">
+                        content-location: string(uri-reference)
+                        </a>
+                        <div class="collapse" id="201-response-header-content-location">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Same as location.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#201-response-header-etag" aria-expanded="false" aria-controls="201-response-header-etag">
+                        etag: string
+                        </a>
+                        <div class="collapse" id="201-response-header-etag">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>For optimistic concurrency control. See `if-match`.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#201-response-header-location" aria-expanded="false" aria-controls="201-response-header-location">
+                        location: string(uri-reference)
+                        </a>
+                        <div class="collapse" id="201-response-header-location">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>URL for the created/repaired job run. The job run key is generated after this request is sent.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#201-response-header-opc-request-id" aria-expanded="false" aria-controls="201-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="201-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#201-response-header-opc-work-request-id" aria-expanded="false" aria-controls="201-response-header-opc-work-request-id">
+                        opc-work-request-id: string
+                        </a>
+                        <div class="collapse" id="201-response-header-opc-work-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the asynchronous work request.
+Use GetWorkRequest with this ID to track the status of the request.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="201-definitions-JobRun" class="swagger-schema">
+    <div class="panel-heading">Root Schema : JobRun</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>A description of a JobRun</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-cleanupDuration-properties-cleanupDuration-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-cleanupDuration-properties-cleanupDuration-2">
+            cleanupDuration: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-cleanupDuration-properties-cleanupDuration-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time (in milliseconds) taken to terminate the cluster and to clean up any associated artifacts.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-ClusterInstance-properties-clusterInstance-2" aria-expanded="false" aria-controls="201-definitions-ClusterInstance-properties-clusterInstance-2">
+            clusterInstance: 
+            object </a> <a href="#201-definitions-ClusterInstance" role="button" class="btn btn-default btn-sm btn-xsm">ClusterInstance</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-ClusterInstance-properties-clusterInstance-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The cluster used for this run. | The value of this field will be set when a new cluster is specified for execution and once the request to create a new cluster is successfully submitted.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-ClusterSpec-properties-clusterSpec-2" aria-expanded="false" aria-controls="201-definitions-ClusterSpec-properties-clusterSpec-2">
+            clusterSpec: 
+            object </a> <a href="#201-definitions-ClusterSpec" role="button" class="btn btn-default btn-sm btn-xsm">ClusterSpec</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-ClusterSpec-properties-clusterSpec-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Snapshot of Job's cluster specification</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-createdBy-properties-createdBy-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-createdBy-properties-createdBy-2">
+            createdBy: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-createdBy-properties-createdBy-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the IAM user.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-createdByName-properties-createdByName-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-createdByName-properties-createdByName-2">
+            createdByName: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-createdByName-properties-createdByName-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Name of the user who created this record</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-endTime-properties-endTime-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-endTime-properties-endTime-2">
+            endTime: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-endTime-properties-endTime-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time at which the job execution started in epoch milliseconds.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-executionDuration-properties-executionDuration-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-executionDuration-properties-executionDuration-2">
+            executionDuration: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-executionDuration-properties-executionDuration-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time (in milliseconds) taken to complete the job execution.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-jobKey-properties-jobKey-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-jobKey-properties-jobKey-2">
+            jobKey(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-jobKey-properties-jobKey-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-jobName-properties-jobName-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-jobName-properties-jobName-2">
+            jobName: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-jobName-properties-jobName-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A user-friendly name. Does not have to be unique, and it's changeable.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-key-properties-key-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-key-properties-key-2">
+            key(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-key-properties-key-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-launched-properties-launched-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-launched-properties-launched-2">
+            launched: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-launched-properties-launched-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>MANUAL</code></div>
+
+
+
+<div>Allowed Values: <code>[
+    &quot;SCHEDULED&quot;,
+    &quot;MANUAL&quot;
+]</code></div>
+
+
+
+
+
+<div>Identify job run launched by schedule or manually.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-lifecycleStates-properties-lifecycleStates-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-lifecycleStates-properties-lifecycleStates-2">
+            lifecycleStates: 
+            array </a> <a href="#201-definitions-JobRun-properties-lifecycleStates" role="button" class="btn btn-default btn-sm btn-xsm">lifecycleStates</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-lifecycleStates-properties-lifecycleStates-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The collection of lifecycleState</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-maxConcurrentRuns-properties-maxConcurrentRuns-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-maxConcurrentRuns-properties-maxConcurrentRuns-2">
+            maxConcurrentRuns: 
+            integer(int32)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-maxConcurrentRuns-properties-maxConcurrentRuns-2">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>0</code></div>
+
+
+
+
+
+<div>Maximum Value: <code>1000</code></div>
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>1</code></div>
+
+
+
+
+
+
+
+<div>Indicates the number of executions for the same job that can be run concurrently. The maximum value cannot exceed 1000.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-name-properties-name-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-name-properties-name-2">
+            name(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-name-properties-name-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A user-friendly name. Does not have to be unique, and it's changeable.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-originalAttemptRunId-properties-originalAttemptRunId-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-originalAttemptRunId-properties-originalAttemptRunId-2">
+            originalAttemptRunId: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-originalAttemptRunId-properties-originalAttemptRunId-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-parameters-properties-parameters-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-parameters-properties-parameters-2">
+            parameters: 
+            array </a> <a href="#201-definitions-JobRun-properties-parameters" role="button" class="btn btn-default btn-sm btn-xsm">parameters</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-parameters-properties-parameters-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">An optional list of parameters.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-parentJobRunKey-properties-parentJobRunKey-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-parentJobRunKey-properties-parentJobRunKey-2">
+            parentJobRunKey: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-parentJobRunKey-properties-parentJobRunKey-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-parentTaskRunKey-properties-parentTaskRunKey-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-parentTaskRunKey-properties-parentTaskRunKey-2">
+            parentTaskRunKey: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-parentTaskRunKey-properties-parentTaskRunKey-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the TaskRun.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Queue-properties-queue-3" aria-expanded="false" aria-controls="201-definitions-Queue-properties-queue-3">
+            queue: 
+            object </a> <a href="#201-definitions-Queue" role="button" class="btn btn-default btn-sm btn-xsm">Queue</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-Queue-properties-queue-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Queue configuration for Job</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-repairedTasks-properties-repairedTasks-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-repairedTasks-properties-repairedTasks-2">
+            repairedTasks: 
+            array </a> <a href="#201-definitions-JobRun-properties-repairedTasks" role="button" class="btn btn-default btn-sm btn-xsm">repairedTasks</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-repairedTasks-properties-repairedTasks-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">A list of repaired tasks.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-repairHistory-properties-repairHistory-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-repairHistory-properties-repairHistory-2">
+            repairHistory: 
+            array </a> <a href="#201-definitions-JobRun-properties-repairHistory" role="button" class="btn btn-default btn-sm btn-xsm">repairHistory</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-repairHistory-properties-repairHistory-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Number of Items: <code>10</code></div>
+
+
+
+
+
+<div class="description">Array of repaired runs</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-rootJobRunKey-properties-rootJobRunKey-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-rootJobRunKey-properties-rootJobRunKey-2">
+            rootJobRunKey: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-rootJobRunKey-properties-rootJobRunKey-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-runDuration-properties-runDuration-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-runDuration-properties-runDuration-2">
+            runDuration: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-runDuration-properties-runDuration-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time (in milliseconds) taken to complete the job execution and all its repairs to finish.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Schedule-properties-schedule-3" aria-expanded="false" aria-controls="201-definitions-Schedule-properties-schedule-3">
+            schedule: 
+            object </a> <a href="#201-definitions-Schedule" role="button" class="btn btn-default btn-sm btn-xsm">Schedule</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-Schedule-properties-schedule-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The schedule configuration for the job.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-setupDuration-properties-setupDuration-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-setupDuration-properties-setupDuration-2">
+            setupDuration: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-setupDuration-properties-setupDuration-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time (in milliseconds) taken to setup the cluster.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-startTime-properties-startTime-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-startTime-properties-startTime-2">
+            startTime: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-startTime-properties-startTime-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time at which the job execution started in epoch milliseconds.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-State-properties-state-4" aria-expanded="false" aria-controls="201-definitions-State-properties-state-4">
+            state: 
+            object </a> <a href="#201-definitions-State" role="button" class="btn btn-default btn-sm btn-xsm">State</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-State-properties-state-4">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The current state of the run.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-systemParameters-properties-systemParameters-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-systemParameters-properties-systemParameters-2">
+            systemParameters: 
+            object </a> <a href="#201-definitions-JobRun-properties-systemParameters" role="button" class="btn btn-default btn-sm btn-xsm">systemParameters</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-systemParameters-properties-systemParameters-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#201-definitions-JobRun-properties-systemParameters-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Map of System Parameters with their values for this jobRun.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-taskRunSummaryMap-properties-taskRunSummaryMap-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-taskRunSummaryMap-properties-taskRunSummaryMap-2">
+            taskRunSummaryMap: 
+            object </a> <a href="#201-definitions-JobRun-properties-taskRunSummaryMap" role="button" class="btn btn-default btn-sm btn-xsm">taskRunSummaryMap</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-taskRunSummaryMap-properties-taskRunSummaryMap-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#201-definitions-JobRun-properties-taskRunSummaryMap-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">TaskRun to TaskRunSummary map for given job run</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-tasks-properties-tasks-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-tasks-properties-tasks-2">
+            tasks: 
+            array </a> <a href="#201-definitions-JobRun-properties-tasks" role="button" class="btn btn-default btn-sm btn-xsm">tasks</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-tasks-properties-tasks-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">List of tasks in a Job</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-taskToTaskRunMap-properties-taskToTaskRunMap-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-taskToTaskRunMap-properties-taskToTaskRunMap-2">
+            taskToTaskRunMap: 
+            object </a> <a href="#201-definitions-JobRun-properties-taskToTaskRunMap" role="button" class="btn btn-default btn-sm btn-xsm">taskToTaskRunMap</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-taskToTaskRunMap-properties-taskToTaskRunMap-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#201-definitions-JobRun-properties-taskToTaskRunMap-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Task to TaskRun map for given job run</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-timeCreated-properties-timeCreated-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-timeCreated-properties-timeCreated-2">
+            timeCreated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-timeCreated-properties-timeCreated-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time at which the job execution started.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-timeoutSeconds-properties-timeoutSeconds-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-timeoutSeconds-properties-timeoutSeconds-2">
+            timeoutSeconds: 
+            integer(int32)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-timeoutSeconds-properties-timeoutSeconds-2">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>60</code></div>
+
+
+
+
+
+<div>Maximum Value: <code>172800</code></div>
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>0</code></div>
+
+
+
+
+
+
+
+<div>An optional value to indicate the max run duration of a job after which job will be timed out. The default is Zero indicating no timeout value.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-timeUpdated-properties-timeUpdated-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-timeUpdated-properties-timeUpdated-2">
+            timeUpdated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-timeUpdated-properties-timeUpdated-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time at which the job execution was updated.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-unifiedJobAndJobRunParameters-properties-unifiedJobAndJobRunParameters-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-unifiedJobAndJobRunParameters-properties-unifiedJobAndJobRunParameters-2">
+            unifiedJobAndJobRunParameters: 
+            array </a> <a href="#201-definitions-JobRun-properties-unifiedJobAndJobRunParameters" role="button" class="btn btn-default btn-sm btn-xsm">unifiedJobAndJobRunParameters</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-unifiedJobAndJobRunParameters-properties-unifiedJobAndJobRunParameters-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Unified List of job and job run parameters after resolving dynamic value references and parameter resolution as per precedence.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-version-properties-version-2" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-version-properties-version-2">
+            version: 
+            integer(int32)</a>
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-version-properties-version-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Current version of JobRun object in repository.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;A description of a JobRun&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;key&quot;,
+        &quot;name&quot;,
+        &quot;jobKey&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;key&quot;:{
+            &quot;description&quot;:&quot;The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;name&quot;:{
+            &quot;description&quot;:&quot;A user-friendly name. Does not have to be unique, and it&#x27;s changeable.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;jobKey&quot;:{
+            &quot;description&quot;:&quot;The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;jobName&quot;:{
+            &quot;description&quot;:&quot;A user-friendly name. Does not have to be unique, and it&#x27;s changeable.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;parentJobRunKey&quot;:{
+            &quot;description&quot;:&quot;The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;rootJobRunKey&quot;:{
+            &quot;description&quot;:&quot;The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;parentTaskRunKey&quot;:{
+            &quot;description&quot;:&quot;The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the TaskRun.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;tasks&quot;:{
+            &quot;description&quot;:&quot;List of tasks in a Job&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/Task&quot;
+            }
+        },
+        &quot;createdBy&quot;:{
+            &quot;description&quot;:&quot;The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the IAM user.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;createdByName&quot;:{
+            &quot;description&quot;:&quot;Name of the user who created this record&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;maxConcurrentRuns&quot;:{
+            &quot;description&quot;:&quot;Indicates the number of executions for the same job that can be run concurrently. The maximum value cannot exceed 1000.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int32&quot;,
+            &quot;minimum&quot;:0,
+            &quot;maximum&quot;:1000,
+            &quot;default&quot;:1
+        },
+        &quot;queue&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/Queue&quot;
+        },
+        &quot;originalAttemptRunId&quot;:{
+            &quot;description&quot;:&quot;The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the Job.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;state&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/State&quot;
+        },
+        &quot;schedule&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/Schedule&quot;
+        },
+        &quot;clusterSpec&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/ClusterSpec&quot;
+        },
+        &quot;clusterInstance&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/ClusterInstance&quot;
+        },
+        &quot;parameters&quot;:{
+            &quot;description&quot;:&quot;An optional list of parameters.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/Parameter&quot;
+            }
+        },
+        &quot;unifiedJobAndJobRunParameters&quot;:{
+            &quot;description&quot;:&quot;Unified List of job and job run parameters after resolving dynamic value references and parameter resolution as per precedence.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/Parameter&quot;
+            }
+        },
+        &quot;repairHistory&quot;:{
+            &quot;description&quot;:&quot;Array of repaired runs&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;maxItems&quot;:10,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/RepairHistory&quot;
+            }
+        },
+        &quot;systemParameters&quot;:{
+            &quot;description&quot;:&quot;Map of System Parameters with their values for this jobRun.&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;string&quot;
+            }
+        },
+        &quot;startTime&quot;:{
+            &quot;description&quot;:&quot;The time at which the job execution started in epoch milliseconds.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;endTime&quot;:{
+            &quot;description&quot;:&quot;The time at which the job execution started in epoch milliseconds.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;setupDuration&quot;:{
+            &quot;description&quot;:&quot;The time (in milliseconds) taken to setup the cluster.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;executionDuration&quot;:{
+            &quot;description&quot;:&quot;The time (in milliseconds) taken to complete the job execution.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;cleanupDuration&quot;:{
+            &quot;description&quot;:&quot;The time (in milliseconds) taken to terminate the cluster and to clean up any associated artifacts.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;runDuration&quot;:{
+            &quot;description&quot;:&quot;The time (in milliseconds) taken to complete the job execution and all its repairs to finish.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;timeCreated&quot;:{
+            &quot;description&quot;:&quot;The time at which the job execution started.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;
+        },
+        &quot;timeUpdated&quot;:{
+            &quot;description&quot;:&quot;The time at which the job execution was updated.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;
+        },
+        &quot;launched&quot;:{
+            &quot;description&quot;:&quot;Identify job run launched by schedule or manually.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;SCHEDULED&quot;,
+                &quot;MANUAL&quot;
+            ],
+            &quot;default&quot;:&quot;MANUAL&quot;
+        },
+        &quot;version&quot;:{
+            &quot;description&quot;:&quot;Current version of JobRun object in repository.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int32&quot;
+        },
+        &quot;taskToTaskRunMap&quot;:{
+            &quot;description&quot;:&quot;Task to TaskRun map for given job run&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;string&quot;
+            }
+        },
+        &quot;taskRunSummaryMap&quot;:{
+            &quot;description&quot;:&quot;TaskRun to TaskRunSummary map for given job run&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;object&quot;
+            }
+        },
+        &quot;timeoutSeconds&quot;:{
+            &quot;description&quot;:&quot;An optional value to indicate the max run duration of a job after which job will be timed out. The default is Zero indicating no timeout value.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int32&quot;,
+            &quot;minimum&quot;:60,
+            &quot;maximum&quot;:172800,
+            &quot;default&quot;:0
+        },
+        &quot;repairedTasks&quot;:{
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;description&quot;:&quot;A list of repaired tasks.&quot;,
+            &quot;items&quot;:{
+                &quot;type&quot;:&quot;string&quot;
+            }
+        },
+        &quot;lifecycleStates&quot;:{
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;description&quot;:&quot;The collection of lifecycleState&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/LifecycleState&quot;
+            }
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-ClusterInstance" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : ClusterInstance</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The cluster used for this run. | The value of this field will be set when a new cluster is specified for execution and once the request to create a new cluster is successfully submitted.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-ClusterInstance-properties-clusterKey-properties-clusterKey-2" aria-expanded="false" aria-controls="201-definitions-ClusterInstance-properties-clusterKey-properties-clusterKey-2">
+            clusterKey: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-ClusterInstance-properties-clusterKey-properties-clusterKey-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The cluster key for the cluster configuration on which the job is executed.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-ClusterInstance-properties-sparkContextKey-properties-sparkContextKey-2" aria-expanded="false" aria-controls="201-definitions-ClusterInstance-properties-sparkContextKey-properties-sparkContextKey-2">
+            sparkContextKey: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-ClusterInstance-properties-sparkContextKey-properties-sparkContextKey-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The spark context used in the JobRun.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The cluster used for this run. | The value of this field will be set when a new cluster is specified for execution and once the request to create a new cluster is successfully submitted.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;clusterKey&quot;:{
+            &quot;description&quot;:&quot;The cluster key for the cluster configuration on which the job is executed.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;sparkContextKey&quot;:{
+            &quot;description&quot;:&quot;The spark context used in the JobRun.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-ClusterSpec" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : ClusterSpec</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Snapshot of Job's cluster specification</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-ClusterSpec-properties-existingClusterKey-properties-existingClusterKey-2" aria-expanded="false" aria-controls="201-definitions-ClusterSpec-properties-existingClusterKey-properties-existingClusterKey-2">
+            existingClusterKey: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-ClusterSpec-properties-existingClusterKey-properties-existingClusterKey-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The key of the Cluster.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Libraries-properties-libraries-2" aria-expanded="false" aria-controls="201-definitions-Libraries-properties-libraries-2">
+            libraries: 
+            object </a> <a href="#201-definitions-Libraries" role="button" class="btn btn-default btn-sm btn-xsm">Libraries</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-Libraries-properties-libraries-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">List of libraries to be installed on the cluster.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-NewClusterConfiguration-properties-newCluster-3" aria-expanded="false" aria-controls="201-definitions-NewClusterConfiguration-properties-newCluster-3">
+            newCluster: 
+            object </a> <a href="#201-definitions-NewClusterConfiguration" role="button" class="btn btn-default btn-sm btn-xsm">NewClusterConfiguration</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-NewClusterConfiguration-properties-newCluster-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The cluster configuration to create a new cluster.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Snapshot of Job&#x27;s cluster specification&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;existingClusterKey&quot;:{
+            &quot;description&quot;:&quot;The key of the Cluster.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;newCluster&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/NewClusterConfiguration&quot;
+        },
+        &quot;libraries&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/Libraries&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-lifecycleStates" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : lifecycleStates</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The collection of lifecycleState</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-LifecycleState-items-0" aria-expanded="false" aria-controls="201-definitions-LifecycleState-items-0">
+            Array of: 
+                object </a> <a href="#201-definitions-LifecycleState" role="button" class="btn btn-default btn-sm btn-xsm">LifecycleState</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-LifecycleState-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The Lifecycle state of execution.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;description&quot;:&quot;The collection of lifecycleState&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/LifecycleState&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-parameters" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : parameters</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>An optional list of parameters.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Parameter-items-0" aria-expanded="false" aria-controls="201-definitions-Parameter-items-0">
+            Array of: 
+                object </a> <a href="#201-definitions-Parameter" role="button" class="btn btn-default btn-sm btn-xsm">Parameter</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-Parameter-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Specifies the name and value of the defined parameter.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;An optional list of parameters.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/Parameter&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-Queue" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : Queue</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Queue configuration for Job</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Queue-properties-isEnabled-properties-isEnabled-3" aria-expanded="false" aria-controls="201-definitions-Queue-properties-isEnabled-properties-isEnabled-3">
+            isEnabled(required): 
+            boolean</a>
+            <div class="collapse schema-summary" id="201-definitions-Queue-properties-isEnabled-properties-isEnabled-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>false</code></div>
+
+
+
+
+
+
+
+<div>True if job queue is enabled.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Queue configuration for Job&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;isEnabled&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;isEnabled&quot;:{
+            &quot;description&quot;:&quot;True if job queue is enabled.&quot;,
+            &quot;type&quot;:&quot;boolean&quot;,
+            &quot;default&quot;:false
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-repairedTasks" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : repairedTasks</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>A list of repaired tasks.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-repairedTasks-items-items-0" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-repairedTasks-items-items-0">
+            Array of: 
+                string</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-JobRun-properties-repairedTasks-items-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;description&quot;:&quot;A list of repaired tasks.&quot;,
+    &quot;items&quot;:{
+        &quot;type&quot;:&quot;string&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-repairHistory" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : repairHistory</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Maximum Number of Items: <code>10</code></div>
+    
+
+    
+
+    
+    <div>Array of repaired runs</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-items-0" aria-expanded="false" aria-controls="201-definitions-RepairHistory-items-0">
+            Array of: 
+                object </a> <a href="#201-definitions-RepairHistory" role="button" class="btn btn-default btn-sm btn-xsm">RepairHistory</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">A description of a repaired JobRun</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Array of repaired runs&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;maxItems&quot;:10,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/RepairHistory&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-Schedule" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : Schedule</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The schedule configuration for the job.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Schedule-properties-pauseStatus-properties-pauseStatus-3" aria-expanded="false" aria-controls="201-definitions-Schedule-properties-pauseStatus-properties-pauseStatus-3">
+            pauseStatus: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-Schedule-properties-pauseStatus-properties-pauseStatus-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>UNPAUSED</code></div>
+
+
+
+<div>Allowed Values: <code>[
+    &quot;PAUSED&quot;,
+    &quot;UNPAUSED&quot;
+]</code></div>
+
+
+
+
+
+<div>Indicates whether the schedule is paused or not.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Schedule-properties-quartzCronExpression-properties-quartzCronExpression-3" aria-expanded="false" aria-controls="201-definitions-Schedule-properties-quartzCronExpression-properties-quartzCronExpression-3">
+            quartzCronExpression(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-Schedule-properties-quartzCronExpression-properties-quartzCronExpression-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A cron expression using Quartz syntax that describes the schedule for a job.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Schedule-properties-timezoneId-properties-timezoneId-3" aria-expanded="false" aria-controls="201-definitions-Schedule-properties-timezoneId-properties-timezoneId-3">
+            timezoneId(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-Schedule-properties-timezoneId-properties-timezoneId-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A Java timezone ID. The schedule of the job is resolved with respect to this timezone. Example - US/Pacific"</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The schedule configuration for the job.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;quartzCronExpression&quot;,
+        &quot;timezoneId&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;quartzCronExpression&quot;:{
+            &quot;description&quot;:&quot;A cron expression using Quartz syntax that describes the schedule for a job.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;timezoneId&quot;:{
+            &quot;description&quot;:&quot;A Java timezone ID. The schedule of the job is resolved with respect to this timezone. Example - US/Pacific\&quot;&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;pauseStatus&quot;:{
+            &quot;description&quot;:&quot;Indicates whether the schedule is paused or not.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;PAUSED&quot;,
+                &quot;UNPAUSED&quot;
+            ],
+            &quot;default&quot;:&quot;UNPAUSED&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-State" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : State</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The current state of the run.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-State-properties-errorTrace-properties-errorTrace-2" aria-expanded="false" aria-controls="201-definitions-State-properties-errorTrace-properties-errorTrace-2">
+            errorTrace: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-State-properties-errorTrace-properties-errorTrace-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>If there was an error executing the run, this field contains any available stack traces.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-State-properties-isUserCanceledOrTimedOut-properties-isUserCanceledOrTimedOut-2" aria-expanded="false" aria-controls="201-definitions-State-properties-isUserCanceledOrTimedOut-properties-isUserCanceledOrTimedOut-2">
+            isUserCanceledOrTimedOut: 
+            boolean</a>
+            <div class="collapse schema-summary" id="201-definitions-State-properties-isUserCanceledOrTimedOut-properties-isUserCanceledOrTimedOut-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>false</code></div>
+
+
+
+
+
+
+
+<div>Set to true, if the job execution is canceled by the user or by the scheduler due to timeout.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-State-properties-stateMessage-properties-stateMessage-2" aria-expanded="false" aria-controls="201-definitions-State-properties-stateMessage-properties-stateMessage-2">
+            stateMessage: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-State-properties-stateMessage-properties-stateMessage-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A descriptive message of the current state.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-State-properties-status-properties-status-2" aria-expanded="false" aria-controls="201-definitions-State-properties-status-properties-status-2">
+            status: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-State-properties-status-properties-status-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;PENDING&quot;,
+    &quot;QUEUED&quot;,
+    &quot;RUNNING&quot;,
+    &quot;SKIPPED&quot;,
+    &quot;INTERNAL_ERROR&quot;,
+    &quot;BLOCKED&quot;,
+    &quot;SUCCESS&quot;,
+    &quot;FAILED&quot;,
+    &quot;CANCELING&quot;,
+    &quot;CANCELED&quot;,
+    &quot;UPSTREAM_CANCELED&quot;,
+    &quot;UPSTREAM_FAILED&quot;,
+    &quot;EXCLUDED&quot;,
+    &quot;TIMED_OUT&quot;,
+    &quot;PAUSED_MAINTENANCE&quot;
+]</code></div>
+
+
+
+
+
+<div>Current state of execution</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The current state of the run.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;status&quot;:{
+            &quot;description&quot;:&quot;Current state of execution&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;PENDING&quot;,
+                &quot;QUEUED&quot;,
+                &quot;RUNNING&quot;,
+                &quot;SKIPPED&quot;,
+                &quot;INTERNAL_ERROR&quot;,
+                &quot;BLOCKED&quot;,
+                &quot;SUCCESS&quot;,
+                &quot;FAILED&quot;,
+                &quot;CANCELING&quot;,
+                &quot;CANCELED&quot;,
+                &quot;UPSTREAM_CANCELED&quot;,
+                &quot;UPSTREAM_FAILED&quot;,
+                &quot;EXCLUDED&quot;,
+                &quot;TIMED_OUT&quot;,
+                &quot;PAUSED_MAINTENANCE&quot;
+            ]
+        },
+        &quot;stateMessage&quot;:{
+            &quot;description&quot;:&quot;A descriptive message of the current state.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;errorTrace&quot;:{
+            &quot;description&quot;:&quot;If there was an error executing the run, this field contains any available stack traces.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;isUserCanceledOrTimedOut&quot;:{
+            &quot;description&quot;:&quot;Set to true, if the job execution is canceled by the user or by the scheduler due to timeout.&quot;,
+            &quot;type&quot;:&quot;boolean&quot;,
+            &quot;default&quot;:false
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-systemParameters" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : systemParameters</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-systemParameters-additionalProperties-additional-0" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-systemParameters-additionalProperties-additional-0">
+           
+               string</a>
+           
+           <div class="collapse schema-summary" id="201-definitions-JobRun-properties-systemParameters-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Map of System Parameters with their values for this jobRun.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;string&quot;
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Map of System Parameters with their values for this jobRun.</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-taskRunSummaryMap" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : taskRunSummaryMap</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-taskRunSummaryMap-additionalProperties-additional-0" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-taskRunSummaryMap-additionalProperties-additional-0">
+           
+               object </a> <a href="#201-definitions-JobRun-properties-taskRunSummaryMap-additionalProperties" role="button" class="btn btn-default btn-sm btn-xsm">additionalProperties</a>
+           
+           <div class="collapse schema-summary" id="201-definitions-JobRun-properties-taskRunSummaryMap-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;TaskRun to TaskRunSummary map for given job run&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;object&quot;
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>TaskRun to TaskRunSummary map for given job run</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-tasks" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : tasks</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>List of tasks in a Job</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Task-items-0" aria-expanded="false" aria-controls="201-definitions-Task-items-0">
+            Array of: 
+                object </a> <a href="#201-definitions-Task" role="button" class="btn btn-default btn-sm btn-xsm">Task</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-Task-items-0">
+                
+                
+
+
+<div>Discriminator: <code>type</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Properties of a task provided by the user.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;List of tasks in a Job&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/Task&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-taskToTaskRunMap" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : taskToTaskRunMap</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-JobRun-properties-taskToTaskRunMap-additionalProperties-additional-0" aria-expanded="false" aria-controls="201-definitions-JobRun-properties-taskToTaskRunMap-additionalProperties-additional-0">
+           
+               string</a>
+           
+           <div class="collapse schema-summary" id="201-definitions-JobRun-properties-taskToTaskRunMap-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Task to TaskRun map for given job run&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;string&quot;
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Task to TaskRun map for given job run</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-unifiedJobAndJobRunParameters" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : unifiedJobAndJobRunParameters</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Unified List of job and job run parameters after resolving dynamic value references and parameter resolution as per precedence.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Parameter-items-0" aria-expanded="false" aria-controls="201-definitions-Parameter-items-0">
+            Array of: 
+                object </a> <a href="#201-definitions-Parameter" role="button" class="btn btn-default btn-sm btn-xsm">Parameter</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-Parameter-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Specifies the name and value of the defined parameter.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Unified List of job and job run parameters after resolving dynamic value references and parameter resolution as per precedence.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/Parameter&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-Libraries" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : Libraries</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>List of libraries to be installed on the cluster.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Libraries-properties-jar-properties-jar-2" aria-expanded="false" aria-controls="201-definitions-Libraries-properties-jar-properties-jar-2">
+            jar: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-Libraries-properties-jar-properties-jar-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>URI of the jar to be installed.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;List of libraries to be installed on the cluster.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;jar&quot;:{
+            &quot;description&quot;:&quot;URI of the jar to be installed.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-NewClusterConfiguration" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : NewClusterConfiguration</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The cluster configuration to create a new cluster.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-AutoScale-properties-autoScale-3" aria-expanded="false" aria-controls="201-definitions-AutoScale-properties-autoScale-3">
+            autoScale: 
+            object </a> <a href="#201-definitions-AutoScale" role="button" class="btn btn-default btn-sm btn-xsm">AutoScale</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-AutoScale-properties-autoScale-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Properties required to automatically scale the clusters up and down based on load.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-NewClusterConfiguration-properties-clusterName-properties-clusterName-3" aria-expanded="false" aria-controls="201-definitions-NewClusterConfiguration-properties-clusterName-properties-clusterName-3">
+            clusterName: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-NewClusterConfiguration-properties-clusterName-properties-clusterName-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>100</code></div>
+
+
+
+
+
+
+
+
+
+<div>A unique name for the job cluster.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-NewClusterConfiguration-properties-numWorkers-properties-numWorkers-3" aria-expanded="false" aria-controls="201-definitions-NewClusterConfiguration-properties-numWorkers-properties-numWorkers-3">
+            numWorkers: 
+            integer(int32)</a>
+            <div class="collapse schema-summary" id="201-definitions-NewClusterConfiguration-properties-numWorkers-properties-numWorkers-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Number of worker nodes configured for this cluster.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-NewClusterConfiguration-properties-sparkConf-properties-sparkConf-3" aria-expanded="false" aria-controls="201-definitions-NewClusterConfiguration-properties-sparkConf-properties-sparkConf-3">
+            sparkConf: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-NewClusterConfiguration-properties-sparkConf-properties-sparkConf-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The spark configuration in key-value pairs.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-NewClusterConfiguration-properties-sparkVersion-properties-sparkVersion-3" aria-expanded="false" aria-controls="201-definitions-NewClusterConfiguration-properties-sparkVersion-properties-sparkVersion-3">
+            sparkVersion: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-NewClusterConfiguration-properties-sparkVersion-properties-sparkVersion-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The Spark version utilized to run the application.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The cluster configuration to create a new cluster.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;numWorkers&quot;:{
+            &quot;description&quot;:&quot;Number of worker nodes configured for this cluster.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int32&quot;
+        },
+        &quot;autoScale&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/AutoScale&quot;
+        },
+        &quot;clusterName&quot;:{
+            &quot;description&quot;:&quot;A unique name for the job cluster.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:100
+        },
+        &quot;sparkVersion&quot;:{
+            &quot;description&quot;:&quot;The Spark version utilized to run the application.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;sparkConf&quot;:{
+            &quot;description&quot;:&quot;The spark configuration in key-value pairs.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-AutoScale" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : AutoScale</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Properties required to automatically scale the clusters up and down based on load.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-AutoScale-properties-maxWorkers-properties-maxWorkers-3" aria-expanded="false" aria-controls="201-definitions-AutoScale-properties-maxWorkers-properties-maxWorkers-3">
+            maxWorkers: 
+            integer(int32)</a>
+            <div class="collapse schema-summary" id="201-definitions-AutoScale-properties-maxWorkers-properties-maxWorkers-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The maximum number of workers to which the cluster can scale up when overloaded.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-AutoScale-properties-minWorkers-properties-minWorkers-3" aria-expanded="false" aria-controls="201-definitions-AutoScale-properties-minWorkers-properties-minWorkers-3">
+            minWorkers: 
+            integer(int32)</a>
+            <div class="collapse schema-summary" id="201-definitions-AutoScale-properties-minWorkers-properties-minWorkers-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The minimum number of workers to which the cluster can scale down when underutilized.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Properties required to automatically scale the clusters up and down based on load.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;minWorkers&quot;:{
+            &quot;description&quot;:&quot;The minimum number of workers to which the cluster can scale down when underutilized.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int32&quot;
+        },
+        &quot;maxWorkers&quot;:{
+            &quot;description&quot;:&quot;The maximum number of workers to which the cluster can scale up when overloaded.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int32&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-LifecycleState" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : LifecycleState</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The Lifecycle state of execution.</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <div class="h5">Match All</div>
+    
+        
+            <div>The Lifecycle state of execution.</div>
+        
+    
+        
+            <div>The Lifecycle state of execution.</div>
+        
+    
+        
+            <div>The Lifecycle state of execution.</div>
+        
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+    <ul class="schema-properties">
+        
+        <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-State-allof-0" aria-expanded="false" aria-controls="201-definitions-State-allof-0">
+            
+            object 
+            
+            
+        </a> <a href="#201-definitions-State" role="button" class="btn btn-default btn-sm btn-xsm">State</a>
+            
+        <div class="collapse schema-summary" id="201-definitions-State-allof-0">
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The current state of the run.</div>
+
+
+            
+        </div>
+        </li>
+        
+        <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-LifecycleState-allOf-1-allof-1" aria-expanded="false" aria-controls="201-definitions-LifecycleState-allOf-1-allof-1">
+            
+            object 
+            
+            
+        </a> <a href="#201-definitions-LifecycleState-allOf-1" role="button" class="btn btn-default btn-sm btn-xsm">LifecycleState-allOf[1]</a>
+            
+        <div class="collapse schema-summary" id="201-definitions-LifecycleState-allOf-1-allof-1">
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+        </li>
+        
+        <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-LifecycleState-allOf-2-allof-2" aria-expanded="false" aria-controls="201-definitions-LifecycleState-allOf-2-allof-2">
+            
+            object 
+            
+            
+        </a> <a href="#201-definitions-LifecycleState-allOf-2" role="button" class="btn btn-default btn-sm btn-xsm">LifecycleState-allOf[2]</a>
+            
+        <div class="collapse schema-summary" id="201-definitions-LifecycleState-allOf-2-allof-2">
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+        </li>
+        
+    </ul>
+    <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The Lifecycle state of execution.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;allOf&quot;:[
+        {
+            &quot;$ref&quot;:&quot;#/definitions/State&quot;
+        },
+        {
+            &quot;type&quot;:&quot;object&quot;
+        },
+        {
+            &quot;properties&quot;:{
+                &quot;startTime&quot;:{
+                    &quot;description&quot;:&quot;The time at which the job execution started in epoch milliseconds.&quot;,
+                    &quot;type&quot;:&quot;integer&quot;,
+                    &quot;format&quot;:&quot;int64&quot;
+                },
+                &quot;endTime&quot;:{
+                    &quot;description&quot;:&quot;The time at which the job execution started in epoch milliseconds.&quot;,
+                    &quot;type&quot;:&quot;integer&quot;,
+                    &quot;format&quot;:&quot;int64&quot;
+                }
+            }
+        }
+    ]
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-LifecycleState-allOf-1" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : LifecycleState-allOf[1]</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-LifecycleState-allOf-2" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : LifecycleState-allOf[2]</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-LifecycleState-allOf-2-properties-endTime-properties-endTime-2" aria-expanded="false" aria-controls="201-definitions-LifecycleState-allOf-2-properties-endTime-properties-endTime-2">
+            endTime: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-LifecycleState-allOf-2-properties-endTime-properties-endTime-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time at which the job execution started in epoch milliseconds.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-LifecycleState-allOf-2-properties-startTime-properties-startTime-2" aria-expanded="false" aria-controls="201-definitions-LifecycleState-allOf-2-properties-startTime-properties-startTime-2">
+            startTime: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-LifecycleState-allOf-2-properties-startTime-properties-startTime-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time at which the job execution started in epoch milliseconds.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;properties&quot;:{
+        &quot;startTime&quot;:{
+            &quot;description&quot;:&quot;The time at which the job execution started in epoch milliseconds.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;endTime&quot;:{
+            &quot;description&quot;:&quot;The time at which the job execution started in epoch milliseconds.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-Parameter" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : Parameter</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Specifies the name and value of the defined parameter.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Parameter-properties-name-properties-name-3" aria-expanded="false" aria-controls="201-definitions-Parameter-properties-name-properties-name-3">
+            name(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-Parameter-properties-name-properties-name-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Pattern: <code>^[\w\-.]+$</code></div>
+
+
+
+<div>The name of the defined parameter. May only contain alphanumeric characters, '_', '-', and '.'</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Parameter-properties-value-properties-value-3" aria-expanded="false" aria-controls="201-definitions-Parameter-properties-value-properties-value-3">
+            value: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-Parameter-properties-value-properties-value-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Value of the defined parameter.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Specifies the name and value of the defined parameter.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;name&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;name&quot;:{
+            &quot;description&quot;:&quot;The name of the defined parameter. May only contain alphanumeric characters, &#x27;_&#x27;, &#x27;-&#x27;, and &#x27;.&#x27;&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;pattern&quot;:&quot;^[\\w\\-.]+$&quot;
+        },
+        &quot;value&quot;:{
+            &quot;description&quot;:&quot;Value of the defined parameter.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-RepairHistory" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : RepairHistory</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>A description of a repaired JobRun</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-endTime-properties-endTime-2" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-endTime-properties-endTime-2">
+            endTime: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-endTime-properties-endTime-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time at which the job execution started in epoch milliseconds.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-executionDuration-properties-executionDuration-2" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-executionDuration-properties-executionDuration-2">
+            executionDuration: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-executionDuration-properties-executionDuration-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time (in milliseconds) taken to complete the job execution.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-key-properties-key-2" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-key-properties-key-2">
+            key: 
+            integer(int32)</a>
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-key-properties-key-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The unique Id of the RepairRun.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-lifecycleStates-properties-lifecycleStates-2" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-lifecycleStates-properties-lifecycleStates-2">
+            lifecycleStates: 
+            array </a> <a href="#201-definitions-RepairHistory-properties-lifecycleStates" role="button" class="btn btn-default btn-sm btn-xsm">lifecycleStates</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-lifecycleStates-properties-lifecycleStates-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The collection of lifecycleState</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-parameters-properties-parameters-2" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-parameters-properties-parameters-2">
+            parameters: 
+            array </a> <a href="#201-definitions-RepairHistory-properties-parameters" role="button" class="btn btn-default btn-sm btn-xsm">parameters</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-parameters-properties-parameters-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">An optional list of parameters.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-repairedTasks-properties-repairedTasks-2" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-repairedTasks-properties-repairedTasks-2">
+            repairedTasks: 
+            array </a> <a href="#201-definitions-RepairHistory-properties-repairedTasks" role="button" class="btn btn-default btn-sm btn-xsm">repairedTasks</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-repairedTasks-properties-repairedTasks-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">A list of repaired tasks.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-startTime-properties-startTime-2" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-startTime-properties-startTime-2">
+            startTime: 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-startTime-properties-startTime-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time at which the job execution started in epoch milliseconds.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-State-properties-state-5" aria-expanded="false" aria-controls="201-definitions-State-properties-state-5">
+            state: 
+            object </a> <a href="#201-definitions-State" role="button" class="btn btn-default btn-sm btn-xsm">State</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-State-properties-state-5">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The current state of the run.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-taskToTaskRunMap-properties-taskToTaskRunMap-2" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-taskToTaskRunMap-properties-taskToTaskRunMap-2">
+            taskToTaskRunMap: 
+            object </a> <a href="#201-definitions-RepairHistory-properties-taskToTaskRunMap" role="button" class="btn btn-default btn-sm btn-xsm">taskToTaskRunMap</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-taskToTaskRunMap-properties-taskToTaskRunMap-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#201-definitions-RepairHistory-properties-taskToTaskRunMap-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Task to TaskRun map for given job run</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-type-properties-type-2" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-type-properties-type-2">
+            type: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-type-properties-type-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;ORIGINAL&quot;,
+    &quot;REPAIR&quot;
+]</code></div>
+
+
+
+
+
+<div>Indicates whether its Original or Repaired run</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;A description of a repaired JobRun&quot;,
+    &quot;properties&quot;:{
+        &quot;type&quot;:{
+            &quot;description&quot;:&quot;Indicates whether its Original or Repaired run&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;ORIGINAL&quot;,
+                &quot;REPAIR&quot;
+            ]
+        },
+        &quot;key&quot;:{
+            &quot;description&quot;:&quot;The unique Id of the RepairRun.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int32&quot;
+        },
+        &quot;state&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/State&quot;
+        },
+        &quot;startTime&quot;:{
+            &quot;description&quot;:&quot;The time at which the job execution started in epoch milliseconds.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;endTime&quot;:{
+            &quot;description&quot;:&quot;The time at which the job execution started in epoch milliseconds.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;taskToTaskRunMap&quot;:{
+            &quot;description&quot;:&quot;Task to TaskRun map for given job run&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;string&quot;
+            }
+        },
+        &quot;parameters&quot;:{
+            &quot;description&quot;:&quot;An optional list of parameters.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/Parameter&quot;
+            }
+        },
+        &quot;repairedTasks&quot;:{
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;description&quot;:&quot;A list of repaired tasks.&quot;,
+            &quot;items&quot;:{
+                &quot;type&quot;:&quot;string&quot;
+            }
+        },
+        &quot;lifecycleStates&quot;:{
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;description&quot;:&quot;The collection of lifecycleState&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/LifecycleState&quot;
+            }
+        },
+        &quot;executionDuration&quot;:{
+            &quot;description&quot;:&quot;The time (in milliseconds) taken to complete the job execution.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-RepairHistory-properties-lifecycleStates" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : lifecycleStates</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The collection of lifecycleState</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-LifecycleState-items-0" aria-expanded="false" aria-controls="201-definitions-LifecycleState-items-0">
+            Array of: 
+                object </a> <a href="#201-definitions-LifecycleState" role="button" class="btn btn-default btn-sm btn-xsm">LifecycleState</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-LifecycleState-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The Lifecycle state of execution.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;description&quot;:&quot;The collection of lifecycleState&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/LifecycleState&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-RepairHistory-properties-parameters" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : parameters</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>An optional list of parameters.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Parameter-items-0" aria-expanded="false" aria-controls="201-definitions-Parameter-items-0">
+            Array of: 
+                object </a> <a href="#201-definitions-Parameter" role="button" class="btn btn-default btn-sm btn-xsm">Parameter</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-Parameter-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Specifies the name and value of the defined parameter.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;An optional list of parameters.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/Parameter&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-RepairHistory-properties-repairedTasks" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : repairedTasks</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>A list of repaired tasks.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-repairedTasks-items-items-0" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-repairedTasks-items-items-0">
+            Array of: 
+                string</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-repairedTasks-items-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;description&quot;:&quot;A list of repaired tasks.&quot;,
+    &quot;items&quot;:{
+        &quot;type&quot;:&quot;string&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-RepairHistory-properties-taskToTaskRunMap" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : taskToTaskRunMap</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-RepairHistory-properties-taskToTaskRunMap-additionalProperties-additional-0" aria-expanded="false" aria-controls="201-definitions-RepairHistory-properties-taskToTaskRunMap-additionalProperties-additional-0">
+           
+               string</a>
+           
+           <div class="collapse schema-summary" id="201-definitions-RepairHistory-properties-taskToTaskRunMap-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Task to TaskRun map for given job run&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;string&quot;
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Task to TaskRun map for given job run</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-JobRun-properties-taskRunSummaryMap-additionalProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : additionalProperties</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-Task" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : Task</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+    <div>Discriminator: <code>type</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Properties of a task provided by the user.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Task-properties-dependsOn-properties-dependsOn-3" aria-expanded="false" aria-controls="201-definitions-Task-properties-dependsOn-properties-dependsOn-3">
+            dependsOn: 
+            array </a> <a href="#201-definitions-Task-properties-dependsOn" role="button" class="btn btn-default btn-sm btn-xsm">dependsOn</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-Task-properties-dependsOn-properties-dependsOn-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Specifies the dependency graph of the task. All the tasks mentioned in this field would need to be completed before executing this task.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Task-properties-isRetryOnTimeout-properties-isRetryOnTimeout-3" aria-expanded="false" aria-controls="201-definitions-Task-properties-isRetryOnTimeout-properties-isRetryOnTimeout-3">
+            isRetryOnTimeout: 
+            boolean</a>
+            <div class="collapse schema-summary" id="201-definitions-Task-properties-isRetryOnTimeout-properties-isRetryOnTimeout-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>false</code></div>
+
+
+
+
+
+
+
+<div>An optional policy to specify whether to retry a task when it times out. The default behavior is to not retry on timeout.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Task-properties-maxRetries-properties-maxRetries-3" aria-expanded="false" aria-controls="201-definitions-Task-properties-maxRetries-properties-maxRetries-3">
+            maxRetries: 
+            integer(int32)</a>
+            <div class="collapse schema-summary" id="201-definitions-Task-properties-maxRetries-properties-maxRetries-3">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>0</code></div>
+
+
+
+
+
+<div>Maximum Value: <code>10</code></div>
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>0</code></div>
+
+
+
+
+
+
+
+<div>The maximum number of times to retry an unsuccessful run. | A run is considered to be unsuccessful if it fails with status FAILED or INTERNAL_ERROR. Maximum value is 10.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Task-properties-minRetryIntervalMillis-properties-minRetryIntervalMillis-3" aria-expanded="false" aria-controls="201-definitions-Task-properties-minRetryIntervalMillis-properties-minRetryIntervalMillis-3">
+            minRetryIntervalMillis: 
+            integer(int32)</a>
+            <div class="collapse schema-summary" id="201-definitions-Task-properties-minRetryIntervalMillis-properties-minRetryIntervalMillis-3">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>0</code></div>
+
+
+
+
+
+<div>Maximum Value: <code>600000</code></div>
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>0</code></div>
+
+
+
+
+
+
+
+<div>An optional minimal interval in milliseconds between the start of the failed run and the subsequent retry run. | If value is not provided, the run would be immediately retried. Maximum value is 10 mins (600000)</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Task-properties-runIf-properties-runIf-3" aria-expanded="false" aria-controls="201-definitions-Task-properties-runIf-properties-runIf-3">
+            runIf(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-Task-properties-runIf-properties-runIf-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>ALL_SUCCESS</code></div>
+
+
+
+<div>Allowed Values: <code>[
+    &quot;ALL_SUCCESS&quot;,
+    &quot;ALL_DONE&quot;,
+    &quot;NONE_FAILED&quot;,
+    &quot;AT_LEAST_ONE_SUCCESS&quot;,
+    &quot;ALL_FAILED&quot;,
+    &quot;AT_LEAST_ONE_FAILED&quot;
+]</code></div>
+
+
+
+
+
+<div>The trigger rule based on which the current task execution is determined.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Task-properties-taskKey-properties-taskKey-3" aria-expanded="false" aria-controls="201-definitions-Task-properties-taskKey-properties-taskKey-3">
+            taskKey(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-Task-properties-taskKey-properties-taskKey-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>100</code></div>
+
+
+
+
+
+
+
+
+
+<div>This is display name of the task. User can specify a value for this.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-Task-properties-type-properties-type-3" aria-expanded="false" aria-controls="201-definitions-Task-properties-type-properties-type-3">
+            type(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-Task-properties-type-properties-type-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;NOTEBOOK_TASK&quot;,
+    &quot;PYTHON_TASK&quot;,
+    &quot;SPARK_SUBMIT_TASK&quot;,
+    &quot;IF_ELSE_TASK&quot;,
+    &quot;JOB_TASK&quot;,
+    &quot;JAR_TASK&quot;
+]</code></div>
+
+
+
+
+
+<div>The type of the task</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Properties of a task provided by the user.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;discriminator&quot;:&quot;type&quot;,
+    &quot;required&quot;:[
+        &quot;type&quot;,
+        &quot;taskKey&quot;,
+        &quot;runIf&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;type&quot;:{
+            &quot;description&quot;:&quot;The type of the task&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;NOTEBOOK_TASK&quot;,
+                &quot;PYTHON_TASK&quot;,
+                &quot;SPARK_SUBMIT_TASK&quot;,
+                &quot;IF_ELSE_TASK&quot;,
+                &quot;JOB_TASK&quot;,
+                &quot;JAR_TASK&quot;
+            ]
+        },
+        &quot;taskKey&quot;:{
+            &quot;description&quot;:&quot;This is display name of the task. User can specify a value for this.&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:100,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;dependsOn&quot;:{
+            &quot;description&quot;:&quot;Specifies the dependency graph of the task. All the tasks mentioned in this field would need to be completed before executing this task.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/DependsOn&quot;
+            }
+        },
+        &quot;runIf&quot;:{
+            &quot;description&quot;:&quot;The trigger rule based on which the current task execution is determined.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;ALL_SUCCESS&quot;,
+                &quot;ALL_DONE&quot;,
+                &quot;NONE_FAILED&quot;,
+                &quot;AT_LEAST_ONE_SUCCESS&quot;,
+                &quot;ALL_FAILED&quot;,
+                &quot;AT_LEAST_ONE_FAILED&quot;
+            ],
+            &quot;default&quot;:&quot;ALL_SUCCESS&quot;
+        },
+        &quot;maxRetries&quot;:{
+            &quot;description&quot;:&quot;The maximum number of times to retry an unsuccessful run. | A run is considered to be unsuccessful if it fails with status FAILED or INTERNAL_ERROR. Maximum value is 10.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int32&quot;,
+            &quot;minimum&quot;:0,
+            &quot;maximum&quot;:10,
+            &quot;default&quot;:0
+        },
+        &quot;minRetryIntervalMillis&quot;:{
+            &quot;description&quot;:&quot;An optional minimal interval in milliseconds between the start of the failed run and the subsequent retry run. | If value is not provided, the run would be immediately retried. Maximum value is 10 mins (600000)&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int32&quot;,
+            &quot;minimum&quot;:0,
+            &quot;default&quot;:0,
+            &quot;maximum&quot;:600000
+        },
+        &quot;isRetryOnTimeout&quot;:{
+            &quot;description&quot;:&quot;An optional policy to specify whether to retry a task when it times out. The default behavior is to not retry on timeout.&quot;,
+            &quot;type&quot;:&quot;boolean&quot;,
+            &quot;default&quot;:false
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-Task-properties-dependsOn" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : dependsOn</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Specifies the dependency graph of the task. All the tasks mentioned in this field would need to be completed before executing this task.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-DependsOn-items-0" aria-expanded="false" aria-controls="201-definitions-DependsOn-items-0">
+            Array of: 
+                object </a> <a href="#201-definitions-DependsOn" role="button" class="btn btn-default btn-sm btn-xsm">DependsOn</a>
+            
+            <div class="collapse schema-summary" id="201-definitions-DependsOn-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Specifies the dependency graph of the task. All the tasks mentioned in this field would need to be completed before executing this task.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Specifies the dependency graph of the task. All the tasks mentioned in this field would need to be completed before executing this task.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/DependsOn&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="201-definitions-DependsOn" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : DependsOn</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Specifies the dependency graph of the task. All the tasks mentioned in this field would need to be completed before executing this task.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-DependsOn-properties-outcome-properties-outcome-3" aria-expanded="false" aria-controls="201-definitions-DependsOn-properties-outcome-properties-outcome-3">
+            outcome: 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-DependsOn-properties-outcome-properties-outcome-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Specified on condition task dependencies. The outcome of the dependent task should be met for this task to be executed.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#201-definitions-DependsOn-properties-taskKey-properties-taskKey-3" aria-expanded="false" aria-controls="201-definitions-DependsOn-properties-taskKey-properties-taskKey-3">
+            taskKey(required): 
+            string</a>
+            <div class="collapse schema-summary" id="201-definitions-DependsOn-properties-taskKey-properties-taskKey-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The name of the task that it depends on.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Specifies the dependency graph of the task. All the tasks mentioned in this field would need to be completed before executing this task.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;taskKey&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;taskKey&quot;:{
+            &quot;description&quot;:&quot;The name of the task that it depends on.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;outcome&quot;:{
+            &quot;description&quot;:&quot;Specified on condition task dependencies. The outcome of the dependent task should be met for this task to be executed.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">400 Response</h4>
+                <div class="response-body">
+                <div>Bad Request (invalid query parameters, malformed headers, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#400-response-header-opc-request-id" aria-expanded="false" aria-controls="400-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="400-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="400-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-code-properties-code-37" aria-expanded="false" aria-controls="400-definitions-Error-properties-code-properties-code-37">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-code-properties-code-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-message-properties-message-37" aria-expanded="false" aria-controls="400-definitions-Error-properties-message-properties-message-37">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-message-properties-message-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">401 Response</h4>
+                <div class="response-body">
+                <div>Unauthorized (missing or expired credentials, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#401-response-header-opc-request-id" aria-expanded="false" aria-controls="401-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="401-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="401-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-code-properties-code-37" aria-expanded="false" aria-controls="401-definitions-Error-properties-code-properties-code-37">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-code-properties-code-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-message-properties-message-37" aria-expanded="false" aria-controls="401-definitions-Error-properties-message-properties-message-37">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-message-properties-message-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">404 Response</h4>
+                <div class="response-body">
+                <div>Not Found. The requested resource was not found.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#404-response-header-opc-request-id" aria-expanded="false" aria-controls="404-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="404-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="404-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-code-properties-code-37" aria-expanded="false" aria-controls="404-definitions-Error-properties-code-properties-code-37">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-code-properties-code-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-message-properties-message-37" aria-expanded="false" aria-controls="404-definitions-Error-properties-message-properties-message-37">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-message-properties-message-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">409 Response</h4>
+                <div class="response-body">
+                <div>Conflict. Request conflicts with the current state of the resource.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#409-response-header-opc-request-id" aria-expanded="false" aria-controls="409-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="409-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="409-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#409-definitions-Error-properties-code-properties-code-16" aria-expanded="false" aria-controls="409-definitions-Error-properties-code-properties-code-16">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="409-definitions-Error-properties-code-properties-code-16">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#409-definitions-Error-properties-message-properties-message-16" aria-expanded="false" aria-controls="409-definitions-Error-properties-message-properties-message-16">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="409-definitions-Error-properties-message-properties-message-16">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">412 Response</h4>
+                <div class="response-body">
+                <div>Precondition Failed (One or more conditions in request failed).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#412-response-header-opc-request-id" aria-expanded="false" aria-controls="412-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="412-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="412-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#412-definitions-Error-properties-code-properties-code-19" aria-expanded="false" aria-controls="412-definitions-Error-properties-code-properties-code-19">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="412-definitions-Error-properties-code-properties-code-19">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#412-definitions-Error-properties-message-properties-message-19" aria-expanded="false" aria-controls="412-definitions-Error-properties-message-properties-message-19">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="412-definitions-Error-properties-message-properties-message-19">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">429 Response</h4>
+                <div class="response-body">
+                <div>Too Many Requests. Too many requests sent to the server in a short period.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#429-response-header-opc-request-id" aria-expanded="false" aria-controls="429-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="429-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="429-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-code-properties-code-37" aria-expanded="false" aria-controls="429-definitions-Error-properties-code-properties-code-37">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-code-properties-code-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-message-properties-message-37" aria-expanded="false" aria-controls="429-definitions-Error-properties-message-properties-message-37">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-message-properties-message-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-500">500 Response</h4>
+                <div class="response-body">
+                <div>Internal Server Error. The server encountered an unexpected condition preventing fulfilment of the request.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#500-response-header-opc-request-id" aria-expanded="false" aria-controls="500-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="500-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="500-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-code-properties-code-37" aria-expanded="false" aria-controls="500-definitions-Error-properties-code-properties-code-37">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-code-properties-code-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-message-properties-message-37" aria-expanded="false" aria-controls="500-definitions-Error-properties-message-properties-message-37">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-message-properties-message-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range">Default Response</h4>
+                <div class="response-body">
+                <div>Unknown Error. Error is not recognized by the system.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#default-response-header-opc-request-id" aria-expanded="false" aria-controls="default-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="default-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="default-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-code-properties-code-37" aria-expanded="false" aria-controls="default-definitions-Error-properties-code-properties-code-37">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-code-properties-code-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-message-properties-message-37" aria-expanded="false" aria-controls="default-definitions-Error-properties-message-properties-message-37">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-message-properties-message-37">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+
+				<a style="float: right" href="#top">Back to Top</a>
+				
+                
+
+            </section>
+
+            
+        </article>
+    </body>
+</html>

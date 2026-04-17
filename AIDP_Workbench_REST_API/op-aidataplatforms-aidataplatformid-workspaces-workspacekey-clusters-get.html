@@ -1,0 +1,6046 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>REST API for Oracle AI Data Platform Workbench - Get clusters in a workspace</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+		
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-permissions-get.html" title="Previous" type="text/html">
+        <link rel="next" href="op-aidataplatforms-aidataplatformid-defaultcluster-get.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:31+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"REST API for Oracle AI Data Platform Workbench - Get clusters in a workspace","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-clusters-clusterkey-permissions-get.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="op-aidataplatforms-aidataplatformid-defaultcluster-get.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+
+            
+            <header id="top">
+
+                <ol class="breadcrumb">
+                    <li><a href="index.html">REST API for Oracle AI Data Platform Workbench</a></li>
+                    <li>Tasks</li>
+                    
+                    <li class="active">
+                        
+                        <a href="api-cluster.html">Cluster</a>
+                        
+                    </li>
+                    
+                </ol>
+                
+                <p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+                
+                
+                <div>
+                	<div class="dropdown btn-group pull-right" style="clear: right;">
+                		<button id="dLabel" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to <span class="caret"></span>
+                		</button>
+      					<ul class="dropdown-menu" aria-labelledby="dLabel">
+          					<li><a href="#request" data-toggle="ignore">Request</a></li>
+          					<li><a href="#response" data-toggle="ignore">Response</a></li>
+          					
+          					<li><a href="#examples" data-toggle="ignore">Examples</a></li>
+          					
+      					</ul>
+    				</div>
+     				<h2>Get clusters in a workspace</h2>
+     			</div>
+                
+                <div>
+                    <div class="label label-get text-uppercase">get</div>
+                    <p><strong>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/clusters</strong></p>
+                </div>
+            </header>
+            <section>
+
+                <div class="description">Returns a list of all clusters in a given workspace.</div>
+
+                
+
+                <h3 id="request">Request</h3>
+                
+
+                
+
+                
+                <div class="h5">Path Parameters</div>
+                <div class="schema-container">
+                <ul class="schema-properties">
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-0" aria-expanded="false" aria-controls="request-path-param-0">
+                    aiDataPlatformId(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-0">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the AI Data Platform (Data Lake) instance.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-1" aria-expanded="false" aria-controls="request-path-param-1">
+                    workspaceKey(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-1">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The key of the Workspace</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                </ul>
+
+                
+                </div>
+                
+
+
+                
+                <div class="h5">Query Parameters</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-query-param-0" aria-expanded="false" aria-controls="request-query-param-0">
+                        displayName: string
+
+                        </a>
+                        <div class="collapse" id="request-query-param-0">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A filter to return only resources that match the given display name exactly.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-query-param-1" aria-expanded="false" aria-controls="request-query-param-1">
+                        displayNameContains: string
+
+                        </a>
+                        <div class="collapse" id="request-query-param-1">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A filter to return only resources that have a display name containing the text provided.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-query-param-2" aria-expanded="false" aria-controls="request-query-param-2">
+                        limit: integer
+
+                        </a>
+                        <div class="collapse" id="request-query-param-2">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Value: <code>1</code></div>
+
+
+
+
+
+<div>Maximum Value: <code>1000</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>For list pagination. The maximum number of results per page, or items to return in a
+paginated "List" call. For important details about how pagination works, see
+[List Pagination](/iaas/Content/API/Concepts/usingapi.htm#nine).
+</div>
+
+
+
+<div>Default Value: <code>100</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-query-param-3" aria-expanded="false" aria-controls="request-query-param-3">
+                        page: string
+
+                        </a>
+                        <div class="collapse" id="request-query-param-3">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>For list pagination. The value of the opc-next-page response header from the previous
+"List" call. For important details about how pagination works, see
+[List Pagination](/iaas/Content/API/Concepts/usingapi.htm#nine).
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-query-param-4" aria-expanded="false" aria-controls="request-query-param-4">
+                        sortBy: string
+
+                        </a>
+                        <div class="collapse" id="request-query-param-4">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The field to sort by. You can provide only one sort order. Default order for `timeCreated` is descending. Default order for `displayName` is ascending.</div>
+
+
+
+<div>Default Value: <code>timeCreated</code></div>
+
+
+
+<div>Allowed Values: <code>[
+    &quot;timeCreated&quot;,
+    &quot;displayName&quot;
+]</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-query-param-5" aria-expanded="false" aria-controls="request-query-param-5">
+                        sortOrder: string
+
+                        </a>
+                        <div class="collapse" id="request-query-param-5">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The sort order to use, either ascending (`ASC`) or descending (`DESC`).</div>
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;ASC&quot;,
+    &quot;DESC&quot;
+]</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-query-param-6" aria-expanded="false" aria-controls="request-query-param-6">
+                        state: string
+
+                        </a>
+                        <div class="collapse" id="request-query-param-6">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A filter to return only resources that match the given lifecycle state. The state value is case-insensitive.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-query-param-7" aria-expanded="false" aria-controls="request-query-param-7">
+                        type: string
+
+                        </a>
+                        <div class="collapse" id="request-query-param-7">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Cluster type. When the filter is not provided list shows all type of cluster - USER, DEFAULT else it show only cluster of type chosen. Only clusters of type USER are attachable to a workspace notebook.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                <div class="h5">Header Parameters</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-request-id" aria-expanded="false" aria-controls="request-header-param-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned identifier for the request. If you need to contact
+Oracle about a particular request, please provide the request ID.
+The only valid characters for request IDs are letters, numbers,
+underscore, and dash.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+
+
+                
+
+                
+
+                
+                
+                <a style="float: right" href="#top">Back to Top</a>
+
+                <h3 id="response">Response</h3>
+
+                
+                
+                <div class="h5">Supported Media Types</div>
+                <ul class="media-types">
+                    
+                    <li>application/json</li>
+                    
+                </ul>
+                
+                
+
+
+
+                
+                <div class="response">
+                <h4 class="response-code range-200">200 Response</h4>
+                <div class="response-body">
+                <div>Successful operation</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-opc-next-page" aria-expanded="false" aria-controls="200-response-header-opc-next-page">
+                        opc-next-page: string
+                        </a>
+                        <div class="collapse" id="200-response-header-opc-next-page">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>For list pagination. When this header appears in the response, additional pages of results remain. For
+important details about how pagination works, see [List Pagination](/iaas/Content/API/Concepts/usingapi.htm#nine).
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-opc-request-id" aria-expanded="false" aria-controls="200-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="200-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned identifier for the request. If you need to contact
+Oracle about a particular request, please provide the request ID.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="200-definitions-ClusterCollection" class="swagger-schema">
+    <div class="panel-heading">Root Schema : ClusterCollection</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Results of a cluster list.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterCollection-properties-items-properties-items-0" aria-expanded="false" aria-controls="200-definitions-ClusterCollection-properties-items-properties-items-0">
+            items(required): 
+            array </a> <a href="#200-definitions-ClusterCollection-properties-items" role="button" class="btn btn-default btn-sm btn-xsm">items</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ClusterCollection-properties-items-properties-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">List of Clusters.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;description&quot;:&quot;Results of a cluster list.&quot;,
+    &quot;required&quot;:[
+        &quot;items&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;items&quot;:{
+            &quot;description&quot;:&quot;List of Clusters.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/ClusterSummary&quot;
+            }
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-ClusterCollection-properties-items" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : items</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>List of Clusters.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-items-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-ClusterSummary" role="button" class="btn btn-default btn-sm btn-xsm">ClusterSummary</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Summary information about a workspace cluster.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;List of Clusters.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/ClusterSummary&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-ClusterSummary" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : ClusterSummary</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Summary information about a workspace cluster.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ActiveClusterResources-properties-activeClusterResources-0" aria-expanded="false" aria-controls="200-definitions-ActiveClusterResources-properties-activeClusterResources-0">
+            activeClusterResources: 
+            object </a> <a href="#200-definitions-ActiveClusterResources" role="button" class="btn btn-default btn-sm btn-xsm">ActiveClusterResources</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ActiveClusterResources-properties-activeClusterResources-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Active resources of a cluster.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-attachedAgentFlowCount-properties-attachedAgentFlowCount-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-attachedAgentFlowCount-properties-attachedAgentFlowCount-0">
+            attachedAgentFlowCount: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-attachedAgentFlowCount-properties-attachedAgentFlowCount-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>oracle.doceng.json.BetterJsonNull@25f9407e</code></div>
+
+
+
+
+
+
+
+<div>Count of agent flow attached to a specific cluster.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-attachedNotebooks-properties-attachedNotebooks-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-attachedNotebooks-properties-attachedNotebooks-0">
+            attachedNotebooks: 
+            array </a> <a href="#200-definitions-ClusterSummary-properties-attachedNotebooks" role="button" class="btn btn-default btn-sm btn-xsm">attachedNotebooks</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-attachedNotebooks-properties-attachedNotebooks-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">List of notebooks attached to a specific cluster.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-attachedSessions-properties-attachedSessions-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-attachedSessions-properties-attachedSessions-0">
+            attachedSessions: 
+            array </a> <a href="#200-definitions-ClusterSummary-properties-attachedSessions" role="button" class="btn btn-default btn-sm btn-xsm">attachedSessions</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-attachedSessions-properties-attachedSessions-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">List of sessions attached to a specific cluster.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterRuntimeConfig-properties-clusterRuntimeConfig-0" aria-expanded="false" aria-controls="200-definitions-ClusterRuntimeConfig-properties-clusterRuntimeConfig-0">
+            clusterRuntimeConfig: 
+            object </a> <a href="#200-definitions-ClusterRuntimeConfig" role="button" class="btn btn-default btn-sm btn-xsm">ClusterRuntimeConfig</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ClusterRuntimeConfig-properties-clusterRuntimeConfig-0">
+                
+                
+
+
+<div>Discriminator: <code>type</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Cluster runtime configuratios.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-createdBy-properties-createdBy-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-createdBy-properties-createdBy-0">
+            createdBy: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-createdBy-properties-createdBy-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>OCID of the user who created this record.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-createdByName-properties-createdByName-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-createdByName-properties-createdByName-0">
+            createdByName: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-createdByName-properties-createdByName-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Name of the user who created this record.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-description-properties-description-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-description-properties-description-0">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-description-properties-description-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>400</code></div>
+
+
+
+
+
+
+
+
+
+<div>Cluster description.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-displayName-properties-displayName-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-displayName-properties-displayName-0">
+            displayName(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-displayName-properties-displayName-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Cluster name.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DriverConfig-properties-driverConfig-0" aria-expanded="false" aria-controls="200-definitions-DriverConfig-properties-driverConfig-0">
+            driverConfig: 
+            object </a> <a href="#200-definitions-DriverConfig" role="button" class="btn btn-default btn-sm btn-xsm">DriverConfig</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-DriverConfig-properties-driverConfig-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Driver configuration.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-key-properties-key-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-key-properties-key-0">
+            key(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-key-properties-key-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Cluster key.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-state-properties-state-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-state-properties-state-0">
+            state(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-state-properties-state-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The current state of the Cluster.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-stateDetails-properties-stateDetails-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-stateDetails-properties-stateDetails-0">
+            stateDetails: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-stateDetails-properties-stateDetails-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A message that describes the current state of the Workspace Cluster in more detail. For example, can be used to provide actionable information for a resource in the Failed state.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-stoppedBy-properties-stoppedBy-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-stoppedBy-properties-stoppedBy-0">
+            stoppedBy: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-stoppedBy-properties-stoppedBy-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>OCID of the user who stopped the cluster. Value will be 'SYSTEM' if it was auto stopped.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-stoppedByName-properties-stoppedByName-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-stoppedByName-properties-stoppedByName-0">
+            stoppedByName: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-stoppedByName-properties-stoppedByName-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Name of the user who stopped the cluster. Value will be 'SYSTEM' if it was auto stopped.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-timeCreated-properties-timeCreated-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-timeCreated-properties-timeCreated-0">
+            timeCreated(required): 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-timeCreated-properties-timeCreated-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Date and time the cluster was created.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-timeUpdated-properties-timeUpdated-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-timeUpdated-properties-timeUpdated-0">
+            timeUpdated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-timeUpdated-properties-timeUpdated-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Date and time the cluster was updated.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-type-properties-type-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-type-properties-type-0">
+            type(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-type-properties-type-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;DEFAULT&quot;,
+    &quot;USER&quot;,
+    &quot;AGENT_FLOW_COMPUTE&quot;
+]</code></div>
+
+
+
+
+
+<div>ClusterType</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-updatedBy-properties-updatedBy-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-updatedBy-properties-updatedBy-0">
+            updatedBy: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-updatedBy-properties-updatedBy-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>OCID of the user who updated this record.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-updatedByName-properties-updatedByName-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-updatedByName-properties-updatedByName-0">
+            updatedByName: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-updatedByName-properties-updatedByName-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Name of the user who updated this record.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-WorkerConfig-properties-workerConfig-0" aria-expanded="false" aria-controls="200-definitions-WorkerConfig-properties-workerConfig-0">
+            workerConfig: 
+            object </a> <a href="#200-definitions-WorkerConfig" role="button" class="btn btn-default btn-sm btn-xsm">WorkerConfig</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-WorkerConfig-properties-workerConfig-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Worker configuration.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Summary information about a workspace cluster.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;key&quot;,
+        &quot;state&quot;,
+        &quot;type&quot;,
+        &quot;timeCreated&quot;,
+        &quot;displayName&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;key&quot;:{
+            &quot;description&quot;:&quot;Cluster key.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;displayName&quot;:{
+            &quot;description&quot;:&quot;Cluster name.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;Cluster description.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:400
+        },
+        &quot;type&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;ClusterType&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/ClusterType&quot;,
+            &quot;enum&quot;:[
+                &quot;DEFAULT&quot;,
+                &quot;USER&quot;,
+                &quot;AGENT_FLOW_COMPUTE&quot;
+            ]
+        },
+        &quot;timeCreated&quot;:{
+            &quot;description&quot;:&quot;Date and time the cluster was created.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;
+        },
+        &quot;timeUpdated&quot;:{
+            &quot;description&quot;:&quot;Date and time the cluster was updated.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;
+        },
+        &quot;state&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;The current state of the Cluster.&quot;,
+            &quot;x-obmcs-enumref&quot;:&quot;#/definitions/Cluster/state&quot;
+        },
+        &quot;stateDetails&quot;:{
+            &quot;description&quot;:&quot;A message that describes the current state of the Workspace Cluster in more detail. For example, can be used to provide actionable information for a resource in the Failed state.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;createdBy&quot;:{
+            &quot;description&quot;:&quot;OCID of the user who created this record.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;createdByName&quot;:{
+            &quot;description&quot;:&quot;Name of the user who created this record.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;updatedBy&quot;:{
+            &quot;description&quot;:&quot;OCID of the user who updated this record.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;updatedByName&quot;:{
+            &quot;description&quot;:&quot;Name of the user who updated this record.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;stoppedBy&quot;:{
+            &quot;description&quot;:&quot;OCID of the user who stopped the cluster. Value will be &#x27;SYSTEM&#x27; if it was auto stopped.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;stoppedByName&quot;:{
+            &quot;description&quot;:&quot;Name of the user who stopped the cluster. Value will be &#x27;SYSTEM&#x27; if it was auto stopped.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;clusterRuntimeConfig&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/ClusterRuntimeConfig&quot;
+        },
+        &quot;activeClusterResources&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/ActiveClusterResources&quot;
+        },
+        &quot;driverConfig&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/DriverConfig&quot;
+        },
+        &quot;workerConfig&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/WorkerConfig&quot;
+        },
+        &quot;attachedNotebooks&quot;:{
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;description&quot;:&quot;List of notebooks attached to a specific cluster.&quot;,
+            &quot;items&quot;:{
+                &quot;type&quot;:&quot;string&quot;
+            }
+        },
+        &quot;attachedSessions&quot;:{
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;description&quot;:&quot;List of sessions attached to a specific cluster.&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/AttachedSession&quot;
+            }
+        },
+        &quot;attachedAgentFlowCount&quot;:{
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;default&quot;:null,
+            &quot;description&quot;:&quot;Count of agent flow attached to a specific cluster.&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-ActiveClusterResources" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : ActiveClusterResources</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Active resources of a cluster.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ActiveClusterResources-properties-activeCores-properties-activeCores-0" aria-expanded="false" aria-controls="200-definitions-ActiveClusterResources-properties-activeCores-properties-activeCores-0">
+            activeCores: 
+            number(double)</a>
+            <div class="collapse schema-summary" id="200-definitions-ActiveClusterResources-properties-activeCores-properties-activeCores-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Count of Active Cores.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ActiveClusterResources-properties-activeExecutorCount-properties-activeExecutorCount-0" aria-expanded="false" aria-controls="200-definitions-ActiveClusterResources-properties-activeExecutorCount-properties-activeExecutorCount-0">
+            activeExecutorCount: 
+            number(double)</a>
+            <div class="collapse schema-summary" id="200-definitions-ActiveClusterResources-properties-activeExecutorCount-properties-activeExecutorCount-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Count of Active Executors.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ActiveClusterResources-properties-activeGpuCores-properties-activeGpuCores-0" aria-expanded="false" aria-controls="200-definitions-ActiveClusterResources-properties-activeGpuCores-properties-activeGpuCores-0">
+            activeGpuCores: 
+            number(double)</a>
+            <div class="collapse schema-summary" id="200-definitions-ActiveClusterResources-properties-activeGpuCores-properties-activeGpuCores-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Count of Active GPU Cores.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ActiveClusterResources-properties-activeGpuMemoryInGBs-properties-activeGpuMemoryInGBs-0" aria-expanded="false" aria-controls="200-definitions-ActiveClusterResources-properties-activeGpuMemoryInGBs-properties-activeGpuMemoryInGBs-0">
+            activeGpuMemoryInGBs: 
+            number(double)</a>
+            <div class="collapse schema-summary" id="200-definitions-ActiveClusterResources-properties-activeGpuMemoryInGBs-properties-activeGpuMemoryInGBs-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Active GPU Memory in GB.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ActiveClusterResources-properties-activeMemoryInGBs-properties-activeMemoryInGBs-0" aria-expanded="false" aria-controls="200-definitions-ActiveClusterResources-properties-activeMemoryInGBs-properties-activeMemoryInGBs-0">
+            activeMemoryInGBs: 
+            number(double)</a>
+            <div class="collapse schema-summary" id="200-definitions-ActiveClusterResources-properties-activeMemoryInGBs-properties-activeMemoryInGBs-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Active Memory in GB.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Active resources of a cluster.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;activeExecutorCount&quot;:{
+            &quot;description&quot;:&quot;Count of Active Executors.&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;double&quot;
+        },
+        &quot;activeCores&quot;:{
+            &quot;description&quot;:&quot;Count of Active Cores.&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;double&quot;
+        },
+        &quot;activeGpuCores&quot;:{
+            &quot;description&quot;:&quot;Count of Active GPU Cores.&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;double&quot;
+        },
+        &quot;activeMemoryInGBs&quot;:{
+            &quot;description&quot;:&quot;Active Memory in GB.&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;double&quot;
+        },
+        &quot;activeGpuMemoryInGBs&quot;:{
+            &quot;description&quot;:&quot;Active GPU Memory in GB.&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;double&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-ClusterSummary-properties-attachedNotebooks" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : attachedNotebooks</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>List of notebooks attached to a specific cluster.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterSummary-properties-attachedNotebooks-items-items-0" aria-expanded="false" aria-controls="200-definitions-ClusterSummary-properties-attachedNotebooks-items-items-0">
+            Array of: 
+                string</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ClusterSummary-properties-attachedNotebooks-items-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;description&quot;:&quot;List of notebooks attached to a specific cluster.&quot;,
+    &quot;items&quot;:{
+        &quot;type&quot;:&quot;string&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-ClusterSummary-properties-attachedSessions" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : attachedSessions</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>List of sessions attached to a specific cluster.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AttachedSession-items-0" aria-expanded="false" aria-controls="200-definitions-AttachedSession-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-AttachedSession" role="button" class="btn btn-default btn-sm btn-xsm">AttachedSession</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AttachedSession-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Details of attached sessions to a cluster</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;description&quot;:&quot;List of sessions attached to a specific cluster.&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/AttachedSession&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-ClusterRuntimeConfig" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : ClusterRuntimeConfig</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+    <div>Discriminator: <code>type</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Cluster runtime configuratios.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterRuntimeConfig-properties-initScripts-properties-initScripts-0" aria-expanded="false" aria-controls="200-definitions-ClusterRuntimeConfig-properties-initScripts-properties-initScripts-0">
+            initScripts: 
+            array </a> <a href="#200-definitions-ClusterRuntimeConfig-properties-initScripts" role="button" class="btn btn-default btn-sm btn-xsm">initScripts</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ClusterRuntimeConfig-properties-initScripts-properties-initScripts-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Init script paths that are run in the order of definition.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ClusterRuntimeConfig-properties-type-properties-type-0" aria-expanded="false" aria-controls="200-definitions-ClusterRuntimeConfig-properties-type-properties-type-0">
+            type: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ClusterRuntimeConfig-properties-type-properties-type-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>SPARK</code></div>
+
+
+
+<div>Allowed Values: <code>[
+    &quot;SPARK&quot;
+]</code></div>
+
+
+
+
+
+<div>Runtime type.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Cluster runtime configuratios.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;discriminator&quot;:&quot;type&quot;,
+    &quot;properties&quot;:{
+        &quot;type&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;Runtime type.&quot;,
+            &quot;default&quot;:&quot;SPARK&quot;,
+            &quot;enum&quot;:[
+                &quot;SPARK&quot;
+            ]
+        },
+        &quot;initScripts&quot;:{
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;description&quot;:&quot;Init script paths that are run in the order of definition.&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/InitScriptPath&quot;
+            }
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-DriverConfig" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : DriverConfig</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Driver configuration.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DriverConfig-properties-driverNodeType-properties-driverNodeType-0" aria-expanded="false" aria-controls="200-definitions-DriverConfig-properties-driverNodeType-properties-driverNodeType-0">
+            driverNodeType: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DriverConfig-properties-driverNodeType-properties-driverNodeType-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>Node type of optional driver node that encodes the driver node shape and associated resources.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DriverConfig-properties-driverShape-properties-driverShape-0" aria-expanded="false" aria-controls="200-definitions-DriverConfig-properties-driverShape-properties-driverShape-0">
+            driverShape: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DriverConfig-properties-driverShape-properties-driverShape-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>Shape of compute cluster driver instance. Example - VM.Standard2.x, VM.Standard.E3.Flex</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ShapeConfig-properties-driverShapeConfig-0" aria-expanded="false" aria-controls="200-definitions-ShapeConfig-properties-driverShapeConfig-0">
+            driverShapeConfig: 
+            object </a> <a href="#200-definitions-ShapeConfig" role="button" class="btn btn-default btn-sm btn-xsm">ShapeConfig</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ShapeConfig-properties-driverShapeConfig-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Shape of the driver or executor if a flexible shape is used.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Driver configuration.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;driverNodeType&quot;:{
+            &quot;description&quot;:&quot;Node type of optional driver node that encodes the driver node shape and associated resources.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;driverShape&quot;:{
+            &quot;description&quot;:&quot;Shape of compute cluster driver instance. Example - VM.Standard2.x, VM.Standard.E3.Flex&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;driverShapeConfig&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/ShapeConfig&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-WorkerConfig" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : WorkerConfig</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Worker configuration.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-WorkerConfig-properties-maxWorkerCount-properties-maxWorkerCount-0" aria-expanded="false" aria-controls="200-definitions-WorkerConfig-properties-maxWorkerCount-properties-maxWorkerCount-0">
+            maxWorkerCount: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-WorkerConfig-properties-maxWorkerCount-properties-maxWorkerCount-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum number of workers. When this property is specified, the cluster is auto-scaled.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-WorkerConfig-properties-minWorkerCount-properties-minWorkerCount-0" aria-expanded="false" aria-controls="200-definitions-WorkerConfig-properties-minWorkerCount-properties-minWorkerCount-0">
+            minWorkerCount: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-WorkerConfig-properties-minWorkerCount-properties-minWorkerCount-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum number of workers.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-WorkerConfig-properties-workerShape-properties-workerShape-0" aria-expanded="false" aria-controls="200-definitions-WorkerConfig-properties-workerShape-properties-workerShape-0">
+            workerShape: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-WorkerConfig-properties-workerShape-properties-workerShape-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>Shape of the compute cluster executor instance.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ShapeConfig-properties-workerShapeConfig-0" aria-expanded="false" aria-controls="200-definitions-ShapeConfig-properties-workerShapeConfig-0">
+            workerShapeConfig: 
+            object </a> <a href="#200-definitions-ShapeConfig" role="button" class="btn btn-default btn-sm btn-xsm">ShapeConfig</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ShapeConfig-properties-workerShapeConfig-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Shape of the driver or executor if a flexible shape is used.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Worker configuration.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;workerShape&quot;:{
+            &quot;description&quot;:&quot;Shape of the compute cluster executor instance.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;workerShapeConfig&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/ShapeConfig&quot;
+        },
+        &quot;minWorkerCount&quot;:{
+            &quot;description&quot;:&quot;Minimum number of workers.&quot;,
+            &quot;type&quot;:&quot;integer&quot;
+        },
+        &quot;maxWorkerCount&quot;:{
+            &quot;description&quot;:&quot;Maximum number of workers. When this property is specified, the cluster is auto-scaled.&quot;,
+            &quot;type&quot;:&quot;integer&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AttachedSession" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : AttachedSession</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Details of attached sessions to a cluster</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AttachedSession-properties-lastCommandRun-properties-lastCommandRun-0" aria-expanded="false" aria-controls="200-definitions-AttachedSession-properties-lastCommandRun-properties-lastCommandRun-0">
+            lastCommandRun: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AttachedSession-properties-lastCommandRun-properties-lastCommandRun-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time of the last command of file was run in this cluster.
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AttachedSession-properties-path-properties-path-0" aria-expanded="false" aria-controls="200-definitions-AttachedSession-properties-path-properties-path-0">
+            path: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AttachedSession-properties-path-properties-path-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The path of the attached file.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AttachedSession-properties-state-properties-state-0" aria-expanded="false" aria-controls="200-definitions-AttachedSession-properties-state-properties-state-0">
+            state: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AttachedSession-properties-state-properties-state-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;ACTIVE&quot;,
+    &quot;IDLE&quot;
+]</code></div>
+
+
+
+
+
+<div>The state of the attached file.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AttachedSession-properties-type-properties-type-0" aria-expanded="false" aria-controls="200-definitions-AttachedSession-properties-type-properties-type-0">
+            type: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AttachedSession-properties-type-properties-type-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;NOTEBOOK&quot;,
+    &quot;FILE&quot;
+]</code></div>
+
+
+
+
+
+<div>The type of the attached session.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;description&quot;:&quot;Details of attached sessions to a cluster&quot;,
+    &quot;properties&quot;:{
+        &quot;type&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;The type of the attached session.&quot;,
+            &quot;enum&quot;:[
+                &quot;NOTEBOOK&quot;,
+                &quot;FILE&quot;
+            ]
+        },
+        &quot;path&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;The path of the attached file.&quot;
+        },
+        &quot;state&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;The state of the attached file.&quot;,
+            &quot;enum&quot;:[
+                &quot;ACTIVE&quot;,
+                &quot;IDLE&quot;
+            ]
+        },
+        &quot;lastCommandRun&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;The time of the last command of file was run in this cluster.\n&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-ClusterRuntimeConfig-properties-initScripts" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : initScripts</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Init script paths that are run in the order of definition.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-InitScriptPath-items-0" aria-expanded="false" aria-controls="200-definitions-InitScriptPath-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-InitScriptPath" role="button" class="btn btn-default btn-sm btn-xsm">InitScriptPath</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-InitScriptPath-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The path details of init script</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;description&quot;:&quot;Init script paths that are run in the order of definition.&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/InitScriptPath&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-InitScriptPath" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : InitScriptPath</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The path details of init script</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-InitScriptPath-properties-destination-properties-destination-0" aria-expanded="false" aria-controls="200-definitions-InitScriptPath-properties-destination-properties-destination-0">
+            destination(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-InitScriptPath-properties-destination-properties-destination-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Full path of the init script file. Example - /Workspace/Shared/Folder1/my-init.sh or /Volumes/catalogName/schemaName/volumeName/Shared/Folder1/my-init.sh.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;The path details of init script&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;destination&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;destination&quot;:{
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;description&quot;:&quot;Full path of the init script file. Example - /Workspace/Shared/Folder1/my-init.sh or /Volumes/catalogName/schemaName/volumeName/Shared/Folder1/my-init.sh.&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-ShapeConfig" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : ShapeConfig</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Shape of the driver or executor if a flexible shape is used.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ShapeConfig-properties-gpus-properties-gpus-0" aria-expanded="false" aria-controls="200-definitions-ShapeConfig-properties-gpus-properties-gpus-0">
+            gpus: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-ShapeConfig-properties-gpus-properties-gpus-0">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>0</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Total number of GPUs used for the driver or workers.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ShapeConfig-properties-memoryInGBs-properties-memoryInGBs-0" aria-expanded="false" aria-controls="200-definitions-ShapeConfig-properties-memoryInGBs-properties-memoryInGBs-0">
+            memoryInGBs: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-ShapeConfig-properties-memoryInGBs-properties-memoryInGBs-0">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>16</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Amount of memory used for the driver or workers.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ShapeConfig-properties-ocpus-properties-ocpus-0" aria-expanded="false" aria-controls="200-definitions-ShapeConfig-properties-ocpus-properties-ocpus-0">
+            ocpus: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-ShapeConfig-properties-ocpus-properties-ocpus-0">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>1</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Total number of OCPUs used for the driver or workers.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Shape of the driver or executor if a flexible shape is used.&quot;,
+    &quot;properties&quot;:{
+        &quot;ocpus&quot;:{
+            &quot;description&quot;:&quot;Total number of OCPUs used for the driver or workers.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;minimum&quot;:1
+        },
+        &quot;gpus&quot;:{
+            &quot;description&quot;:&quot;Total number of GPUs used for the driver or workers.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;minimum&quot;:0
+        },
+        &quot;memoryInGBs&quot;:{
+            &quot;description&quot;:&quot;Amount of memory used for the driver or workers.&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;minimum&quot;:16
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">400 Response</h4>
+                <div class="response-body">
+                <div>Bad Request (invalid query parameters, malformed headers, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#400-response-header-opc-request-id" aria-expanded="false" aria-controls="400-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="400-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="400-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-code-properties-code-11" aria-expanded="false" aria-controls="400-definitions-Error-properties-code-properties-code-11">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-code-properties-code-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-message-properties-message-11" aria-expanded="false" aria-controls="400-definitions-Error-properties-message-properties-message-11">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-message-properties-message-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">401 Response</h4>
+                <div class="response-body">
+                <div>Unauthorized (missing or expired credentials, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#401-response-header-opc-request-id" aria-expanded="false" aria-controls="401-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="401-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="401-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-code-properties-code-11" aria-expanded="false" aria-controls="401-definitions-Error-properties-code-properties-code-11">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-code-properties-code-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-message-properties-message-11" aria-expanded="false" aria-controls="401-definitions-Error-properties-message-properties-message-11">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-message-properties-message-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">404 Response</h4>
+                <div class="response-body">
+                <div>Not Found. The requested resource was not found.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#404-response-header-opc-request-id" aria-expanded="false" aria-controls="404-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="404-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="404-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-code-properties-code-11" aria-expanded="false" aria-controls="404-definitions-Error-properties-code-properties-code-11">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-code-properties-code-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-message-properties-message-11" aria-expanded="false" aria-controls="404-definitions-Error-properties-message-properties-message-11">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-message-properties-message-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">429 Response</h4>
+                <div class="response-body">
+                <div>Too Many Requests. Too many requests sent to the server in a short period.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#429-response-header-opc-request-id" aria-expanded="false" aria-controls="429-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="429-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="429-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-code-properties-code-11" aria-expanded="false" aria-controls="429-definitions-Error-properties-code-properties-code-11">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-code-properties-code-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-message-properties-message-11" aria-expanded="false" aria-controls="429-definitions-Error-properties-message-properties-message-11">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-message-properties-message-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-500">500 Response</h4>
+                <div class="response-body">
+                <div>Internal Server Error. The server encountered an unexpected condition preventing fulfilment of the request.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#500-response-header-opc-request-id" aria-expanded="false" aria-controls="500-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="500-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="500-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-code-properties-code-11" aria-expanded="false" aria-controls="500-definitions-Error-properties-code-properties-code-11">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-code-properties-code-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-message-properties-message-11" aria-expanded="false" aria-controls="500-definitions-Error-properties-message-properties-message-11">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-message-properties-message-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range">Default Response</h4>
+                <div class="response-body">
+                <div>Unknown Error. Error is not recognized by the system.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#default-response-header-opc-request-id" aria-expanded="false" aria-controls="default-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="default-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="default-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-code-properties-code-11" aria-expanded="false" aria-controls="default-definitions-Error-properties-code-properties-code-11">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-code-properties-code-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-message-properties-message-11" aria-expanded="false" aria-controls="default-definitions-Error-properties-message-properties-message-11">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-message-properties-message-11">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+
+				<a style="float: right" href="#top">Back to Top</a>
+				
+                
+                <h3 id="examples">Examples</h3>
+                
+            <div>
+               <div class="section">
+                  <p>The following example shows how to &lt;describe action&gt; by submitting a &lt;method&gt; request on the REST resource using cURL. For more information about cURL, see<a href="Use%20cURL.html" target="_blank">Use cURL</a></p><pre class="oac_no_warn" dir="ltr">curl&lt;command&gt;https:</pre></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-51E5C29A-6B7E-487A-8832-5D709410C16A__GUID-A85376BB-4DE9-4339-A585-5DB290EA48B4">Example of the Response Headers</p>
+                  <p>The following shows example of the response headers.</p><pre class="oac_no_warn" dir="ltr">&lt;Response header&gt;</pre></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-51E5C29A-6B7E-487A-8832-5D709410C16A__GUID-A65AFDA9-4579-4925-9F6A-6599E8DCC393">Example of the Response Body</p>
+                  <p>The following example shows the contents of the response body in JSON format, including&lt;additional information&gt;:</p><pre class="oac_no_warn" dir="ltr">&lt;Include response&gt;</pre></div>
+            </div>
+         
+                <a style="float: right" href="#top">Back to Top</a>
+                
+
+            </section>
+
+            
+        </article>
+    </body>
+</html>

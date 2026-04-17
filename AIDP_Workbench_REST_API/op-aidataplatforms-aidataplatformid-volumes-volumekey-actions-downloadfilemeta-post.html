@@ -1,0 +1,4239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>REST API for Oracle AI Data Platform Workbench - Download a file to Volume by generating par</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+		
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletedir-delete.html" title="Previous" type="text/html">
+        <link rel="next" href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfile-post.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:30+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"REST API for Oracle AI Data Platform Workbench - Download a file to Volume by generating par","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-deletedir-delete.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="op-aidataplatforms-aidataplatformid-volumes-volumekey-actions-downloadfile-post.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+
+            
+            <header id="top">
+
+                <ol class="breadcrumb">
+                    <li><a href="index.html">REST API for Oracle AI Data Platform Workbench</a></li>
+                    <li>Tasks</li>
+                    
+                    <li class="active">
+                        
+                        <a href="api-volume.html">Volume</a>
+                        
+                    </li>
+                    
+                </ol>
+                
+                <p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+                
+                
+                <div>
+                	<div class="dropdown btn-group pull-right" style="clear: right;">
+                		<button id="dLabel" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to <span class="caret"></span>
+                		</button>
+      					<ul class="dropdown-menu" aria-labelledby="dLabel">
+          					<li><a href="#request" data-toggle="ignore">Request</a></li>
+          					<li><a href="#response" data-toggle="ignore">Response</a></li>
+          					
+      					</ul>
+    				</div>
+     				<h2>Download a file to Volume by generating par</h2>
+     			</div>
+                
+                <div>
+                    <div class="label label-post text-uppercase">post</div>
+                    <p><strong>/20240831/aiDataPlatforms/{aiDataPlatformId}/volumes/{volumeKey}/actions/downloadFileMeta</strong></p>
+                </div>
+            </header>
+            <section>
+
+                <div class="description">provide the par info for downloading the file for given path.
+</div>
+
+                
+
+                <h3 id="request">Request</h3>
+                
+
+                
+
+                
+                <div class="h5">Path Parameters</div>
+                <div class="schema-container">
+                <ul class="schema-properties">
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-0" aria-expanded="false" aria-controls="request-path-param-0">
+                    aiDataPlatformId(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-0">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the AI Data Platform (Data Lake) instance.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-1" aria-expanded="false" aria-controls="request-path-param-1">
+                    volumeKey(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-1">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The key of the Volume</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                </ul>
+
+                
+                </div>
+                
+
+
+                
+
+
+                
+                <div class="h5">Header Parameters</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-request-id" aria-expanded="false" aria-controls="request-header-param-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned identifier for the request. If you need to contact
+Oracle about a particular request, please provide the request ID.
+The only valid characters for request IDs are letters, numbers,
+underscore, and dash.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-retry-token" aria-expanded="false" aria-controls="request-header-param-opc-retry-token">
+                        opc-retry-token: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-retry-token">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>64</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A token that uniquely identifies a request so it can be retried in case of a timeout or
+server error without risk of running that same action again. Retry tokens expire after 24
+hours, but can be invalidated before then due to conflicting operations. For example, if a resource
+has been deleted and removed from the system, then a retry of the original creation request
+might be rejected.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-path" aria-expanded="false" aria-controls="request-header-param-path">
+                        path(required): string
+                        </a>
+                        <div class="collapse" id="request-header-param-path">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The absolute path of the file or folder</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+
+
+                
+
+                
+
+                
+                
+                <a style="float: right" href="#top">Back to Top</a>
+
+                <h3 id="response">Response</h3>
+
+                
+                
+                <div class="h5">Supported Media Types</div>
+                <ul class="media-types">
+                    
+                    <li>application/json</li>
+                    
+                </ul>
+                
+                
+
+
+
+                
+                <div class="response">
+                <h4 class="response-code range-200">200 Response</h4>
+                <div class="response-body">
+                <div>generates a PAR to download the file.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-content-location" aria-expanded="false" aria-controls="200-response-header-content-location">
+                        content-location: string(uri-reference)
+                        </a>
+                        <div class="collapse" id="200-response-header-content-location">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Same as location.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-etag" aria-expanded="false" aria-controls="200-response-header-etag">
+                        etag: string
+                        </a>
+                        <div class="collapse" id="200-response-header-etag">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>For optimistic concurrency control. See `if-match`.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-location" aria-expanded="false" aria-controls="200-response-header-location">
+                        location: string(uri-reference)
+                        </a>
+                        <div class="collapse" id="200-response-header-location">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>URL for the uploaded Volume file.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-opc-request-id" aria-expanded="false" aria-controls="200-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="200-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="200-definitions-DownloadFileWithParResult" class="swagger-schema">
+    <div class="panel-heading">Root Schema : DownloadFileWithParResult</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Response object of generate PAR with download API</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-createdBy-properties-createdBy-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-createdBy-properties-createdBy-1">
+            createdBy: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-createdBy-properties-createdBy-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The user who created the file.
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-createdTime-properties-createdTime-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-createdTime-properties-createdTime-1">
+            createdTime: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-createdTime-properties-createdTime-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The time at which the file was created.
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-definedTags-properties-definedTags-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-definedTags-properties-definedTags-1">
+            definedTags: 
+            object </a> <a href="#200-definitions-DownloadFileWithParResult-properties-definedTags" role="button" class="btn btn-default btn-sm btn-xsm">definedTags</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-definedTags-properties-definedTags-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Defined tags for this resource. Each key is predefined and scoped to a namespace.
+For more information, see [Resource Tags](/iaas/Content/General/Concepts/resourcetags.htm).
+
+Example: `{"Operations": {"CostCenter": "42"}}`
+</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-description-properties-description-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-description-properties-description-1">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-description-properties-description-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The file description.
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-eTag-properties-eTag-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-eTag-properties-eTag-1">
+            eTag(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-eTag-properties-eTag-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>etag after creating or closing a file
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-freeformTags-properties-freeformTags-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-freeformTags-properties-freeformTags-1">
+            freeformTags: 
+            object </a> <a href="#200-definitions-DownloadFileWithParResult-properties-freeformTags" role="button" class="btn btn-default btn-sm btn-xsm">freeformTags</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-freeformTags-properties-freeformTags-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-DownloadFileWithParResult-properties-freeformTags-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace.
+For more information, see [Resource Tags](/iaas/Content/General/Concepts/resourcetags.htm).
+
+Example: `{"Department": "Finance"}`
+</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-locationUri-properties-locationUri-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-locationUri-properties-locationUri-1">
+            locationUri(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-locationUri-properties-locationUri-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The object storage uri which has bucket and namespace information.
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-parUrl-properties-parUrl-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-parUrl-properties-parUrl-1">
+            parUrl: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-parUrl-properties-parUrl-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>string representing the par url
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-size-properties-size-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-size-properties-size-1">
+            size(required): 
+            integer(int64)</a>
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-size-properties-size-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>file size in bytes
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-systemTags-properties-systemTags-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-systemTags-properties-systemTags-1">
+            systemTags: 
+            object </a> <a href="#200-definitions-DownloadFileWithParResult-properties-systemTags" role="button" class="btn btn-default btn-sm btn-xsm">systemTags</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-systemTags-properties-systemTags-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">System tags for this resource. Each key is predefined and scoped to a namespace.
+
+Example: `{"orcl-cloud": {"free-tier-retained": "true"}}`
+</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-updatedBy-properties-updatedBy-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-updatedBy-properties-updatedBy-1">
+            updatedBy: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-updatedBy-properties-updatedBy-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The user who last updated the file.
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-updatedTime-properties-updatedTime-1" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-updatedTime-properties-updatedTime-1">
+            updatedTime: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-updatedTime-properties-updatedTime-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The last modified time of the file.
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Response object of generate PAR with download API&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;locationUri&quot;,
+        &quot;eTag&quot;,
+        &quot;size&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;parUrl&quot;:{
+            &quot;description&quot;:&quot;string representing the par url\n&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;eTag&quot;:{
+            &quot;description&quot;:&quot;etag after creating or closing a file\n&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;locationUri&quot;:{
+            &quot;description&quot;:&quot;The object storage uri which has bucket and namespace information.\n&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;size&quot;:{
+            &quot;description&quot;:&quot;file size in bytes\n&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;format&quot;:&quot;int64&quot;
+        },
+        &quot;createdBy&quot;:{
+            &quot;description&quot;:&quot;The user who created the file.\n&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;updatedBy&quot;:{
+            &quot;description&quot;:&quot;The user who last updated the file.\n&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;createdTime&quot;:{
+            &quot;description&quot;:&quot;The time at which the file was created.\n&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;updatedTime&quot;:{
+            &quot;description&quot;:&quot;The last modified time of the file.\n&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;The file description.\n&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;freeformTags&quot;:{
+            &quot;description&quot;:&quot;Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace.\nFor more information, see [Resource Tags](/iaas/Content/General/Concepts/resourcetags.htm).\n\nExample: &#x60;{\&quot;Department\&quot;: \&quot;Finance\&quot;}&#x60;\n&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;string&quot;
+            }
+        },
+        &quot;definedTags&quot;:{
+            &quot;description&quot;:&quot;Defined tags for this resource. Each key is predefined and scoped to a namespace.\nFor more information, see [Resource Tags](/iaas/Content/General/Concepts/resourcetags.htm).\n\nExample: &#x60;{\&quot;Operations\&quot;: {\&quot;CostCenter\&quot;: \&quot;42\&quot;}}&#x60;\n&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;object&quot;,
+                &quot;description&quot;:&quot;Key-value pair representing a defined tag key and value, scoped to a namespace.\n\nExample: &#x60;{\&quot;CostCenter\&quot;: \&quot;42\&quot;}&#x60;\n&quot;,
+                &quot;additionalProperties&quot;:{
+                    &quot;type&quot;:&quot;object&quot;,
+                    &quot;description&quot;:&quot;The value of the tag. Only the String type is supported.\n&quot;
+                }
+            }
+        },
+        &quot;systemTags&quot;:{
+            &quot;description&quot;:&quot;System tags for this resource. Each key is predefined and scoped to a namespace.\n\nExample: &#x60;{\&quot;orcl-cloud\&quot;: {\&quot;free-tier-retained\&quot;: \&quot;true\&quot;}}&#x60;\n&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;object&quot;,
+                &quot;description&quot;:&quot;Key-value pair representing a system tag key and value, scoped to a namespace.\n\nExample: &#x60;{\&quot;free-tier-retained\&quot;: \&quot;true\&quot;}&#x60;\n&quot;,
+                &quot;additionalProperties&quot;:{
+                    &quot;type&quot;:&quot;object&quot;,
+                    &quot;description&quot;:&quot;The value of the tag. Only the String type is supported.\n&quot;
+                }
+            }
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-DownloadFileWithParResult-properties-definedTags" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : definedTags</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties-additional-0" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties-additional-0">
+           
+               object </a> <a href="#200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties" role="button" class="btn btn-default btn-sm btn-xsm">additionalProperties</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Key-value pair representing a defined tag key and value, scoped to a namespace.
+
+Example: `{"CostCenter": "42"}`
+</div>
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Defined tags for this resource. Each key is predefined and scoped to a namespace.\nFor more information, see [Resource Tags](/iaas/Content/General/Concepts/resourcetags.htm).\n\nExample: &#x60;{\&quot;Operations\&quot;: {\&quot;CostCenter\&quot;: \&quot;42\&quot;}}&#x60;\n&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;object&quot;,
+        &quot;description&quot;:&quot;Key-value pair representing a defined tag key and value, scoped to a namespace.\n\nExample: &#x60;{\&quot;CostCenter\&quot;: \&quot;42\&quot;}&#x60;\n&quot;,
+        &quot;additionalProperties&quot;:{
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;description&quot;:&quot;The value of the tag. Only the String type is supported.\n&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Defined tags for this resource. Each key is predefined and scoped to a namespace.
+For more information, see [Resource Tags](/iaas/Content/General/Concepts/resourcetags.htm).
+
+Example: `{"Operations": {"CostCenter": "42"}}`
+</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-DownloadFileWithParResult-properties-freeformTags" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : freeformTags</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-freeformTags-additionalProperties-additional-0" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-freeformTags-additionalProperties-additional-0">
+           
+               string</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-freeformTags-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace.\nFor more information, see [Resource Tags](/iaas/Content/General/Concepts/resourcetags.htm).\n\nExample: &#x60;{\&quot;Department\&quot;: \&quot;Finance\&quot;}&#x60;\n&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;string&quot;
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace.
+For more information, see [Resource Tags](/iaas/Content/General/Concepts/resourcetags.htm).
+
+Example: `{"Department": "Finance"}`
+</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-DownloadFileWithParResult-properties-systemTags" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : systemTags</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties-additional-0" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties-additional-0">
+           
+               object </a> <a href="#200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties" role="button" class="btn btn-default btn-sm btn-xsm">additionalProperties</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Key-value pair representing a system tag key and value, scoped to a namespace.
+
+Example: `{"free-tier-retained": "true"}`
+</div>
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;System tags for this resource. Each key is predefined and scoped to a namespace.\n\nExample: &#x60;{\&quot;orcl-cloud\&quot;: {\&quot;free-tier-retained\&quot;: \&quot;true\&quot;}}&#x60;\n&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;object&quot;,
+        &quot;description&quot;:&quot;Key-value pair representing a system tag key and value, scoped to a namespace.\n\nExample: &#x60;{\&quot;free-tier-retained\&quot;: \&quot;true\&quot;}&#x60;\n&quot;,
+        &quot;additionalProperties&quot;:{
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;description&quot;:&quot;The value of the tag. Only the String type is supported.\n&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>System tags for this resource. Each key is predefined and scoped to a namespace.
+
+Example: `{"orcl-cloud": {"free-tier-retained": "true"}}`
+</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : additionalProperties</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties-additionalProperties-additional-0" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties-additionalProperties-additional-0">
+           
+               object </a> <a href="#200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties-additionalProperties" role="button" class="btn btn-default btn-sm btn-xsm">additionalProperties</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The value of the tag. Only the String type is supported.
+</div>
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;description&quot;:&quot;Key-value pair representing a defined tag key and value, scoped to a namespace.\n\nExample: &#x60;{\&quot;CostCenter\&quot;: \&quot;42\&quot;}&#x60;\n&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;object&quot;,
+        &quot;description&quot;:&quot;The value of the tag. Only the String type is supported.\n&quot;
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Key-value pair representing a defined tag key and value, scoped to a namespace.
+
+Example: `{"CostCenter": "42"}`
+</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-DownloadFileWithParResult-properties-definedTags-additionalProperties-additionalProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : additionalProperties</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The value of the tag. Only the String type is supported.
+</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : additionalProperties</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties-additionalProperties-additional-0" aria-expanded="false" aria-controls="200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties-additionalProperties-additional-0">
+           
+               object </a> <a href="#200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties-additionalProperties" role="button" class="btn btn-default btn-sm btn-xsm">additionalProperties</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">The value of the tag. Only the String type is supported.
+</div>
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;description&quot;:&quot;Key-value pair representing a system tag key and value, scoped to a namespace.\n\nExample: &#x60;{\&quot;free-tier-retained\&quot;: \&quot;true\&quot;}&#x60;\n&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;object&quot;,
+        &quot;description&quot;:&quot;The value of the tag. Only the String type is supported.\n&quot;
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Key-value pair representing a system tag key and value, scoped to a namespace.
+
+Example: `{"free-tier-retained": "true"}`
+</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-DownloadFileWithParResult-properties-systemTags-additionalProperties-additionalProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : additionalProperties</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>The value of the tag. Only the String type is supported.
+</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">400 Response</h4>
+                <div class="response-body">
+                <div>Bad Request (invalid query parameters, malformed headers, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#400-response-header-opc-request-id" aria-expanded="false" aria-controls="400-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="400-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="400-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-code-properties-code-81" aria-expanded="false" aria-controls="400-definitions-Error-properties-code-properties-code-81">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-code-properties-code-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-message-properties-message-81" aria-expanded="false" aria-controls="400-definitions-Error-properties-message-properties-message-81">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-message-properties-message-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">401 Response</h4>
+                <div class="response-body">
+                <div>Unauthorized (missing or expired credentials, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#401-response-header-opc-request-id" aria-expanded="false" aria-controls="401-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="401-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="401-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-code-properties-code-81" aria-expanded="false" aria-controls="401-definitions-Error-properties-code-properties-code-81">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-code-properties-code-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-message-properties-message-81" aria-expanded="false" aria-controls="401-definitions-Error-properties-message-properties-message-81">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-message-properties-message-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">404 Response</h4>
+                <div class="response-body">
+                <div>Not Found. The requested resource was not found.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#404-response-header-opc-request-id" aria-expanded="false" aria-controls="404-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="404-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="404-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-code-properties-code-81" aria-expanded="false" aria-controls="404-definitions-Error-properties-code-properties-code-81">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-code-properties-code-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-message-properties-message-81" aria-expanded="false" aria-controls="404-definitions-Error-properties-message-properties-message-81">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-message-properties-message-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">409 Response</h4>
+                <div class="response-body">
+                <div>Conflict. Request conflicts with the current state of the resource.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#409-response-header-opc-request-id" aria-expanded="false" aria-controls="409-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="409-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="409-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#409-definitions-Error-properties-code-properties-code-30" aria-expanded="false" aria-controls="409-definitions-Error-properties-code-properties-code-30">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="409-definitions-Error-properties-code-properties-code-30">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#409-definitions-Error-properties-message-properties-message-30" aria-expanded="false" aria-controls="409-definitions-Error-properties-message-properties-message-30">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="409-definitions-Error-properties-message-properties-message-30">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">429 Response</h4>
+                <div class="response-body">
+                <div>Too Many Requests. Too many requests sent to the server in a short period.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#429-response-header-opc-request-id" aria-expanded="false" aria-controls="429-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="429-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="429-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-code-properties-code-81" aria-expanded="false" aria-controls="429-definitions-Error-properties-code-properties-code-81">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-code-properties-code-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-message-properties-message-81" aria-expanded="false" aria-controls="429-definitions-Error-properties-message-properties-message-81">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-message-properties-message-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-500">500 Response</h4>
+                <div class="response-body">
+                <div>Internal Server Error. The server encountered an unexpected condition preventing fulfilment of the request.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#500-response-header-opc-request-id" aria-expanded="false" aria-controls="500-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="500-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="500-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-code-properties-code-81" aria-expanded="false" aria-controls="500-definitions-Error-properties-code-properties-code-81">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-code-properties-code-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-message-properties-message-81" aria-expanded="false" aria-controls="500-definitions-Error-properties-message-properties-message-81">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-message-properties-message-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range">Default Response</h4>
+                <div class="response-body">
+                <div>Unknown Error. Error is not recognized by the system.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#default-response-header-opc-request-id" aria-expanded="false" aria-controls="default-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="default-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="default-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-code-properties-code-81" aria-expanded="false" aria-controls="default-definitions-Error-properties-code-properties-code-81">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-code-properties-code-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-message-properties-message-81" aria-expanded="false" aria-controls="default-definitions-Error-properties-message-properties-message-81">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-message-properties-message-81">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+
+				<a style="float: right" href="#top">Back to Top</a>
+				
+                
+
+            </section>
+
+            
+        </article>
+    </body>
+</html>

@@ -1,0 +1,9231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>REST API for Oracle AI Data Platform Workbench - Get Agent Flow details</title>
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="dcterms.category" content="cloud">
+		<meta name="dcterms.identifier" content="G50606-01">
+		<meta name="dcterms.isVersionOf" content="AIWAP">
+		
+        <link rel="stylesheet" href="/sp_common/rest-template/ohc-rest-template/css/rest.css">
+        <script>
+            document.write('<style type="text/css">');
+            document.write('body > .noscript, body > .noscript ~ * { opacity: 0; }');
+            document.write('</style>');
+        </script>
+        <script data-main="/sp_common/rest-template/ohc-rest-template/js/rest-config" src="/sp_common/rest-template/requirejs/require.js"></script>
+        <script>
+            if(window.require === undefined) {
+                document.write('<script data-main="sp_common/rest-template/ohc-rest-template/js/rest-config" src="sp_common/rest-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/rest-template/ohc-rest-template/css/rest.css" rel="stylesheet">');
+            }
+        </script>
+		
+
+        <meta name="description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta property="og:site_name" content="Oracle Help Center">
+        <meta property="og:title" content="REST API for Oracle AI Data Platform Workbench">
+        <meta property="og:description" content="Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.">
+        <meta name="generator" content="Oracle REST API Publisher 1.7.0">
+		<meta name="date" content="2026-02-27 20:32:47 UTC">
+        <link rel="shortcut icon" href="/sp_common/rest-template/ohc-common/img/favicon.ico">
+        <meta name="application-name" content="REST API for Oracle AI Data Platform Workbench">
+        <link type="application/swagger+json" title="Swagger 2.0" href="swagger.json" rel="alternate">
+        <link rel="prev" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-get.html" title="Previous" type="text/html">
+        <link rel="next" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-permissions-get.html" title="Next" type="text/html">
+    
+    <meta name="dcterms.created" content="2026-02-27T20:36:30+00:00">
+    <meta name="dcterms.title" content="REST API for Oracle AI Data Platform Workbench">
+    <meta name="dcterms.product" content="en/cloud/paas/ai-data-platform">
+    <meta name="dcterms.release" content="Latest Cloud Release">
+  <script id="ssot-metadata" type="application/json"> {"primary":{"category":{"short_name":"cloud","element_name":"Cloud","display_in_url":true},"suite":{"short_name":"paas","element_name":"Cloud Platform","display_in_url":true},"product_group":{"short_name":"data-management-cloud","element_name":"Data Management","display_in_url":false},"product":{"short_name":"ai-data-platform","element_name":"AI Data Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Cloud Release","display_in_url":false}}} </script>
+    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":"REST API for Oracle AI Data Platform Workbench - Get Agent Flow details","description":"Oracle AI Data Platform Workbench provides a dedicated development environment for data professionals to design, orchestrate, and deploy data pipelines and AI models using Spark-powered notebooks.","datePublished":"2026-02-27 CST","dateModified":"2026-02-27 CST"} </script>
+    </head>
+    <body>
+        <div class="noscript alert alert-danger text-center" role="alert">
+            <a class="pull-left" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflowdeployments-agentflowdeploymentkey-get.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+            <a class="pull-right" href="op-aidataplatforms-aidataplatformid-workspaces-workspacekey-agentflows-agentflowkey-permissions-get.html">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        </div>
+        <article>
+
+            
+            <header id="top">
+
+                <ol class="breadcrumb">
+                    <li><a href="index.html">REST API for Oracle AI Data Platform Workbench</a></li>
+                    <li>Tasks</li>
+                    
+                    <li class="active">
+                        
+                        <a href="api-agentflow.html">AgentFlow</a>
+                        
+                    </li>
+                    
+                </ol>
+                
+                <p class="draftsubtitle">NOT FOR PUBLIC DISTRIBUTION: 2026-02-27</p>
+                
+                
+                <div>
+                	<div class="dropdown btn-group pull-right" style="clear: right;">
+                		<button id="dLabel" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to <span class="caret"></span>
+                		</button>
+      					<ul class="dropdown-menu" aria-labelledby="dLabel">
+          					<li><a href="#request" data-toggle="ignore">Request</a></li>
+          					<li><a href="#response" data-toggle="ignore">Response</a></li>
+          					
+      					</ul>
+    				</div>
+     				<h2>Get Agent Flow details</h2>
+     			</div>
+                
+                <div>
+                    <div class="label label-get text-uppercase">get</div>
+                    <p><strong>/20240831/aiDataPlatforms/{aiDataPlatformId}/workspaces/{workspaceKey}/agentFlows/{agentFlowKey}</strong></p>
+                </div>
+            </header>
+            <section>
+
+                <div class="description">Returns detailed information about an Agent Flow.</div>
+
+                
+
+                <h3 id="request">Request</h3>
+                
+
+                
+
+                
+                <div class="h5">Path Parameters</div>
+                <div class="schema-container">
+                <ul class="schema-properties">
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-0" aria-expanded="false" aria-controls="request-path-param-0">
+                    agentFlowKey(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-0">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The UUID of the Agent Flow</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-1" aria-expanded="false" aria-controls="request-path-param-1">
+                    aiDataPlatformId(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-1">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The [OCID](/iaas/Content/General/Concepts/identifiers.htm) of the AI Data Platform (Data Lake) instance.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                    <li><a role="button" data-toggle="collapse" href="#request-path-param-2" aria-expanded="false" aria-controls="request-path-param-2">
+                    workspaceKey(required): string
+                    </a>
+                    <div class="collapse" id="request-path-param-2">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The key of the Workspace</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    </li>
+                
+                </ul>
+
+                
+                </div>
+                
+
+
+                
+
+
+                
+                <div class="h5">Header Parameters</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-opc-request-id" aria-expanded="false" aria-controls="request-header-param-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="request-header-param-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned identifier for the request. If you need to contact
+Oracle about a particular request, please provide the request ID.
+The only valid characters for request IDs are letters, numbers,
+underscore, and dash.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#request-header-param-should-update-recent" aria-expanded="false" aria-controls="request-header-param-should-update-recent">
+                        should-update-recent: boolean
+                        </a>
+                        <div class="collapse" id="request-header-param-should-update-recent">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A flag to identify if the recent list should be updated.</div>
+
+
+
+<div>Default Value: <code>false</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+
+
+                
+
+                
+
+                
+                
+                <a style="float: right" href="#top">Back to Top</a>
+
+                <h3 id="response">Response</h3>
+
+                
+                
+                <div class="h5">Supported Media Types</div>
+                <ul class="media-types">
+                    
+                    <li>application/json</li>
+                    
+                </ul>
+                
+                
+
+
+
+                
+                <div class="response">
+                <h4 class="response-code range-200">200 Response</h4>
+                <div class="response-body">
+                <div>Successful operation</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-etag" aria-expanded="false" aria-controls="200-response-header-etag">
+                        etag: string
+                        </a>
+                        <div class="collapse" id="200-response-header-etag">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>For optimistic concurrency control. See `if-match`.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                        <li><a role="button" data-toggle="collapse" href="#200-response-header-opc-request-id" aria-expanded="false" aria-controls="200-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="200-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="200-definitions-AgentFlow" class="swagger-schema">
+    <div class="panel-heading">Root Schema : AgentFlow</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>An agent flow is a sequence of nodes and edges defining an end-to-end agentic application. | A flow can be composed of multiple nodes, each node being a single agent or a multi-agent system, working independently | or collaboratively to accomplish an overall objective</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-computeKey-properties-computeKey-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-computeKey-properties-computeKey-1">
+            computeKey: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-computeKey-properties-computeKey-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>The key of the Agent Flow Compute associated with this Agent Flow</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-createdBy-properties-createdBy-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-createdBy-properties-createdBy-1">
+            createdBy: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-createdBy-properties-createdBy-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>The OCID of the user/principal who created the Agent flow.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-dependenciesFilePath-properties-dependenciesFilePath-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-dependenciesFilePath-properties-dependenciesFilePath-1">
+            dependenciesFilePath: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-dependenciesFilePath-properties-dependenciesFilePath-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The path to dependencies file</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-deploymentComputeKey-properties-deploymentComputeKey-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-deploymentComputeKey-properties-deploymentComputeKey-1">
+            deploymentComputeKey: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-deploymentComputeKey-properties-deploymentComputeKey-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The key of the Compute where Agent Flow is deployed</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-deploymentMode-properties-deploymentMode-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-deploymentMode-properties-deploymentMode-1">
+            deploymentMode: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-deploymentMode-properties-deploymentMode-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Agent flow deployment mode.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-description-properties-description-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-description-properties-description-1">
+            description(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-description-properties-description-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>AgentFlow description.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowDiagram-properties-diagram-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowDiagram-properties-diagram-1">
+            diagram: 
+            object </a> <a href="#200-definitions-AgentFlowDiagram" role="button" class="btn btn-default btn-sm btn-xsm">AgentFlowDiagram</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowDiagram-properties-diagram-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Diagrammatic representation of the Agent Flow with all node and edge details</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-displayName-properties-displayName-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-displayName-properties-displayName-1">
+            displayName(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-displayName-properties-displayName-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>AgentFlow name.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-entryFilePath-properties-entryFilePath-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-entryFilePath-properties-entryFilePath-1">
+            entryFilePath: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-entryFilePath-properties-entryFilePath-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The path to project entry file</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-GuardrailsConfiguration-properties-guardrails-1" aria-expanded="false" aria-controls="200-definitions-GuardrailsConfiguration-properties-guardrails-1">
+            guardrails: 
+            object </a> <a href="#200-definitions-GuardrailsConfiguration" role="button" class="btn btn-default btn-sm btn-xsm">GuardrailsConfiguration</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-GuardrailsConfiguration-properties-guardrails-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Safety guardrails configuration for an agent flow</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-key-properties-key-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-key-properties-key-1">
+            key(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-key-properties-key-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The unique identifier (UUID) of the Agent flow</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-lifecycleDetails-properties-lifecycleDetails-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-lifecycleDetails-properties-lifecycleDetails-1">
+            lifecycleDetails: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-lifecycleDetails-properties-lifecycleDetails-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A message that describes the current state of the Agent Flow in more detail. For example,
+can be used to provide actionable information for a resource in the Failed state.
+</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-lifecycleState-properties-lifecycleState-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-lifecycleState-properties-lifecycleState-1">
+            lifecycleState(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-lifecycleState-properties-lifecycleState-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;DRAFT&quot;,
+    &quot;DEPLOYED&quot;
+]</code></div>
+
+
+
+
+
+<div>The current state of the Agent Flow.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-pathInfo-properties-pathInfo-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-pathInfo-properties-pathInfo-1">
+            pathInfo(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-pathInfo-properties-pathInfo-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Path inside volume where the agentFlow json is written</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SessionConfiguration-properties-sessionConfig-1" aria-expanded="false" aria-controls="200-definitions-SessionConfiguration-properties-sessionConfig-1">
+            sessionConfig: 
+            object </a> <a href="#200-definitions-SessionConfiguration" role="button" class="btn btn-default btn-sm btn-xsm">SessionConfiguration</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-SessionConfiguration-properties-sessionConfig-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Session configuration for an agent flow</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-timeCreated-properties-timeCreated-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-timeCreated-properties-timeCreated-1">
+            timeCreated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-timeCreated-properties-timeCreated-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The date and time the Agent flow was created.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-timeUpdated-properties-timeUpdated-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-timeUpdated-properties-timeUpdated-1">
+            timeUpdated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-timeUpdated-properties-timeUpdated-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The date and time the Agent flow was updated.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-type-properties-type-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-type-properties-type-1">
+            type: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-type-properties-type-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;CANVAS&quot;,
+    &quot;CODE&quot;
+]</code></div>
+
+
+
+
+
+<div>The type of Agent Flow (Canvas or Code)</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-updatedBy-properties-updatedBy-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-updatedBy-properties-updatedBy-1">
+            updatedBy: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-updatedBy-properties-updatedBy-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Minimum Length: <code>1</code></div>
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>The ID of the user who last updated the schema.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-uri-properties-uri-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-uri-properties-uri-1">
+            uri: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-uri-properties-uri-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Agent flow uri.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-uriState-properties-uriState-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-uriState-properties-uriState-1">
+            uriState: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-uriState-properties-uriState-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Agent flow uri state.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-version-properties-version-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-version-properties-version-1">
+            version: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-version-properties-version-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A number indicating the version of the record. Each time the record is updated, this version will be incremented. This will be used for optimistic locking</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlow-properties-workspaceKey-properties-workspaceKey-1" aria-expanded="false" aria-controls="200-definitions-AgentFlow-properties-workspaceKey-properties-workspaceKey-1">
+            workspaceKey: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlow-properties-workspaceKey-properties-workspaceKey-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The key of the workspace to which this Agent flow belongs.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;An agent flow is a sequence of nodes and edges defining an end-to-end agentic application. | A flow can be composed of multiple nodes, each node being a single agent or a multi-agent system, working independently | or collaboratively to accomplish an overall objective&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;required&quot;:[
+        &quot;key&quot;,
+        &quot;displayName&quot;,
+        &quot;description&quot;,
+        &quot;lifecycleState&quot;,
+        &quot;pathInfo&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;key&quot;:{
+            &quot;description&quot;:&quot;The unique identifier (UUID) of the Agent flow&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;displayName&quot;:{
+            &quot;description&quot;:&quot;AgentFlow name.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;workspaceKey&quot;:{
+            &quot;description&quot;:&quot;The key of the workspace to which this Agent flow belongs.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;AgentFlow description.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;pathInfo&quot;:{
+            &quot;description&quot;:&quot;Path inside volume where the agentFlow json is written&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;type&quot;:{
+            &quot;description&quot;:&quot;The type of Agent Flow (Canvas or Code)&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;CANVAS&quot;,
+                &quot;CODE&quot;
+            ]
+        },
+        &quot;entryFilePath&quot;:{
+            &quot;description&quot;:&quot;The path to project entry file&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;dependenciesFilePath&quot;:{
+            &quot;description&quot;:&quot;The path to dependencies file&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;deploymentComputeKey&quot;:{
+            &quot;description&quot;:&quot;The key of the Compute where Agent Flow is deployed&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;deploymentMode&quot;:{
+            &quot;description&quot;:&quot;Agent flow deployment mode.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;uri&quot;:{
+            &quot;description&quot;:&quot;Agent flow uri.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;uriState&quot;:{
+            &quot;description&quot;:&quot;Agent flow uri state.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;lifecycleState&quot;:{
+            &quot;description&quot;:&quot;The current state of the Agent Flow.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;DRAFT&quot;,
+                &quot;DEPLOYED&quot;
+            ]
+        },
+        &quot;lifecycleDetails&quot;:{
+            &quot;description&quot;:&quot;A message that describes the current state of the Agent Flow in more detail. For example,\ncan be used to provide actionable information for a resource in the Failed state.\n&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;timeCreated&quot;:{
+            &quot;description&quot;:&quot;The date and time the Agent flow was created.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;
+        },
+        &quot;timeUpdated&quot;:{
+            &quot;description&quot;:&quot;The date and time the Agent flow was updated.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;
+        },
+        &quot;createdBy&quot;:{
+            &quot;description&quot;:&quot;The OCID of the user/principal who created the Agent flow.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;updatedBy&quot;:{
+            &quot;description&quot;:&quot;The ID of the user who last updated the schema.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;computeKey&quot;:{
+            &quot;description&quot;:&quot;The key of the Agent Flow Compute associated with this Agent Flow&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;minLength&quot;:1,
+            &quot;maxLength&quot;:255
+        },
+        &quot;diagram&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/AgentFlowDiagram&quot;
+        },
+        &quot;guardrails&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/GuardrailsConfiguration&quot;
+        },
+        &quot;sessionConfig&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/SessionConfiguration&quot;
+        },
+        &quot;version&quot;:{
+            &quot;description&quot;:&quot;A number indicating the version of the record. Each time the record is updated, this version will be incremented. This will be used for optimistic locking&quot;,
+            &quot;type&quot;:&quot;integer&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowDiagram" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : AgentFlowDiagram</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Diagrammatic representation of the Agent Flow with all node and edge details</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowDiagram-properties-description-properties-description-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowDiagram-properties-description-properties-description-1">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowDiagram-properties-description-properties-description-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>AgentFlow description.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowDiagram-properties-displayName-properties-displayName-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowDiagram-properties-displayName-properties-displayName-1">
+            displayName: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowDiagram-properties-displayName-properties-displayName-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>AgentFlow name.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowDiagram-properties-edges-properties-edges-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowDiagram-properties-edges-properties-edges-1">
+            edges: 
+            object </a> <a href="#200-definitions-AgentFlowDiagram-properties-edges" role="button" class="btn btn-default btn-sm btn-xsm">edges</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowDiagram-properties-edges-properties-edges-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-AgentFlowDiagram-properties-edges-additionalProperties" role="button" class="btn btn-default btn-sm">AgentFlowEdge</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Mapping of edgeId to edge objects.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowDiagram-properties-key-properties-key-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowDiagram-properties-key-properties-key-1">
+            key: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowDiagram-properties-key-properties-key-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>The unique identifier (UUID) of the Agent flow</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowDiagram-properties-nodes-properties-nodes-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowDiagram-properties-nodes-properties-nodes-1">
+            nodes: 
+            object </a> <a href="#200-definitions-AgentFlowDiagram-properties-nodes" role="button" class="btn btn-default btn-sm btn-xsm">nodes</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowDiagram-properties-nodes-properties-nodes-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-AgentFlowDiagram-properties-nodes-additionalProperties" role="button" class="btn btn-default btn-sm">AgentFlowNode</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Mapping of nodeId to node objects.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Diagrammatic representation of the Agent Flow with all node and edge details&quot;,
+    &quot;properties&quot;:{
+        &quot;key&quot;:{
+            &quot;description&quot;:&quot;The unique identifier (UUID) of the Agent flow&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;displayName&quot;:{
+            &quot;description&quot;:&quot;AgentFlow name.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;AgentFlow description.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;nodes&quot;:{
+            &quot;description&quot;:&quot;Mapping of nodeId to node objects.&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/AgentFlowNode&quot;
+            },
+            &quot;default&quot;:{
+            }
+        },
+        &quot;edges&quot;:{
+            &quot;description&quot;:&quot;Mapping of edgeId to edge objects.&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/AgentFlowEdge&quot;
+            },
+            &quot;default&quot;:{
+            }
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-GuardrailsConfiguration" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : GuardrailsConfiguration</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Safety guardrails configuration for an agent flow</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-GuardrailsConfiguration-properties-description-properties-description-1" aria-expanded="false" aria-controls="200-definitions-GuardrailsConfiguration-properties-description-properties-description-1">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-GuardrailsConfiguration-properties-description-properties-description-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Length: <code>1000</code></div>
+
+
+
+
+
+
+
+
+
+<div>Description of the guardrails configuration</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-GuardrailsConfiguration-properties-name-properties-name-1" aria-expanded="false" aria-controls="200-definitions-GuardrailsConfiguration-properties-name-properties-name-1">
+            name: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-GuardrailsConfiguration-properties-name-properties-name-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>Name of the guardrails configuration</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-GuardrailsConfiguration-properties-policies-properties-policies-1" aria-expanded="false" aria-controls="200-definitions-GuardrailsConfiguration-properties-policies-properties-policies-1">
+            policies: 
+            array </a> <a href="#200-definitions-GuardrailsConfiguration-properties-policies" role="button" class="btn btn-default btn-sm btn-xsm">policies</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-GuardrailsConfiguration-properties-policies-properties-policies-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">List of safety policies configured in this guardrails</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Safety guardrails configuration for an agent flow&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;name&quot;:{
+            &quot;description&quot;:&quot;Name of the guardrails configuration&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;maxLength&quot;:255
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;Description of the guardrails configuration&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;maxLength&quot;:1000
+        },
+        &quot;policies&quot;:{
+            &quot;description&quot;:&quot;List of safety policies configured in this guardrails&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/SafetyPolicy&quot;
+            }
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-SessionConfiguration" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : SessionConfiguration</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Session configuration for an agent flow</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SessionRetentionConfiguration-properties-sessionRetentionConfig-1" aria-expanded="false" aria-controls="200-definitions-SessionRetentionConfiguration-properties-sessionRetentionConfig-1">
+            sessionRetentionConfig: 
+            object </a> <a href="#200-definitions-SessionRetentionConfiguration" role="button" class="btn btn-default btn-sm btn-xsm">SessionRetentionConfiguration</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-SessionRetentionConfiguration-properties-sessionRetentionConfig-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Session data retention configuration for agent flow</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SessionConfiguration-properties-variables-properties-variables-1" aria-expanded="false" aria-controls="200-definitions-SessionConfiguration-properties-variables-properties-variables-1">
+            variables: 
+            object </a> <a href="#200-definitions-SessionConfiguration-properties-variables" role="button" class="btn btn-default btn-sm btn-xsm">variables</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-SessionConfiguration-properties-variables-properties-variables-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-SessionConfiguration-properties-variables-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Map of session variable name ??? variable definition</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Session configuration for an agent flow&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;variables&quot;:{
+            &quot;description&quot;:&quot;Map of session variable name ??? variable definition&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;object&quot;
+            },
+            &quot;default&quot;:{
+            }
+        },
+        &quot;sessionRetentionConfig&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/SessionRetentionConfiguration&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowDiagram-properties-edges" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : edges</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-additional-0" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-additional-0">
+           
+               object </a> <a href="#200-definitions-AgentFlowEdge" role="button" class="btn btn-default btn-sm btn-xsm">AgentFlowEdge</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">An edge connecting two nodes in the diagram, with context and metadata.</div>
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Mapping of edgeId to edge objects.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/AgentFlowEdge&quot;
+    },
+    &quot;default&quot;:{
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Mapping of edgeId to edge objects.</div>
+    
+
+    
+    <div>Default Value: <code>{
+}</code></div>
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowDiagram-properties-nodes" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : nodes</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-additional-0" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-additional-0">
+           
+               object </a> <a href="#200-definitions-AgentFlowNode" role="button" class="btn btn-default btn-sm btn-xsm">AgentFlowNode</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-additional-0">
+               
+               
+
+
+<div>Discriminator: <code>type</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">A node in a diagram, representing logic, data, or operation.</div>
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Mapping of nodeId to node objects.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/AgentFlowNode&quot;
+    },
+    &quot;default&quot;:{
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Mapping of nodeId to node objects.</div>
+    
+
+    
+    <div>Default Value: <code>{
+}</code></div>
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowEdge" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : AgentFlowEdge</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>An edge connecting two nodes in the diagram, with context and metadata.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-destNodeId-properties-destNodeId-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-destNodeId-properties-destNodeId-1">
+            destNodeId(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-destNodeId-properties-destNodeId-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Destination node for this edge.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-destNodeInput-properties-destNodeInput-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-destNodeInput-properties-destNodeInput-1">
+            destNodeInput(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-destNodeInput-properties-destNodeInput-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Input port on the destination node.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-edgeHandles-properties-edgeHandles-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-edgeHandles-properties-edgeHandles-1">
+            edgeHandles: 
+            array </a> <a href="#200-definitions-AgentFlowEdge-properties-edgeHandles" role="button" class="btn btn-default btn-sm btn-xsm">edgeHandles</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-edgeHandles-properties-edgeHandles-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Geometry handle coordinates.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-edgeProperties-properties-edgeProperties-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-edgeProperties-properties-edgeProperties-1">
+            edgeProperties: 
+            object </a> <a href="#200-definitions-AgentFlowEdge-properties-edgeProperties" role="button" class="btn btn-default btn-sm btn-xsm">edgeProperties</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-edgeProperties-properties-edgeProperties-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-AgentFlowEdge-properties-edgeProperties-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Extensible Properties of the Edge</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-edgeType-properties-edgeType-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-edgeType-properties-edgeType-1">
+            edgeType: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-edgeType-properties-edgeType-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Style/type for edge.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-key-properties-key-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-key-properties-key-1">
+            key(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-key-properties-key-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique edge identifier.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-parentNodeId-properties-parentNodeId-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-parentNodeId-properties-parentNodeId-1">
+            parentNodeId: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-parentNodeId-properties-parentNodeId-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Parent node, if hierarchical.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-srcNodeId-properties-srcNodeId-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-srcNodeId-properties-srcNodeId-1">
+            srcNodeId(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-srcNodeId-properties-srcNodeId-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Source node for this edge.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-srcNodeOutput-properties-srcNodeOutput-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-srcNodeOutput-properties-srcNodeOutput-1">
+            srcNodeOutput(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-srcNodeOutput-properties-srcNodeOutput-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Output port on the source node.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-timeCreated-properties-timeCreated-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-timeCreated-properties-timeCreated-1">
+            timeCreated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-timeCreated-properties-timeCreated-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>2024-12-11T22:41:25.622463Z</code></div>
+
+
+
+
+
+
+
+<div>RFC3339 timestamp when edge was created.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-timeUpdated-properties-timeUpdated-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-timeUpdated-properties-timeUpdated-1">
+            timeUpdated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-timeUpdated-properties-timeUpdated-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>2024-12-11T22:41:25.622470Z</code></div>
+
+
+
+
+
+
+
+<div>RFC3339 timestamp when edge was last updated.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-validationErrors-properties-validationErrors-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-validationErrors-properties-validationErrors-1">
+            validationErrors: 
+            array </a> <a href="#200-definitions-AgentFlowEdge-properties-validationErrors" role="button" class="btn btn-default btn-sm btn-xsm">validationErrors</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-validationErrors-properties-validationErrors-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">List of validation errors encountered in the diagram.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;An edge connecting two nodes in the diagram, with context and metadata.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;srcNodeId&quot;:{
+            &quot;description&quot;:&quot;Source node for this edge.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;destNodeId&quot;:{
+            &quot;description&quot;:&quot;Destination node for this edge.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;srcNodeOutput&quot;:{
+            &quot;description&quot;:&quot;Output port on the source node.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;destNodeInput&quot;:{
+            &quot;description&quot;:&quot;Input port on the destination node.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;parentNodeId&quot;:{
+            &quot;description&quot;:&quot;Parent node, if hierarchical.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;edgeHandles&quot;:{
+            &quot;description&quot;:&quot;Geometry handle coordinates.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/Point&quot;
+            },
+            &quot;default&quot;:[
+            ]
+        },
+        &quot;edgeProperties&quot;:{
+            &quot;description&quot;:&quot;Extensible Properties of the Edge&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;object&quot;
+            }
+        },
+        &quot;edgeType&quot;:{
+            &quot;description&quot;:&quot;Style/type for edge.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;key&quot;:{
+            &quot;description&quot;:&quot;Unique edge identifier.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;timeCreated&quot;:{
+            &quot;description&quot;:&quot;RFC3339 timestamp when edge was created.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;,
+            &quot;default&quot;:&quot;2024-12-11T22:41:25.622463Z&quot;
+        },
+        &quot;timeUpdated&quot;:{
+            &quot;description&quot;:&quot;RFC3339 timestamp when edge was last updated.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;,
+            &quot;default&quot;:&quot;2024-12-11T22:41:25.622470Z&quot;
+        },
+        &quot;validationErrors&quot;:{
+            &quot;description&quot;:&quot;List of validation errors encountered in the diagram.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/ValidationError&quot;
+            }
+        }
+    },
+    &quot;required&quot;:[
+        &quot;srcNodeId&quot;,
+        &quot;destNodeId&quot;,
+        &quot;srcNodeOutput&quot;,
+        &quot;destNodeInput&quot;,
+        &quot;key&quot;
+    ]
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowEdge-properties-edgeHandles" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : edgeHandles</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Geometry handle coordinates.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Point-items-0" aria-expanded="false" aria-controls="200-definitions-Point-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-Point" role="button" class="btn btn-default btn-sm btn-xsm">Point</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-Point-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">A 2D point for edge handles on diagram elements.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Geometry handle coordinates.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/Point&quot;
+    },
+    &quot;default&quot;:[
+    ]
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowEdge-properties-edgeProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : edgeProperties</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowEdge-properties-edgeProperties-additionalProperties-additional-0" aria-expanded="false" aria-controls="200-definitions-AgentFlowEdge-properties-edgeProperties-additionalProperties-additional-0">
+           
+               object </a> <a href="#200-definitions-AgentFlowEdge-properties-edgeProperties-additionalProperties" role="button" class="btn btn-default btn-sm btn-xsm">additionalProperties</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-AgentFlowEdge-properties-edgeProperties-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Extensible Properties of the Edge&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;object&quot;
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Extensible Properties of the Edge</div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowEdge-properties-validationErrors" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : validationErrors</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>List of validation errors encountered in the diagram.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ValidationError-items-0" aria-expanded="false" aria-controls="200-definitions-ValidationError-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-ValidationError" role="button" class="btn btn-default btn-sm btn-xsm">ValidationError</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ValidationError-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Validation error for a component in agent flow diagram.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;List of validation errors encountered in the diagram.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/ValidationError&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-Point" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : Point</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>A 2D point for edge handles on diagram elements.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Point-properties-x-properties-x-1" aria-expanded="false" aria-controls="200-definitions-Point-properties-x-properties-x-1">
+            x(required): 
+            number(float)</a>
+            <div class="collapse schema-summary" id="200-definitions-Point-properties-x-properties-x-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>X coordinate.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-Point-properties-y-properties-y-1" aria-expanded="false" aria-controls="200-definitions-Point-properties-y-properties-y-1">
+            y(required): 
+            number(float)</a>
+            <div class="collapse schema-summary" id="200-definitions-Point-properties-y-properties-y-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Y coordinate.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;A 2D point for edge handles on diagram elements.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;x&quot;:{
+            &quot;description&quot;:&quot;X coordinate.&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;float&quot;
+        },
+        &quot;y&quot;:{
+            &quot;description&quot;:&quot;Y coordinate.&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;float&quot;
+        }
+    },
+    &quot;required&quot;:[
+        &quot;x&quot;,
+        &quot;y&quot;
+    ]
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowEdge-properties-edgeProperties-additionalProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : additionalProperties</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-ValidationError" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : ValidationError</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Validation error for a component in agent flow diagram.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ValidationError-properties-key-properties-key-1" aria-expanded="false" aria-controls="200-definitions-ValidationError-properties-key-properties-key-1">
+            key(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ValidationError-properties-key-properties-key-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Id of the component that caused the error</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ValidationError-properties-message-properties-message-1" aria-expanded="false" aria-controls="200-definitions-ValidationError-properties-message-properties-message-1">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ValidationError-properties-message-properties-message-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ValidationError-properties-name-properties-name-1" aria-expanded="false" aria-controls="200-definitions-ValidationError-properties-name-properties-name-1">
+            name(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ValidationError-properties-name-properties-name-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Error name</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ValidationError-properties-type-properties-type-1" aria-expanded="false" aria-controls="200-definitions-ValidationError-properties-type-properties-type-1">
+            type(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-ValidationError-properties-type-properties-type-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Type of error.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Validation error for a component in agent flow diagram.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;type&quot;:{
+            &quot;description&quot;:&quot;Type of error.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;Error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;name&quot;:{
+            &quot;description&quot;:&quot;Error name&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;key&quot;:{
+            &quot;description&quot;:&quot;Id of the component that caused the error&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    },
+    &quot;required&quot;:[
+        &quot;type&quot;,
+        &quot;message&quot;,
+        &quot;name&quot;,
+        &quot;key&quot;
+    ]
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowNode" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : AgentFlowNode</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+    <div>Discriminator: <code>type</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>A node in a diagram, representing logic, data, or operation.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-configuration-properties-configuration-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-configuration-properties-configuration-1">
+            configuration: 
+            object </a> <a href="#200-definitions-AgentFlowNode-properties-configuration" role="button" class="btn btn-default btn-sm btn-xsm">configuration</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-configuration-properties-configuration-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Additional Properties Allowed: <a href="#200-definitions-AgentFlowNode-properties-configuration-additionalProperties" role="button" class="btn btn-default btn-sm">additionalProperties</a></div>
+
+
+
+
+
+
+
+
+
+<div class="description">Configuration object for this node.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-description-properties-description-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-description-properties-description-1">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-description-properties-description-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>New node</code></div>
+
+
+
+
+
+
+
+<div>Description of this node.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-inputs-properties-inputs-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-inputs-properties-inputs-1">
+            inputs: 
+            array </a> <a href="#200-definitions-AgentFlowNode-properties-inputs" role="button" class="btn btn-default btn-sm btn-xsm">inputs</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-inputs-properties-inputs-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Array of NodeInput objects.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-isExpanded-properties-isExpanded-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-isExpanded-properties-isExpanded-1">
+            isExpanded: 
+            boolean</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-isExpanded-properties-isExpanded-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>false</code></div>
+
+
+
+
+
+
+
+<div>Is node expanded in UI.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-key-properties-key-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-key-properties-key-1">
+            key(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-key-properties-key-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique identifier for the node.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-name-properties-name-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-name-properties-name-1">
+            name: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-name-properties-name-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>New node</code></div>
+
+
+
+
+
+
+
+<div>Name of this node.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-nodeType-properties-nodeType-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-nodeType-properties-nodeType-1">
+            nodeType: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-nodeType-properties-nodeType-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Type of this node.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-nodeTypeId-properties-nodeTypeId-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-nodeTypeId-properties-nodeTypeId-1">
+            nodeTypeId: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-nodeTypeId-properties-nodeTypeId-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Definition ID for this node type.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-outputs-properties-outputs-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-outputs-properties-outputs-1">
+            outputs: 
+            array </a> <a href="#200-definitions-AgentFlowNode-properties-outputs" role="button" class="btn btn-default btn-sm btn-xsm">outputs</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-outputs-properties-outputs-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Array of NodeOutput objects.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-parentNodeId-properties-parentNodeId-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-parentNodeId-properties-parentNodeId-1">
+            parentNodeId: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-parentNodeId-properties-parentNodeId-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Parent node ID, for subgraphs.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-positionX-properties-positionX-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-positionX-properties-positionX-1">
+            positionX: 
+            number(float)</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-positionX-properties-positionX-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>0</code></div>
+
+
+
+
+
+
+
+<div>Canvas X coordinate.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-positionY-properties-positionY-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-positionY-properties-positionY-1">
+            positionY: 
+            number(float)</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-positionY-properties-positionY-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>0</code></div>
+
+
+
+
+
+
+
+<div>Canvas Y coordinate.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-timeCreated-properties-timeCreated-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-timeCreated-properties-timeCreated-1">
+            timeCreated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-timeCreated-properties-timeCreated-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>2024-12-11T22:41:25.967777Z</code></div>
+
+
+
+
+
+
+
+<div>RFC3339 timestamp when node was created.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-timeUpdated-properties-timeUpdated-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-timeUpdated-properties-timeUpdated-1">
+            timeUpdated: 
+            string(date-time)</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-timeUpdated-properties-timeUpdated-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>2024-12-11T22:41:25.967783Z</code></div>
+
+
+
+
+
+
+
+<div>RFC3339 timestamp when node was last updated.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-type-properties-type-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-type-properties-type-1">
+            type: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-type-properties-type-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;AGENT&quot;,
+    &quot;SQL_TOOL&quot;,
+    &quot;PROMPT_TOOL&quot;,
+    &quot;RAG_TOOL&quot;,
+    &quot;MCP_TOOL&quot;,
+    &quot;HTTP_TOOL&quot;
+]</code></div>
+
+
+
+
+
+<div>Node type discriminator</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-validationErrors-properties-validationErrors-1" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-validationErrors-properties-validationErrors-1">
+            validationErrors: 
+            array </a> <a href="#200-definitions-AgentFlowNode-properties-validationErrors" role="button" class="btn btn-default btn-sm btn-xsm">validationErrors</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-validationErrors-properties-validationErrors-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">List of validation errors encountered in the diagram.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;A node in a diagram, representing logic, data, or operation.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;discriminator&quot;:&quot;type&quot;,
+    &quot;properties&quot;:{
+        &quot;type&quot;:{
+            &quot;description&quot;:&quot;Node type discriminator&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/NodeType&quot;,
+            &quot;enum&quot;:[
+                &quot;AGENT&quot;,
+                &quot;SQL_TOOL&quot;,
+                &quot;PROMPT_TOOL&quot;,
+                &quot;RAG_TOOL&quot;,
+                &quot;MCP_TOOL&quot;,
+                &quot;HTTP_TOOL&quot;
+            ]
+        },
+        &quot;nodeType&quot;:{
+            &quot;description&quot;:&quot;Type of this node.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;name&quot;:{
+            &quot;description&quot;:&quot;Name of this node.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;default&quot;:&quot;New node&quot;
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;Description of this node.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;default&quot;:&quot;New node&quot;
+        },
+        &quot;positionX&quot;:{
+            &quot;description&quot;:&quot;Canvas X coordinate.&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;float&quot;,
+            &quot;default&quot;:0
+        },
+        &quot;positionY&quot;:{
+            &quot;description&quot;:&quot;Canvas Y coordinate.&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;float&quot;,
+            &quot;default&quot;:0
+        },
+        &quot;isExpanded&quot;:{
+            &quot;description&quot;:&quot;Is node expanded in UI.&quot;,
+            &quot;type&quot;:&quot;boolean&quot;,
+            &quot;default&quot;:false
+        },
+        &quot;parentNodeId&quot;:{
+            &quot;description&quot;:&quot;Parent node ID, for subgraphs.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;configuration&quot;:{
+            &quot;description&quot;:&quot;Configuration object for this node.&quot;,
+            &quot;type&quot;:&quot;object&quot;,
+            &quot;default&quot;:{
+            },
+            &quot;additionalProperties&quot;:{
+                &quot;type&quot;:&quot;object&quot;,
+                &quot;default&quot;:{
+                }
+            }
+        },
+        &quot;nodeTypeId&quot;:{
+            &quot;description&quot;:&quot;Definition ID for this node type.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;key&quot;:{
+            &quot;description&quot;:&quot;Unique identifier for the node.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;timeCreated&quot;:{
+            &quot;description&quot;:&quot;RFC3339 timestamp when node was created.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;,
+            &quot;default&quot;:&quot;2024-12-11T22:41:25.967777Z&quot;
+        },
+        &quot;timeUpdated&quot;:{
+            &quot;description&quot;:&quot;RFC3339 timestamp when node was last updated.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;format&quot;:&quot;date-time&quot;,
+            &quot;default&quot;:&quot;2024-12-11T22:41:25.967783Z&quot;
+        },
+        &quot;inputs&quot;:{
+            &quot;description&quot;:&quot;Array of NodeInput objects.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/NodeInput&quot;
+            },
+            &quot;default&quot;:[
+            ]
+        },
+        &quot;outputs&quot;:{
+            &quot;description&quot;:&quot;Array of NodeOutput objects.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/NodeOutput&quot;
+            },
+            &quot;default&quot;:[
+            ]
+        },
+        &quot;validationErrors&quot;:{
+            &quot;description&quot;:&quot;List of validation errors encountered in the diagram.&quot;,
+            &quot;type&quot;:&quot;array&quot;,
+            &quot;items&quot;:{
+                &quot;$ref&quot;:&quot;#/definitions/ValidationError&quot;
+            }
+        }
+    },
+    &quot;required&quot;:[
+        &quot;key&quot;
+    ]
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowNode-properties-configuration" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : configuration</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-AgentFlowNode-properties-configuration-additionalProperties-additional-0" aria-expanded="false" aria-controls="200-definitions-AgentFlowNode-properties-configuration-additionalProperties-additional-0">
+           
+               object </a> <a href="#200-definitions-AgentFlowNode-properties-configuration-additionalProperties" role="button" class="btn btn-default btn-sm btn-xsm">additionalProperties</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-AgentFlowNode-properties-configuration-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Configuration object for this node.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;default&quot;:{
+    },
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;object&quot;,
+        &quot;default&quot;:{
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Configuration object for this node.</div>
+    
+
+    
+    <div>Default Value: <code>{
+}</code></div>
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowNode-properties-inputs" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : inputs</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Array of NodeInput objects.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeInput-items-0" aria-expanded="false" aria-controls="200-definitions-NodeInput-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-NodeInput" role="button" class="btn btn-default btn-sm btn-xsm">NodeInput</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-NodeInput-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">An input slot for a node, including type and requirements.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Array of NodeInput objects.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/NodeInput&quot;
+    },
+    &quot;default&quot;:[
+    ]
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowNode-properties-outputs" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : outputs</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Array of NodeOutput objects.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeOutput-items-0" aria-expanded="false" aria-controls="200-definitions-NodeOutput-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-NodeOutput" role="button" class="btn btn-default btn-sm btn-xsm">NodeOutput</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-NodeOutput-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">An output slot for a node, including type and requirements.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Array of NodeOutput objects.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/NodeOutput&quot;
+    },
+    &quot;default&quot;:[
+    ]
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowNode-properties-validationErrors" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : validationErrors</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>List of validation errors encountered in the diagram.</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-ValidationError-items-0" aria-expanded="false" aria-controls="200-definitions-ValidationError-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-ValidationError" role="button" class="btn btn-default btn-sm btn-xsm">ValidationError</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-ValidationError-items-0">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Validation error for a component in agent flow diagram.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;List of validation errors encountered in the diagram.&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/ValidationError&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-AgentFlowNode-properties-configuration-additionalProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : additionalProperties</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Default Value: <code>{
+}</code></div>
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-NodeInput" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : NodeInput</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>An input slot for a node, including type and requirements.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeInput-properties-description-properties-description-1" aria-expanded="false" aria-controls="200-definitions-NodeInput-properties-description-properties-description-1">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeInput-properties-description-properties-description-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Documentation or tooltip shown in the UI.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeInput-properties-isRequired-properties-isRequired-1" aria-expanded="false" aria-controls="200-definitions-NodeInput-properties-isRequired-properties-isRequired-1">
+            isRequired(required): 
+            boolean</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeInput-properties-isRequired-properties-isRequired-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>True if this input is mandatory.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeInput-properties-isSingleConnection-properties-isSingleConnection-1" aria-expanded="false" aria-controls="200-definitions-NodeInput-properties-isSingleConnection-properties-isSingleConnection-1">
+            isSingleConnection: 
+            boolean</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeInput-properties-isSingleConnection-properties-isSingleConnection-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>false</code></div>
+
+
+
+
+
+
+
+<div>True if only one connection is allowed; false allows multiple.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeInput-properties-name-properties-name-1" aria-expanded="false" aria-controls="200-definitions-NodeInput-properties-name-properties-name-1">
+            name(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeInput-properties-name-properties-name-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique name for the input slot.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeIo-properties-type-2" aria-expanded="false" aria-controls="200-definitions-NodeIo-properties-type-2">
+            type(required): 
+            object </a> <a href="#200-definitions-NodeIo" role="button" class="btn btn-default btn-sm btn-xsm">NodeIo</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-NodeIo-properties-type-2">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Defines the data type and color for an input or output.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;An input slot for a node, including type and requirements.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;name&quot;:{
+            &quot;description&quot;:&quot;Unique name for the input slot.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;type&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/NodeIo&quot;
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;Documentation or tooltip shown in the UI.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;isRequired&quot;:{
+            &quot;description&quot;:&quot;True if this input is mandatory.&quot;,
+            &quot;type&quot;:&quot;boolean&quot;
+        },
+        &quot;isSingleConnection&quot;:{
+            &quot;description&quot;:&quot;True if only one connection is allowed; false allows multiple.&quot;,
+            &quot;type&quot;:&quot;boolean&quot;,
+            &quot;default&quot;:false
+        }
+    },
+    &quot;required&quot;:[
+        &quot;name&quot;,
+        &quot;type&quot;,
+        &quot;isRequired&quot;
+    ]
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-NodeIo" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : NodeIo</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Defines the data type and color for an input or output.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeIoColor-properties-color-1" aria-expanded="false" aria-controls="200-definitions-NodeIoColor-properties-color-1">
+            color(required): 
+            object </a> <a href="#200-definitions-NodeIoColor" role="button" class="btn btn-default btn-sm btn-xsm">NodeIoColor</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-NodeIoColor-properties-color-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Text and background color configuration for a node input/output.</div>
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeIo-properties-dataType-properties-dataType-1" aria-expanded="false" aria-controls="200-definitions-NodeIo-properties-dataType-properties-dataType-1">
+            dataType(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeIo-properties-dataType-properties-dataType-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;FLOW&quot;,
+    &quot;STR&quot;,
+    &quot;INT&quot;,
+    &quot;BOOL&quot;,
+    &quot;FLOAT&quot;,
+    &quot;LIST&quot;,
+    &quot;DICT&quot;,
+    &quot;ANY&quot;,
+    &quot;TOOLS&quot;,
+    &quot;LLMS&quot;,
+    &quot;AGENTS&quot;,
+    &quot;PLANNER&quot;,
+    &quot;FLOWS&quot;
+]</code></div>
+
+
+
+
+
+<div>Possible types of node inputs and outputs.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Defines the data type and color for an input or output.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;dataType&quot;:{
+            &quot;description&quot;:&quot;Possible types of node inputs and outputs.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;FLOW&quot;,
+                &quot;STR&quot;,
+                &quot;INT&quot;,
+                &quot;BOOL&quot;,
+                &quot;FLOAT&quot;,
+                &quot;LIST&quot;,
+                &quot;DICT&quot;,
+                &quot;ANY&quot;,
+                &quot;TOOLS&quot;,
+                &quot;LLMS&quot;,
+                &quot;AGENTS&quot;,
+                &quot;PLANNER&quot;,
+                &quot;FLOWS&quot;
+            ]
+        },
+        &quot;color&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/NodeIoColor&quot;
+        }
+    },
+    &quot;required&quot;:[
+        &quot;dataType&quot;,
+        &quot;color&quot;
+    ]
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-NodeIoColor" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : NodeIoColor</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Text and background color configuration for a node input/output.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeIoColor-properties-backgroundColor-properties-backgroundColor-1" aria-expanded="false" aria-controls="200-definitions-NodeIoColor-properties-backgroundColor-properties-backgroundColor-1">
+            backgroundColor(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeIoColor-properties-backgroundColor-properties-backgroundColor-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Input/output badge background color.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeIoColor-properties-handleColor-properties-handleColor-1" aria-expanded="false" aria-controls="200-definitions-NodeIoColor-properties-handleColor-properties-handleColor-1">
+            handleColor(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeIoColor-properties-handleColor-properties-handleColor-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Input/output connector handle color.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeIoColor-properties-textColor-properties-textColor-1" aria-expanded="false" aria-controls="200-definitions-NodeIoColor-properties-textColor-properties-textColor-1">
+            textColor(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeIoColor-properties-textColor-properties-textColor-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;DARK&quot;,
+    &quot;LIGHT&quot;
+]</code></div>
+
+
+
+
+
+<div>Whether the text on badges should be dark or light for visibility.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Text and background color configuration for a node input/output.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;textColor&quot;:{
+            &quot;description&quot;:&quot;Whether the text on badges should be dark or light for visibility.&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;enum&quot;:[
+                &quot;DARK&quot;,
+                &quot;LIGHT&quot;
+            ]
+        },
+        &quot;backgroundColor&quot;:{
+            &quot;description&quot;:&quot;Input/output badge background color.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;handleColor&quot;:{
+            &quot;description&quot;:&quot;Input/output connector handle color.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    },
+    &quot;required&quot;:[
+        &quot;textColor&quot;,
+        &quot;backgroundColor&quot;,
+        &quot;handleColor&quot;
+    ]
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-NodeOutput" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : NodeOutput</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>An output slot for a node, including type and requirements.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeOutput-properties-description-properties-description-1" aria-expanded="false" aria-controls="200-definitions-NodeOutput-properties-description-properties-description-1">
+            description: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeOutput-properties-description-properties-description-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Documentation or tooltip shown in the UI.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeOutput-properties-isRequired-properties-isRequired-1" aria-expanded="false" aria-controls="200-definitions-NodeOutput-properties-isRequired-properties-isRequired-1">
+            isRequired(required): 
+            boolean</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeOutput-properties-isRequired-properties-isRequired-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>True if this output is mandatory.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeOutput-properties-name-properties-name-1" aria-expanded="false" aria-controls="200-definitions-NodeOutput-properties-name-properties-name-1">
+            name(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-NodeOutput-properties-name-properties-name-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique name for the output slot.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-NodeIo-properties-type-3" aria-expanded="false" aria-controls="200-definitions-NodeIo-properties-type-3">
+            type(required): 
+            object </a> <a href="#200-definitions-NodeIo" role="button" class="btn btn-default btn-sm btn-xsm">NodeIo</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-NodeIo-properties-type-3">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Defines the data type and color for an input or output.</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;An output slot for a node, including type and requirements.&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;name&quot;:{
+            &quot;description&quot;:&quot;Unique name for the output slot.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;type&quot;:{
+            &quot;$ref&quot;:&quot;#/definitions/NodeIo&quot;
+        },
+        &quot;description&quot;:{
+            &quot;description&quot;:&quot;Documentation or tooltip shown in the UI.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;isRequired&quot;:{
+            &quot;description&quot;:&quot;True if this output is mandatory.&quot;,
+            &quot;type&quot;:&quot;boolean&quot;
+        }
+    },
+    &quot;required&quot;:[
+        &quot;name&quot;,
+        &quot;type&quot;,
+        &quot;isRequired&quot;
+    ]
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-GuardrailsConfiguration-properties-policies" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : policies</div>
+    
+      
+      <div class="schema-type">Type: <code>array</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>List of safety policies configured in this guardrails</div>
+    
+
+    
+
+    
+
+    
+    
+        <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SafetyPolicy-items-0" aria-expanded="false" aria-controls="200-definitions-SafetyPolicy-items-0">
+            Array of: 
+                object </a> <a href="#200-definitions-SafetyPolicy" role="button" class="btn btn-default btn-sm btn-xsm">SafetyPolicy</a>
+            
+            <div class="collapse schema-summary" id="200-definitions-SafetyPolicy-items-0">
+                
+                
+
+
+<div>Discriminator: <code>policyType</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">Individual safety policy configuration</div>
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;List of safety policies configured in this guardrails&quot;,
+    &quot;type&quot;:&quot;array&quot;,
+    &quot;items&quot;:{
+        &quot;$ref&quot;:&quot;#/definitions/SafetyPolicy&quot;
+    }
+}</code></pre>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-SafetyPolicy" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : SafetyPolicy</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+    <div>Discriminator: <code>policyType</code></div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Individual safety policy configuration</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SafetyPolicy-properties-action-properties-action-1" aria-expanded="false" aria-controls="200-definitions-SafetyPolicy-properties-action-properties-action-1">
+            action(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-SafetyPolicy-properties-action-properties-action-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;BLOCK&quot;,
+    &quot;INFORM&quot;,
+    &quot;MASK&quot;
+]</code></div>
+
+
+
+
+
+<div>Action to take when policy is violated</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SafetyPolicy-properties-policyDescription-properties-policyDescription-1" aria-expanded="false" aria-controls="200-definitions-SafetyPolicy-properties-policyDescription-properties-policyDescription-1">
+            policyDescription: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-SafetyPolicy-properties-policyDescription-properties-policyDescription-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Length: <code>1000</code></div>
+
+
+
+
+
+
+
+
+
+<div>Description of the policy</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SafetyPolicy-properties-policyName-properties-policyName-1" aria-expanded="false" aria-controls="200-definitions-SafetyPolicy-properties-policyName-properties-policyName-1">
+            policyName: 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-SafetyPolicy-properties-policyName-properties-policyName-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum Length: <code>255</code></div>
+
+
+
+
+
+
+
+
+
+<div>Custom name for the policy</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SafetyPolicy-properties-policyType-properties-policyType-1" aria-expanded="false" aria-controls="200-definitions-SafetyPolicy-properties-policyType-properties-policyType-1">
+            policyType(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-SafetyPolicy-properties-policyType-properties-policyType-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;CONTENT_MODERATION&quot;,
+    &quot;PROMPT_ATTACKS_PREVENTION&quot;,
+    &quot;PII_DETECTION&quot;,
+    &quot;DENIED_TOPICS&quot;,
+    &quot;WORD_FILTERS&quot;,
+    &quot;CONTEXTUAL_GROUNDING&quot;,
+    &quot;CUSTOM_POLICY&quot;
+]</code></div>
+
+
+
+
+
+<div>Type of safety policy</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SafetyPolicy-properties-scope-properties-scope-1" aria-expanded="false" aria-controls="200-definitions-SafetyPolicy-properties-scope-properties-scope-1">
+            scope(required): 
+            string</a>
+            <div class="collapse schema-summary" id="200-definitions-SafetyPolicy-properties-scope-properties-scope-1">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Allowed Values: <code>[
+    &quot;USER_REQUEST&quot;,
+    &quot;AGENT_RESPONSE&quot;,
+    &quot;BOTH&quot;
+]</code></div>
+
+
+
+
+
+<div>Scope of policy application</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SafetyPolicy-properties-threshold-properties-threshold-1" aria-expanded="false" aria-controls="200-definitions-SafetyPolicy-properties-threshold-properties-threshold-1">
+            threshold: 
+            number(float)</a>
+            <div class="collapse schema-summary" id="200-definitions-SafetyPolicy-properties-threshold-properties-threshold-1">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>0</code></div>
+
+
+
+
+
+<div>Maximum Value: <code>1</code></div>
+
+
+
+
+
+
+
+
+
+
+
+<div>Default Value: <code>0.5</code></div>
+
+
+
+
+
+
+
+<div>Threshold value for policy violation (0.0 to 1.0)</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Individual safety policy configuration&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;discriminator&quot;:&quot;policyType&quot;,
+    &quot;required&quot;:[
+        &quot;policyType&quot;,
+        &quot;scope&quot;,
+        &quot;action&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;policyType&quot;:{
+            &quot;description&quot;:&quot;Type of safety policy&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/PolicyType&quot;,
+            &quot;enum&quot;:[
+                &quot;CONTENT_MODERATION&quot;,
+                &quot;PROMPT_ATTACKS_PREVENTION&quot;,
+                &quot;PII_DETECTION&quot;,
+                &quot;DENIED_TOPICS&quot;,
+                &quot;WORD_FILTERS&quot;,
+                &quot;CONTEXTUAL_GROUNDING&quot;,
+                &quot;CUSTOM_POLICY&quot;
+            ]
+        },
+        &quot;policyName&quot;:{
+            &quot;description&quot;:&quot;Custom name for the policy&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;maxLength&quot;:255
+        },
+        &quot;policyDescription&quot;:{
+            &quot;description&quot;:&quot;Description of the policy&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;maxLength&quot;:1000
+        },
+        &quot;scope&quot;:{
+            &quot;description&quot;:&quot;Scope of policy application&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/PolicyScope&quot;,
+            &quot;enum&quot;:[
+                &quot;USER_REQUEST&quot;,
+                &quot;AGENT_RESPONSE&quot;,
+                &quot;BOTH&quot;
+            ]
+        },
+        &quot;action&quot;:{
+            &quot;description&quot;:&quot;Action to take when policy is violated&quot;,
+            &quot;type&quot;:&quot;string&quot;,
+            &quot;x-obmcs-top-level-enum&quot;:&quot;#/definitions/PolicyAction&quot;,
+            &quot;enum&quot;:[
+                &quot;BLOCK&quot;,
+                &quot;INFORM&quot;,
+                &quot;MASK&quot;
+            ]
+        },
+        &quot;threshold&quot;:{
+            &quot;description&quot;:&quot;Threshold value for policy violation (0.0 to 1.0)&quot;,
+            &quot;type&quot;:&quot;number&quot;,
+            &quot;format&quot;:&quot;float&quot;,
+            &quot;minimum&quot;:0,
+            &quot;maximum&quot;:1,
+            &quot;default&quot;:0.5
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-SessionRetentionConfiguration" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : SessionRetentionConfiguration</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Session data retention configuration for agent flow</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SessionRetentionConfiguration-properties-retentionPeriodInDays-properties-retentionPeriodInDays-1" aria-expanded="false" aria-controls="200-definitions-SessionRetentionConfiguration-properties-retentionPeriodInDays-properties-retentionPeriodInDays-1">
+            retentionPeriodInDays: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-SessionRetentionConfiguration-properties-retentionPeriodInDays-properties-retentionPeriodInDays-1">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>1</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>No. of days session data will be kept</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SessionRetentionConfiguration-properties-sessionSizeLimit-properties-sessionSizeLimit-1" aria-expanded="false" aria-controls="200-definitions-SessionRetentionConfiguration-properties-sessionSizeLimit-properties-sessionSizeLimit-1">
+            sessionSizeLimit: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-SessionRetentionConfiguration-properties-sessionSizeLimit-properties-sessionSizeLimit-1">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>1</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Max storage allocated to session data (in MB).</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SessionRetentionConfiguration-properties-threadCountLimit-properties-threadCountLimit-1" aria-expanded="false" aria-controls="200-definitions-SessionRetentionConfiguration-properties-threadCountLimit-properties-threadCountLimit-1">
+            threadCountLimit: 
+            integer</a>
+            <div class="collapse schema-summary" id="200-definitions-SessionRetentionConfiguration-properties-threadCountLimit-properties-threadCountLimit-1">
+                
+                
+
+
+
+
+<div>Minimum Value: <code>1</code></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Maximum no. of user prompt and agent response pairs per session</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Session data retention configuration for agent flow&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;properties&quot;:{
+        &quot;retentionPeriodInDays&quot;:{
+            &quot;description&quot;:&quot;No. of days session data will be kept&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;minimum&quot;:1
+        },
+        &quot;sessionSizeLimit&quot;:{
+            &quot;description&quot;:&quot;Max storage allocated to session data (in MB).&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;minimum&quot;:1
+        },
+        &quot;threadCountLimit&quot;:{
+            &quot;description&quot;:&quot;Maximum no. of user prompt and agent response pairs per session&quot;,
+            &quot;type&quot;:&quot;integer&quot;,
+            &quot;minimum&quot;:1
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-SessionConfiguration-properties-variables" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : variables</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+       <div class="h5">Additional Properties Allowed</div>
+
+       <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+       <ul class="schema-properties">
+           
+           <li><a role="button" data-toggle="prop-collapse" href="#200-definitions-SessionConfiguration-properties-variables-additionalProperties-additional-0" aria-expanded="false" aria-controls="200-definitions-SessionConfiguration-properties-variables-additionalProperties-additional-0">
+           
+               object </a> <a href="#200-definitions-SessionConfiguration-properties-variables-additionalProperties" role="button" class="btn btn-default btn-sm btn-xsm">additionalProperties</a>
+           
+           <div class="collapse schema-summary" id="200-definitions-SessionConfiguration-properties-variables-additionalProperties-additional-0">
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+           </div>
+           </li>
+           
+       </ul>
+       <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Map of session variable name ??? variable definition&quot;,
+    &quot;type&quot;:&quot;object&quot;,
+    &quot;additionalProperties&quot;:{
+        &quot;type&quot;:&quot;object&quot;
+    },
+    &quot;default&quot;:{
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Map of session variable name ??? variable definition</div>
+    
+
+    
+    <div>Default Value: <code>{
+}</code></div>
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    <div id="200-definitions-SessionConfiguration-properties-variables-additionalProperties" class="swagger-schema">
+    <div class="panel-heading">Nested Schema : additionalProperties</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">400 Response</h4>
+                <div class="response-body">
+                <div>Bad Request (invalid query parameters, malformed headers, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#400-response-header-opc-request-id" aria-expanded="false" aria-controls="400-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="400-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="400-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-code-properties-code-150" aria-expanded="false" aria-controls="400-definitions-Error-properties-code-properties-code-150">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-code-properties-code-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#400-definitions-Error-properties-message-properties-message-150" aria-expanded="false" aria-controls="400-definitions-Error-properties-message-properties-message-150">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="400-definitions-Error-properties-message-properties-message-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">401 Response</h4>
+                <div class="response-body">
+                <div>Unauthorized (missing or expired credentials, and so on).</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#401-response-header-opc-request-id" aria-expanded="false" aria-controls="401-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="401-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="401-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-code-properties-code-150" aria-expanded="false" aria-controls="401-definitions-Error-properties-code-properties-code-150">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-code-properties-code-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#401-definitions-Error-properties-message-properties-message-150" aria-expanded="false" aria-controls="401-definitions-Error-properties-message-properties-message-150">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="401-definitions-Error-properties-message-properties-message-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">404 Response</h4>
+                <div class="response-body">
+                <div>Not Found. The requested resource was not found.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#404-response-header-opc-request-id" aria-expanded="false" aria-controls="404-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="404-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="404-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-code-properties-code-150" aria-expanded="false" aria-controls="404-definitions-Error-properties-code-properties-code-150">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-code-properties-code-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#404-definitions-Error-properties-message-properties-message-150" aria-expanded="false" aria-controls="404-definitions-Error-properties-message-properties-message-150">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="404-definitions-Error-properties-message-properties-message-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-400">429 Response</h4>
+                <div class="response-body">
+                <div>Too Many Requests. Too many requests sent to the server in a short period.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#429-response-header-opc-request-id" aria-expanded="false" aria-controls="429-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="429-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="429-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-code-properties-code-150" aria-expanded="false" aria-controls="429-definitions-Error-properties-code-properties-code-150">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-code-properties-code-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#429-definitions-Error-properties-message-properties-message-150" aria-expanded="false" aria-controls="429-definitions-Error-properties-message-properties-message-150">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="429-definitions-Error-properties-message-properties-message-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range-500">500 Response</h4>
+                <div class="response-body">
+                <div>Internal Server Error. The server encountered an unexpected condition preventing fulfilment of the request.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#500-response-header-opc-request-id" aria-expanded="false" aria-controls="500-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="500-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="500-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-code-properties-code-150" aria-expanded="false" aria-controls="500-definitions-Error-properties-code-properties-code-150">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-code-properties-code-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#500-definitions-Error-properties-message-properties-message-150" aria-expanded="false" aria-controls="500-definitions-Error-properties-message-properties-message-150">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="500-definitions-Error-properties-message-properties-message-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+                <div class="response">
+                <h4 class="response-code range">Default Response</h4>
+                <div class="response-body">
+                <div>Unknown Error. Error is not recognized by the system.</div>
+
+                
+                <div class="h5">Headers</div>
+                <div class="schema-container">
+                    <ul class="schema-properties">
+                        
+                        <li><a role="button" data-toggle="collapse" href="#default-response-header-opc-request-id" aria-expanded="false" aria-controls="default-response-header-opc-request-id">
+                        opc-request-id: string
+                        </a>
+                        <div class="collapse" id="default-response-header-opc-request-id">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>Unique Oracle-assigned id for the request. If you need to contact Oracle about a particular request, please provide the request ID.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                
+
+
+                
+                    <div class="entity">
+                    <div class="h5 hidden-print">Body (<span class="schema-path"></span>)</div>
+
+
+                    <div class="schema-container">
+                    
+                    <div id="default-definitions-Error" class="swagger-schema">
+    <div class="panel-heading">Root Schema : Error</div>
+    
+      <div class="schema-type">Type: <code>object</code></div>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>Error information.</div>
+    
+
+    
+
+    
+
+    
+    <a href="#" role="button" data-toggle="schema-view" class="toggle-schema pull-right btn btn-default btn-sm btn-xsm">Show Source</a>
+        <ul class="schema-properties">
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-code-properties-code-150" aria-expanded="false" aria-controls="default-definitions-Error-properties-code-properties-code-150">
+            code(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-code-properties-code-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A short error code that defines the error, meant for programmatic parsing.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+            <li><a role="button" data-toggle="prop-collapse" href="#default-definitions-Error-properties-message-properties-message-150" aria-expanded="false" aria-controls="default-definitions-Error-properties-message-properties-message-150">
+            message(required): 
+            string</a>
+            <div class="collapse schema-summary" id="default-definitions-Error-properties-message-properties-message-150">
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>A human-readable error message.</div>
+
+
+
+
+                
+            </div>
+            </li>
+            
+        </ul>
+        <pre class="schema-source" style="display: none;"><code class="json">{
+    &quot;description&quot;:&quot;Error information.&quot;,
+    &quot;required&quot;:[
+        &quot;code&quot;,
+        &quot;message&quot;
+    ],
+    &quot;properties&quot;:{
+        &quot;code&quot;:{
+            &quot;description&quot;:&quot;A short error code that defines the error, meant for programmatic parsing.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        },
+        &quot;message&quot;:{
+            &quot;description&quot;:&quot;A human-readable error message.&quot;,
+            &quot;type&quot;:&quot;string&quot;
+        }
+    }
+}</code></pre>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+</div>
+
+                    
+                    </div>
+
+                    
+                    </div>
+                
+                </div>
+                </div>
+                
+
+				<a style="float: right" href="#top">Back to Top</a>
+				
+                
+
+            </section>
+
+            
+        </article>
+    </body>
+</html>
